@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> should render with: blockquote 1`] = `
+<ForwardRef
+  type="blockquote"
+>
+  <blockquote>
+    My content for 
+    blockquote
+  </blockquote>
+</ForwardRef>
+`;
+
+exports[`<Text /> should render with: p 1`] = `
+<ForwardRef
+  type="p"
+>
+  <p>
+    My content for 
+    p
+  </p>
+</ForwardRef>
+`;
+
+exports[`<Text /> should render with: strong 1`] = `
+<ForwardRef
+  type="strong"
+>
+  <strong>
+    My content for 
+    strong
+  </strong>
+</ForwardRef>
+`;
