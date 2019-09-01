@@ -5,7 +5,7 @@ exports[`<Title /> should render with: h1 1`] = `
   type="h1"
 >
   <h1>
-    My content for 
+    My content for
     h1
   </h1>
 </ForwardRef>
@@ -16,7 +16,7 @@ exports[`<Title /> should render with: h2 1`] = `
   type="h2"
 >
   <h2>
-    My content for 
+    My content for
     h2
   </h2>
 </ForwardRef>
@@ -27,7 +27,7 @@ exports[`<Title /> should render with: h3 1`] = `
   type="h3"
 >
   <h3>
-    My content for 
+    My content for
     h3
   </h3>
 </ForwardRef>
@@ -38,7 +38,7 @@ exports[`<Title /> should render with: h4 1`] = `
   type="h4"
 >
   <h4>
-    My content for 
+    My content for
     h4
   </h4>
 </ForwardRef>
@@ -49,7 +49,7 @@ exports[`<Title /> should render with: h5 1`] = `
   type="h5"
 >
   <h5>
-    My content for 
+    My content for
     h5
   </h5>
 </ForwardRef>
@@ -60,7 +60,7 @@ exports[`<Title /> should render with: h6 1`] = `
   type="h6"
 >
   <h6>
-    My content for 
+    My content for
     h6
   </h6>
 </ForwardRef>

@@ -5,7 +5,7 @@ exports[`<Text /> should render with: blockquote 1`] = `
   type="blockquote"
 >
   <blockquote>
-    My content for 
+    My content for
     blockquote
   </blockquote>
 </ForwardRef>
@@ -16,7 +16,7 @@ exports[`<Text /> should render with: p 1`] = `
   type="p"
 >
   <p>
-    My content for 
+    My content for
     p
   </p>
 </ForwardRef>
@@ -27,7 +27,7 @@ exports[`<Text /> should render with: strong 1`] = `
   type="strong"
 >
   <strong>
-    My content for 
+    My content for
     strong
   </strong>
 </ForwardRef>

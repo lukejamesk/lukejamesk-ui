@@ -3,16 +3,30 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: [
     'babel',
-    '@typescript-eslint'
+    '@typescript-eslint',
+    'jest'
   ],
   rules: {
     'comma-dangle': ['error', 'never'],
     'semi': ['error', 'never'],
-    'import/prefer-default-export': 'off'
+    'import/prefer-default-export': 'off',
+    'react/jsx-filename-extension': [1, { 'extensions': ['.tsx', '.jsx'] }]
   },
   env: {
     browser: true,
     node: true,
-    es6: true
+    es6: true,
+    jest: true
+  },
+  settings: {
+    'import/extensions': ['.js','.jsx','.ts','.tsx'],
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts','.tsx']
+    },
+    'import/resolver': {
+        'node': {
+            'extensions': ['.js','.jsx','.ts','.tsx']
+        }
+    }
   }
 }
