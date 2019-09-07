@@ -26,4 +26,13 @@ describe('<Text />', () => {
     )
     expect(wrapper).toMatchSnapshot()
   })
+
+  it('with no type', () => {
+    const wrapper = mount(
+      <Text>
+        My content for paragraph
+      </Text>
+    )
+    expect(wrapper).toMatchSnapshot()
+  })
 })

@@ -32,3 +32,11 @@ exports[`<Title /> should render with: heading3 1`] = `
   </h3>
 </ForwardRef>
 `;
+
+exports[`<Title /> with no type 1`] = `
+<ForwardRef>
+  <h1>
+    My content for no title
+  </h1>
+</ForwardRef>
+`;

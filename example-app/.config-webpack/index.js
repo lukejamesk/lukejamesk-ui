@@ -8,7 +8,7 @@ const config = compose(
   babelLoader
 )({
   entry: {
-    app: './client/index.js'
+    app: './src/index.js'
   },
   output: {
     path: path.join(__dirname, '../.dist-client'),

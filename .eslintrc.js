@@ -13,7 +13,11 @@ module.exports = {
       {
         devDependencies: [
           '.storybook/**',
-          'client/**/*.stories.js'
+          'packages/**/*.stories.js',
+          'packages/**/*.test.js',
+          'example-app/**/*.stories.js',
+          'example-app/**/*.test.js',
+          'test/**'
         ]
       }
     ],

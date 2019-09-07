@@ -42,3 +42,11 @@ exports[`<Text /> should render with: paragraph 1`] = `
   </p>
 </ForwardRef>
 `;
+
+exports[`<Text /> with no type 1`] = `
+<ForwardRef>
+  <p>
+    My content for paragraph
+  </p>
+</ForwardRef>
+`;

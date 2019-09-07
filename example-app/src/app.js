@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import {
   Title,
   Text
-} from './core/typography'
+} from '@lukejamesk-ui/typography'
 
 const App = ({ name }) => (
   <div>
