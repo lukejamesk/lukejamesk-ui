@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-  Typography
+  Typography,
+  Button
 } from '@lukejamesk-ui'
 
 const App = ({ name }) => (
@@ -10,6 +11,9 @@ const App = ({ name }) => (
     <Typography>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
     </Typography>
+    <Button>
+      My Button
+    </Button>
   </div>
 )
 

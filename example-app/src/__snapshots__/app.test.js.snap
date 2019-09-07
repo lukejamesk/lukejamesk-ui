@@ -17,6 +17,13 @@ exports[`<App /> should render 1`] = `
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
       </p>
     </ForwardRef>
+    <ForwardRef>
+      <button
+        type="button"
+      >
+        My Button
+      </button>
+    </ForwardRef>
   </div>
 </App>
 `;

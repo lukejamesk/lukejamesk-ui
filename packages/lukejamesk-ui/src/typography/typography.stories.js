@@ -7,7 +7,7 @@ const exampleText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Maecenas feugiat varius mi, eu sagittis nunc dignissim nec.
 Quisque rhoncus hendrerit leo.`
 
-storiesOf('Core|Typography', module)
+storiesOf('UI|Typography', module)
   .add('Paragraph', () => (
     <Typography paragraph={boolean}>
       {text('text', exampleText)}
