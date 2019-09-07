@@ -1,16 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {
-  Title,
-  Text
-} from '@lukejamesk-ui/typography'
+  Typography
+} from '@lukejamesk-ui'
 
 const App = ({ name }) => (
   <div>
-    <Title type="heading1">{name}</Title>
-    <Text type="paragraph">
+    <Typography type="heading1">{name}</Typography>
+    <Typography>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
-    </Text>
+    </Typography>
   </div>
 )
 

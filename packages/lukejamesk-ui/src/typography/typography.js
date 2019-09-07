@@ -4,10 +4,13 @@ import PropTypes from 'prop-types'
 const variantMapping = {
   paragraph: 'p',
   bold: 'strong',
-  blockquote: 'blockquote'
+  blockquote: 'blockquote',
+  heading1: 'h1',
+  heading2: 'h2',
+  heading3: 'h3'
 }
 
-export const Text = forwardRef(
+const Typography = forwardRef(
   ({ type = 'paragraph', paragraph = false, ...other }, ref) => {
     const Component = paragraph
       ? variantMapping.paragraph
@@ -19,7 +22,16 @@ export const Text = forwardRef(
   }
 )
 
-Text.propTypes = {
-  type: PropTypes.oneOf(['paragraph', 'bold', 'blockquote']),
+Typography.propTypes = {
+  type: PropTypes.oneOf([
+    'paragraph',
+    'bold',
+    'blockquote',
+    'heading1',
+    'heading2',
+    'heading3'
+  ]),
   paragraph: PropTypes.bool
 }
+
+export default Typography

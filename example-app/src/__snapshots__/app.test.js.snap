@@ -12,9 +12,7 @@ exports[`<App /> should render 1`] = `
         Test
       </h1>
     </ForwardRef>
-    <ForwardRef
-      type="paragraph"
-    >
+    <ForwardRef>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
       </p>

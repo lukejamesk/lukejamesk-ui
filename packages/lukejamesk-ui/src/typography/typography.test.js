@@ -1,18 +1,25 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import { forEach } from 'ramda'
-import { Text } from '.'
+import Typography from './typography'
 
-const textTypes = ['paragraph', 'bold', 'blockquote']
+const textTypes = [
+  'paragraph',
+  'bold',
+  'blockquote',
+  'heading1',
+  'heading2',
+  'heading3'
+]
 
-describe('<Text />', () => {
+describe('<Typography />', () => {
   forEach((type) => {
     it(`should render with: ${type}`, () => {
       const wrapper = mount(
-        <Text type={type}>
+        <Typography type={type}>
           My content for
           {type}
-        </Text>
+        </Typography>
       )
       expect(wrapper).toMatchSnapshot()
     })
@@ -20,18 +27,18 @@ describe('<Text />', () => {
 
   it('should render a paragraph when paragraph is true', () => {
     const wrapper = mount(
-      <Text paragraph>
+      <Typography paragraph>
         My content for paragraph
-      </Text>
+      </Typography>
     )
     expect(wrapper).toMatchSnapshot()
   })
 
   it('with no type', () => {
     const wrapper = mount(
-      <Text>
+      <Typography>
         My content for paragraph
-      </Text>
+      </Typography>
     )
     expect(wrapper).toMatchSnapshot()
   })
