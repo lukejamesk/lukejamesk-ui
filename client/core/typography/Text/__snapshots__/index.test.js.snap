@@ -11,24 +11,24 @@ exports[`<Text /> should render with: blockquote 1`] = `
 </ForwardRef>
 `;
 
-exports[`<Text /> should render with: p 1`] = `
+exports[`<Text /> should render with: bold 1`] = `
 <ForwardRef
-  type="p"
->
-  <p>
-    My content for
-    p
-  </p>
-</ForwardRef>
-`;
-
-exports[`<Text /> should render with: strong 1`] = `
-<ForwardRef
-  type="strong"
+  type="bold"
 >
   <strong>
     My content for
-    strong
+    bold
   </strong>
+</ForwardRef>
+`;
+
+exports[`<Text /> should render with: paragraph 1`] = `
+<ForwardRef
+  type="paragraph"
+>
+  <p>
+    My content for
+    paragraph
+  </p>
 </ForwardRef>
 `;

@@ -1,16 +1,14 @@
 module.exports = {
   extends: 'airbnb',
-  parser: '@typescript-eslint/parser',
   plugins: [
     'babel',
-    '@typescript-eslint',
     'jest'
   ],
   rules: {
     'comma-dangle': ['error', 'never'],
     'semi': ['error', 'never'],
     'import/prefer-default-export': 'off',
-    'react/jsx-filename-extension': [1, { 'extensions': ['.tsx', '.jsx'] }]
+    'react/jsx-filename-extension': [1, { 'extensions': ['.js'] }]
   },
   env: {
     browser: true,
@@ -19,13 +17,10 @@ module.exports = {
     jest: true
   },
   settings: {
-    'import/extensions': ['.js','.jsx','.ts','.tsx'],
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts','.tsx']
-    },
+    'import/extensions': ['.js'],
     'import/resolver': {
         'node': {
-            'extensions': ['.js','.jsx','.ts','.tsx']
+            'extensions': ['.js']
         }
     }
   }

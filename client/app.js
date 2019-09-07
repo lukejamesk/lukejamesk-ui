@@ -1,20 +1,21 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {
   Title,
   Text
 } from './core/typography'
 
-export interface AppProps {
-  name: String
-}
-
-const App = ({ name }: AppProps) => (
+const App = ({ name }) => (
   <div>
-    <Title type="h1">{name}</Title>
-    <Text type="p">
+    <Title type="heading1">{name}</Title>
+    <Text type="paragraph">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
     </Text>
   </div>
 )
+
+App.propTypes = {
+  name: PropTypes.string.isRequired
+}
 
 export default App

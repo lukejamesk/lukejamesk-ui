@@ -8,14 +8,14 @@ const config = compose(
   babelLoader
 )({
   entry: {
-    app: './client/index.tsx'
+    app: './client/index.js'
   },
   output: {
     path: path.join(__dirname, '../client-dist'),
     filename: '[name]-[chunkhash].js'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    extensions: ['.js'],
     modules: ['node_modules'],
     alias: {},
     plugins: []

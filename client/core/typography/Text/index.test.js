@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import { forEach } from 'ramda'
 import { Text } from '.'
 
-const textTypes = ['p', 'strong', 'blockquote']
+const textTypes = ['paragraph', 'bold', 'blockquote']
 
 describe('<Text />', () => {
   forEach((type) => {
