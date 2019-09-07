@@ -10,10 +10,11 @@
     "lint": "eslint --ext .js client .config-webpack",
     "test": "jest",
     "test:debug": "node --inspect node_modules/.bin/jest -i",
-    "storybook": "start-storybook"
+    "storybook": "yarn storybook:start",
+    "storybook:start": "start-storybook -c .config-storybook",
+    "storybook:build": "build-storybook -c .config-storybook -o .dist-storybook"
   },
   "dependencies": {
-    "@storybook/react": "^5.1.11",
     "enzyme": "^3.10.0",
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",
@@ -26,6 +27,8 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.5.5",
+    "@storybook/react": "^5.1.11",
+    "@storybook/addon-knobs": "^5.1.11",
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",

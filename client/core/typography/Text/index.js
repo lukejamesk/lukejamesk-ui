@@ -8,8 +8,11 @@ const variantMapping = {
 }
 
 export const Text = forwardRef(
-  ({ type = 'paragraph', ...other }, ref) => {
-    const Component = variantMapping[type]
+  ({ type = 'paragraph', paragraph = false, ...other }, ref) => {
+    const Component = paragraph
+      ? variantMapping.paragraph
+      : variantMapping[type]
+
     return (
       <Component ref={ref} {...other} />
     )
@@ -17,9 +20,6 @@ export const Text = forwardRef(
 )
 
 Text.propTypes = {
-  type: PropTypes.oneOf(['paragraph', 'bold', 'blockquote'])
-}
-
-Text.defaultProps = {
-  type: 'paragraph'
+  type: PropTypes.oneOf(['paragraph', 'bold', 'blockquote']),
+  paragraph: PropTypes.bool
 }

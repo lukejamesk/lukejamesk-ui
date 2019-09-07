@@ -8,7 +8,17 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'semi': ['error', 'never'],
     'import/prefer-default-export': 'off',
-    'react/jsx-filename-extension': [1, { 'extensions': ['.js'] }]
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '.storybook/**',
+          'client/**/*.stories.js'
+        ]
+      }
+    ],
+    'react/jsx-filename-extension': [1, { 'extensions': ['.js'] }],
+    'react/require-default-props': 'off',
   },
   env: {
     browser: true,

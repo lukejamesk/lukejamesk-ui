@@ -17,4 +17,13 @@ describe('<Text />', () => {
       expect(wrapper).toMatchSnapshot()
     })
   }, textTypes)
+
+  it('should render a paragraph when paragraph is true', () => {
+    const wrapper = mount(
+      <Text paragraph>
+        My content for paragraph
+      </Text>
+    )
+    expect(wrapper).toMatchSnapshot()
+  })
 })

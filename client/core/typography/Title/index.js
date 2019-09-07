@@ -18,7 +18,3 @@ export const Title = forwardRef(
 Title.propTypes = {
   type: PropTypes.oneOf(['heading1', 'heading2', 'heading3'])
 }
-
-Title.defaultProps = {
-  type: variantMapping.Heading1
-}
