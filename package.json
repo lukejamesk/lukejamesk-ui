@@ -6,11 +6,11 @@
   "author": "Luke King <lukejamesk@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --cache --report-unused-disable-directives",
+    "lint": "eslint . --report-unused-disable-directives",
     "test": "jest",
     "test:debug": "node --inspect node_modules/.bin/jest -i",
     "storybook": "yarn storybook:start",
-    "storybook:start": "start-storybook -c .config-storybook",
+    "storybook:start": "start-storybook -c .config-storybook -p 8081",
     "storybook:build": "build-storybook -c .config-storybook -o .dist-storybook"
   },
   "dependencies": {
@@ -18,8 +18,7 @@
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
-    "react-dom": "^16.8.6",
-    "react-jss": "^8.6.1"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

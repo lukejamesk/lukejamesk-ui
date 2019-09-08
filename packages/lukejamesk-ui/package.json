@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "clsx": "^1.0.4",
     "prop-types": "^15.7.2",
-    "react-jss": "^8.6.1",
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "react-jss": "10.0.0-alpha.24"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^5.1.11",

@@ -2,6 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { forEach } from 'ramda'
 import Typography from './typography'
+import { ThemeProvider, defaultTheme } from '@lukejamesk-styles'
 
 const textTypes = [
   'paragraph',
@@ -12,14 +13,18 @@ const textTypes = [
   'heading3'
 ]
 
+const Wrapper = props => <ThemeProvider theme={defaultTheme} {...props} />
+
 describe('<Typography />', () => {
   forEach((type) => {
     it(`should render with: ${type}`, () => {
       const wrapper = mount(
-        <Typography type={type}>
-          My content for
-          {type}
-        </Typography>
+        <Wrapper>
+          <Typography variant={type}>
+            My content for
+            {type}
+          </Typography>
+        </Wrapper>
       )
       expect(wrapper).toMatchSnapshot()
     })
@@ -27,18 +32,22 @@ describe('<Typography />', () => {
 
   it('should render a paragraph when paragraph is true', () => {
     const wrapper = mount(
-      <Typography paragraph>
-        My content for paragraph
-      </Typography>
+      <Wrapper>
+        <Typography paragraph>
+          My content for paragraph
+        </Typography>
+      </Wrapper>
     )
     expect(wrapper).toMatchSnapshot()
   })
 
   it('with no type', () => {
     const wrapper = mount(
-      <Typography>
-        My content for paragraph
-      </Typography>
+      <Wrapper>
+        <Typography>
+          My content for paragraph
+        </Typography>
+      </Wrapper>
     )
     expect(wrapper).toMatchSnapshot()
   })

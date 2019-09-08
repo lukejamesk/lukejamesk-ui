@@ -9,3 +9,13 @@ storiesOf('UI|Button', module)
       {text('text', 'My Button')}
     </Button>
   ))
+  .add('Primary', () => (
+    <Button variant="primary">
+      {text('text', 'My Button')}
+    </Button>
+  ))
+  .add('Secondary', () => (
+    <Button variant="secondary">
+      {text('text', 'My Button')}
+    </Button>
+  ))

@@ -1,29 +1,147 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> should render 1`] = `
-<App
-  name="Test"
+<ThemeProvider
+  theme={
+    Object {
+      "palette": Object {
+        "primary": "#39c5ff",
+        "secondary": "#5c946e",
+        "text": "rgba(0, 0, 0, .9)",
+      },
+      "spacing": Object {
+        "l": 20,
+        "m": 16,
+        "s": 12,
+        "xl": 24,
+        "xs": 8,
+        "xxl": 28,
+        "xxs": 4,
+      },
+      "typography": Object {
+        "bold": 600,
+        "button": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 14,
+        },
+        "fontFamily": "Helvetica, Arial, Sans-serif",
+        "fontSize": 14,
+        "heading1": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 25,
+          "fontWeight": 600,
+        },
+        "heading2": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 21,
+          "fontWeight": 600,
+        },
+        "heading3": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 18,
+          "fontWeight": 600,
+        },
+      },
+    }
+  }
 >
-  <div>
-    <ForwardRef
-      type="heading1"
-    >
-      <h1>
-        Test
-      </h1>
-    </ForwardRef>
-    <ForwardRef>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
-      </p>
-    </ForwardRef>
-    <ForwardRef>
-      <button
-        type="button"
+  <App
+    name="Test"
+  >
+    <CssBaseline>
+      <View
+        className="app-0-2-1"
       >
-        My Button
-      </button>
-    </ForwardRef>
-  </div>
-</App>
+        <div
+          className="app-0-2-1"
+        >
+          <H1>
+            <Typography
+              variant="heading1"
+            >
+              <h1
+                className="all-0-2-2 heading1-0-2-3"
+              >
+                Test
+              </h1>
+            </Typography>
+          </H1>
+          <P>
+            <Typography
+              paragraph={true}
+            >
+              <p
+                className="all-0-2-9 paragraph-0-2-13"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
+              </p>
+            </Typography>
+          </P>
+          <Blockquote>
+            <Typography
+              variant="blockquote"
+            >
+              <blockquote
+                className="all-0-2-16 blockquote-0-2-22"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                <B>
+                  <Typography
+                    variant="bold"
+                  >
+                    <strong
+                      className="all-0-2-23 bold-0-2-28"
+                    >
+                      Doloribus perferendis molestiae.
+                    </strong>
+                  </Typography>
+                </B>
+              </blockquote>
+            </Typography>
+          </Blockquote>
+          <View>
+            <div>
+              <PrimaryButton>
+                <Button
+                  variant="primary"
+                >
+                  <button
+                    className="button-0-2-30 primary-0-2-31"
+                    type="button"
+                  >
+                    <Typography>
+                      <span
+                        className="all-0-2-33"
+                      >
+                        My Button
+                      </span>
+                    </Typography>
+                  </button>
+                </Button>
+              </PrimaryButton>
+              <SecondaryButton>
+                <Button
+                  variant="secondary"
+                >
+                  <button
+                    className="button-0-2-40 secondary-0-2-42"
+                    type="button"
+                  >
+                    <Typography>
+                      <span
+                        className="all-0-2-43"
+                      >
+                        Second action
+                      </span>
+                    </Typography>
+                  </button>
+                </Button>
+              </SecondaryButton>
+            </div>
+          </View>
+        </div>
+      </View>
+    </CssBaseline>
+  </App>
+</ThemeProvider>
 `;

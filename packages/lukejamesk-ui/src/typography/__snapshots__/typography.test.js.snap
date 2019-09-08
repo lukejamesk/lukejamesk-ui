@@ -1,85 +1,477 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Typography /> should render a paragraph when paragraph is true 1`] = `
-<ForwardRef
-  paragraph={true}
->
-  <p>
-    My content for paragraph
-  </p>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      paragraph={true}
+    >
+      <p
+        className="all-0-2-43 paragraph-0-2-47"
+      >
+        My content for paragraph
+      </p>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> should render with: blockquote 1`] = `
-<ForwardRef
-  type="blockquote"
->
-  <blockquote>
-    My content for
-    blockquote
-  </blockquote>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      variant="blockquote"
+    >
+      <blockquote
+        className="all-0-2-15 blockquote-0-2-21"
+      >
+        My content for
+        blockquote
+      </blockquote>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> should render with: bold 1`] = `
-<ForwardRef
-  type="bold"
->
-  <strong>
-    My content for
-    bold
-  </strong>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      variant="bold"
+    >
+      <strong
+        className="all-0-2-8 bold-0-2-13"
+      >
+        My content for
+        bold
+      </strong>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> should render with: heading1 1`] = `
-<ForwardRef
-  type="heading1"
->
-  <h1>
-    My content for
-    heading1
-  </h1>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      variant="heading1"
+    >
+      <h1
+        className="all-0-2-22 heading1-0-2-23"
+      >
+        My content for
+        heading1
+      </h1>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> should render with: heading2 1`] = `
-<ForwardRef
-  type="heading2"
->
-  <h2>
-    My content for
-    heading2
-  </h2>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      variant="heading2"
+    >
+      <h2
+        className="all-0-2-29 heading2-0-2-31"
+      >
+        My content for
+        heading2
+      </h2>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> should render with: heading3 1`] = `
-<ForwardRef
-  type="heading3"
->
-  <h3>
-    My content for
-    heading3
-  </h3>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      variant="heading3"
+    >
+      <h3
+        className="all-0-2-36 heading3-0-2-39"
+      >
+        My content for
+        heading3
+      </h3>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> should render with: paragraph 1`] = `
-<ForwardRef
-  type="paragraph"
->
-  <p>
-    My content for
-    paragraph
-  </p>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography
+      variant="paragraph"
+    >
+      <p
+        className="all-0-2-1 paragraph-0-2-5"
+      >
+        My content for
+        paragraph
+      </p>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;
 
 exports[`<Typography /> with no type 1`] = `
-<ForwardRef>
-  <p>
-    My content for paragraph
-  </p>
-</ForwardRef>
+<Wrapper>
+  <ThemeProvider
+    theme={
+      Object {
+        "palette": Object {
+          "primary": "#39c5ff",
+          "secondary": "#5c946e",
+          "text": "rgba(0, 0, 0, .9)",
+        },
+        "spacing": Object {
+          "l": 20,
+          "m": 16,
+          "s": 12,
+          "xl": 24,
+          "xs": 8,
+          "xxl": 28,
+          "xxs": 4,
+        },
+        "typography": Object {
+          "bold": 600,
+          "button": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 14,
+          },
+          "fontFamily": "Helvetica, Arial, Sans-serif",
+          "fontSize": 14,
+          "heading1": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 25,
+            "fontWeight": 600,
+          },
+          "heading2": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 21,
+            "fontWeight": 600,
+          },
+          "heading3": Object {
+            "fontFamily": "Verdana, Arial, Sans-serif",
+            "fontSize": 18,
+            "fontWeight": 600,
+          },
+        },
+      }
+    }
+  >
+    <Typography>
+      <span
+        className="all-0-2-50"
+      >
+        My content for paragraph
+      </span>
+    </Typography>
+  </ThemeProvider>
+</Wrapper>
 `;

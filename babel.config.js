@@ -10,7 +10,9 @@ module.exports = {
     root: ['/src'],
     alias: {
       '@lukejamesk-ui': './packages/lukejamesk-ui/src',
-      '@lukejamesk-ui/*': './packages/lukejamesk-ui/*'
+      '@lukejamesk-ui/*': './packages/lukejamesk-ui/*',
+      '@lukejamesk-styles': './packages/lukejamesk-styles/src',
+      '@lukejamesk-styles/*': './packages/lukejamesk-styles/*'
     }
   }]]
 }

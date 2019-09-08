@@ -1,11 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Button /> should render 1`] = `
-<ForwardRef>
-  <button
-    type="button"
-  >
-    My content for button
-  </button>
-</ForwardRef>
+<ThemeProvider
+  theme={
+    Object {
+      "palette": Object {
+        "primary": "#39c5ff",
+        "secondary": "#5c946e",
+        "text": "rgba(0, 0, 0, .9)",
+      },
+      "spacing": Object {
+        "l": 20,
+        "m": 16,
+        "s": 12,
+        "xl": 24,
+        "xs": 8,
+        "xxl": 28,
+        "xxs": 4,
+      },
+      "typography": Object {
+        "bold": 600,
+        "button": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 14,
+        },
+        "fontFamily": "Helvetica, Arial, Sans-serif",
+        "fontSize": 14,
+        "heading1": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 25,
+          "fontWeight": 600,
+        },
+        "heading2": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 21,
+          "fontWeight": 600,
+        },
+        "heading3": Object {
+          "fontFamily": "Verdana, Arial, Sans-serif",
+          "fontSize": 18,
+          "fontWeight": 600,
+        },
+      },
+    }
+  }
+>
+  <Button>
+    <button
+      className="button-0-2-1"
+      type="button"
+    >
+      <Typography>
+        <span
+          className="all-0-2-4"
+        >
+          My content for button
+        </span>
+      </Typography>
+    </button>
+  </Button>
+</ThemeProvider>
 `;

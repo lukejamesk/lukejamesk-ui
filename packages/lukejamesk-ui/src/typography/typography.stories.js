@@ -14,27 +14,27 @@ storiesOf('UI|Typography', module)
     </Typography>
   ))
   .add('Blockquote', () => (
-    <Typography type="blockquote">
+    <Typography variant="blockquote">
       {text('text', exampleText)}
     </Typography>
   ))
   .add('Bold', () => (
-    <Typography type="bold">
+    <Typography variant="bold">
       {text('text', exampleText)}
     </Typography>
   ))
   .add('Heading 1', () => (
-    <Typography type="heading1">
+    <Typography variant="heading1">
       {text('text', 'Heading 1')}
     </Typography>
   ))
   .add('Heading 2', () => (
-    <Typography type="heading2">
+    <Typography variant="heading2">
       {text('text', 'Heading 2')}
     </Typography>
   ))
   .add('Heading 3', () => (
-    <Typography type="heading3">
+    <Typography variant="heading3">
       {text('text', 'Heading 3')}
     </Typography>
   ))
