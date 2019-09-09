@@ -1,8 +1,8 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
 import { withKnobs } from '@storybook/addon-knobs'
-import { ThemeProvider, defaultTheme } from '@lukejamesk-styles'
-import { CssBaseline } from '@lukejamesk-ui'
+import { ThemeProvider, defaultTheme } from '@lukejamesk-ui/styles'
+import { CssBaseline } from '@lukejamesk-ui/core'
 
 const loadStories = () => {
   const req = require.context('../packages/', true, /stories\.js$/)

@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import clsx from 'clsx'
-import { useStyles } from '@lukejamesk-styles'
+import { useStyles } from '@lukejamesk-ui/styles'
 
 const variantMapping = {
   paragraph: 'p',

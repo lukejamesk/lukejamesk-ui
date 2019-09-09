@@ -1,12 +1,14 @@
+const defaultAlias = {
+  '@lukejamesk-ui/core': '../packages/lukejamesk-ui/src',
+  '@lukejamesk-ui/styles': '../packages/lukejamesk-ui-styles/src'
+}
+
 module.exports = {
   extends: '../babel.config.js',
-  plugins: [['module-resolver', {
-    root: ['/src'],
-    alias: {
-      '@lukejamesk-ui': '../packages/lukejamesk-ui/src',
-      '@lukejamesk-ui/*': '../packages/lukejamesk-ui/*',
-      '@lukejamesk-styles': '../packages/lukejamesk-styles/src',
-      '@lukejamesk-styles/*': '../packages/lukejamesk-styles/*'
-    }
-  }]]
+  plugins: [
+    ['module-resolver', {
+      root: ['./'],
+      alias: defaultAlias
+    }]
+  ]
 }

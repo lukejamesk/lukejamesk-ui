@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app'
 import {
   ThemeProvider,
   defaultTheme
-} from '@lukejamesk-styles'
+} from '@lukejamesk-ui/styles'
+import App from './app'
 
 ReactDOM.render(
   <ThemeProvider theme={defaultTheme}>

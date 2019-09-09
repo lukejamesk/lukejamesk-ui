@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStyles } from '@lukejamesk-styles'
-
+import { useStyles } from '@lukejamesk-ui/styles'
 
 const styles = theme => ({
   '@global': {

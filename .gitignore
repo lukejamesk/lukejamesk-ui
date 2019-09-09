@@ -1,4 +1,4 @@
 node_modules
-.dist-client
+.dist
 .dist-storybook
 coverage

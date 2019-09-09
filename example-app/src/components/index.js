@@ -2,7 +2,7 @@ import React from 'react'
 import {
   Typography,
   Button
-} from '@lukejamesk-ui'
+} from '@lukejamesk-ui/core'
 
 export const B = props => <Typography variant="bold" {...props} />
 export const P = props => <Typography paragraph {...props} />

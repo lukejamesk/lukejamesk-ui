@@ -1,8 +1,12 @@
 {
-  "name": "lukejamesk-ui",
+  "name": "@lukejamesk-ui/core",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "yarn build:cjs",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./.dist --ignore \"**/*.(test|stories).js\""
+  },
   "dependencies": {
     "clsx": "^1.0.4",
     "prop-types": "^15.7.2",

@@ -1,5 +1,5 @@
 {
-  "name": "lukejamesk-styles",
+  "name": "@lukejamesk-ui/styles",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react-jss": "10.0.0-alpha.24"
+    "react-jss": "10.0.0-alpha.24",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0"
   }
 }

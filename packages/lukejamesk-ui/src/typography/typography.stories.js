@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { text, boolean } from '@storybook/addon-knobs'
-import Typography from './typography'
+import Typography from './Typography'
 
 const exampleText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Maecenas feugiat varius mi, eu sagittis nunc dignissim nec.

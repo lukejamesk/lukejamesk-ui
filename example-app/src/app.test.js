@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import {
   ThemeProvider,
   defaultTheme
-} from '@lukejamesk-styles'
+} from '@lukejamesk-ui/styles'
 import App from './app'
 
 describe('<App />', () => {

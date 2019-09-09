@@ -1,8 +1,8 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import { forEach } from 'ramda'
-import Typography from './typography'
-import { ThemeProvider, defaultTheme } from '@lukejamesk-styles'
+import { ThemeProvider, defaultTheme } from '@lukejamesk-ui/styles'
+import Typography from './Typography'
 
 const textTypes = [
   'paragraph',
