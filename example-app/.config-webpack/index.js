@@ -11,7 +11,7 @@ const config = compose(
     app: './src/index.js'
   },
   output: {
-    path: path.join(__dirname, '../.dist'),
+    path: path.join(__dirname, '../build'),
     filename: '[name]-[chunkhash].js'
   },
   resolve: {

@@ -1,5 +1,7 @@
 module.exports = {
-  extends: 'airbnb',
+  extends: [
+    'airbnb'
+  ],
   plugins: [
     'babel',
     'jest'
@@ -17,7 +19,8 @@ module.exports = {
           'packages/**/*.test.js',
           'example-app/**/*.stories.js',
           'example-app/**/*.test.js',
-          'test/**'
+          'test/**',
+          'scripts/**'
         ]
       }
     ],

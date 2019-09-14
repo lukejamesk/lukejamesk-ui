@@ -4,7 +4,7 @@ import {
   ThemeProvider,
   defaultTheme
 } from '@lukejamesk-ui/styles'
-import App from './app'
+import App from './App'
 
 ReactDOM.render(
   <ThemeProvider theme={defaultTheme}>

@@ -1,10 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import {
-  ThemeProvider,
-  defaultTheme
-} from '@lukejamesk-ui/styles'
-import App from './app'
+import { ThemeProvider, defaultTheme } from '@lukejamesk-ui/styles'
+import App from './App'
 
 describe('<App />', () => {
   it('should render', () => {

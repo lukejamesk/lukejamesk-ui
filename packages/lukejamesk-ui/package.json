@@ -1,17 +1,29 @@
 {
   "name": "@lukejamesk-ui/core",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.1",
+  "main": "./src/index.js",
   "license": "MIT",
+  "author": "Luke King",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukejamesk/base-react.git",
+    "directory": "packages/lukejamesk-ui"
+  },
   "scripts": {
-    "build": "yarn build:cjs",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./.dist --ignore \"**/*.(test|stories).js\""
+    "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build --ignore \"**/*.test.js\",\"**/*.stories.js\"",
+    "build:copy-files": "node ../../scripts/copy-files.js",
+    "build:pre": "rimraf build",
+    "release": "yarn build && npm publish ./build --tag latest --registry http://localhost:4873"
   },
   "dependencies": {
     "clsx": "^1.0.4",
+    "global": "^4.4.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
-    "react-jss": "10.0.0-alpha.24"
+    "react-jss": "10.0.0-alpha.24",
+    "@lukejamesk-ui/styles": "^0.0.1"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^5.1.11",
@@ -21,5 +33,8 @@
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

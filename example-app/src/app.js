@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  useStyles
-} from '@lukejamesk-ui/styles'
-import {
-  CssBaseline
-} from '@lukejamesk-ui/core'
+import { CssBaseline } from '@lukejamesk-ui/core'
+import { useStyles } from '@lukejamesk-ui/styles'
 import {
   H1,
   P,
