@@ -4,6 +4,15 @@ exports[`<App /> should render 1`] = `
 <ThemeProvider
   theme={
     Object {
+      "breakpoints": Object {
+        "l": 1280,
+        "m": 768,
+        "s": 480,
+        "xl": 1920,
+        "xs": 320,
+        "xxl": 2560,
+        "xxs": 0,
+      },
       "palette": Object {
         "primary": "#39c5ff",
         "secondary": "#5c946e",
@@ -45,103 +54,223 @@ exports[`<App /> should render 1`] = `
     }
   }
 >
-  <App
+  <Component
     name="Test"
   >
-    <CssBaseline>
-      <View
-        className="app-0-2-1"
+    <Breakpoints
+      breakpoints={
+        Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        }
+      }
+    >
+      <ThemeProvider
+        theme={
+          Object {
+            "breakpoints": Object {
+              "l": 1280,
+              "m": 768,
+              "s": 480,
+              "xl": 1920,
+              "xs": 320,
+              "xxl": 2560,
+              "xxs": 0,
+            },
+            "palette": Object {
+              "primary": "#39c5ff",
+              "secondary": "#5c946e",
+              "text": "rgba(0, 0, 0, .9)",
+            },
+            "spacing": Object {
+              "l": 20,
+              "m": 16,
+              "s": 12,
+              "xl": 24,
+              "xs": 8,
+              "xxl": 28,
+              "xxs": 4,
+            },
+            "typography": Object {
+              "bold": 600,
+              "button": Object {
+                "fontFamily": "Verdana, Arial, Sans-serif",
+                "fontSize": 14,
+              },
+              "fontFamily": "Helvetica, Arial, Sans-serif",
+              "fontSize": 14,
+              "heading1": Object {
+                "fontFamily": "Verdana, Arial, Sans-serif",
+                "fontSize": 25,
+                "fontWeight": 600,
+              },
+              "heading2": Object {
+                "fontFamily": "Verdana, Arial, Sans-serif",
+                "fontSize": 21,
+                "fontWeight": 600,
+              },
+              "heading3": Object {
+                "fontFamily": "Verdana, Arial, Sans-serif",
+                "fontSize": 18,
+                "fontWeight": 600,
+              },
+            },
+          }
+        }
       >
-        <div
-          className="app-0-2-1"
+        <App
+          name="Test"
         >
-          <H1>
-            <Typography
-              variant="heading1"
+          <CssBaseline>
+            <View
+              className="app-0-2-1"
             >
-              <h1
-                className="all-0-2-2 heading1-0-2-3"
+              <div
+                className="app-0-2-1"
               >
-                Test
-              </h1>
-            </Typography>
-          </H1>
-          <P>
-            <Typography
-              paragraph={true}
-            >
-              <p
-                className="all-0-2-9 paragraph-0-2-13"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
-              </p>
-            </Typography>
-          </P>
-          <Blockquote>
-            <Typography
-              variant="blockquote"
-            >
-              <blockquote
-                className="all-0-2-16 blockquote-0-2-22"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                <B>
+                <H1>
                   <Typography
-                    variant="bold"
+                    variant="heading1"
                   >
-                    <strong
-                      className="all-0-2-23 bold-0-2-28"
+                    <h1
+                      className="all-0-2-3 heading1-0-2-4"
                     >
-                      Doloribus perferendis molestiae.
-                    </strong>
+                      Test
+                    </h1>
                   </Typography>
-                </B>
-              </blockquote>
-            </Typography>
-          </Blockquote>
-          <View>
-            <div>
-              <PrimaryButton>
-                <Button
-                  variant="primary"
-                >
-                  <button
-                    className="button-0-2-30 primary-0-2-31"
-                    type="button"
+                </H1>
+                <P>
+                  <Typography
+                    paragraph={true}
                   >
-                    <Typography>
-                      <span
-                        className="all-0-2-33"
-                      >
-                        My Button
-                      </span>
-                    </Typography>
-                  </button>
-                </Button>
-              </PrimaryButton>
-              <SecondaryButton>
-                <Button
-                  variant="secondary"
-                >
-                  <button
-                    className="button-0-2-40 secondary-0-2-42"
-                    type="button"
+                    <p
+                      className="all-0-2-10 paragraph-0-2-14"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
+                    </p>
+                  </Typography>
+                </P>
+                <Blockquote>
+                  <Typography
+                    variant="blockquote"
                   >
-                    <Typography>
-                      <span
-                        className="all-0-2-43"
+                    <blockquote
+                      className="all-0-2-17 blockquote-0-2-23"
+                    >
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                      <B>
+                        <Typography
+                          variant="bold"
+                        >
+                          <strong
+                            className="all-0-2-24 bold-0-2-29"
+                          >
+                            Doloribus perferendis molestiae.
+                          </strong>
+                        </Typography>
+                      </B>
+                    </blockquote>
+                  </Typography>
+                </Blockquote>
+                <View>
+                  <div>
+                    <PrimaryButton>
+                      <Button
+                        variant="primary"
                       >
-                        Second action
-                      </span>
-                    </Typography>
-                  </button>
-                </Button>
-              </SecondaryButton>
-            </div>
-          </View>
-        </div>
-      </View>
-    </CssBaseline>
-  </App>
+                        <button
+                          className="button-0-2-31 primary-0-2-32"
+                          type="button"
+                        >
+                          <Typography>
+                            <span
+                              className="all-0-2-34"
+                            >
+                              My Button
+                            </span>
+                          </Typography>
+                        </button>
+                      </Button>
+                    </PrimaryButton>
+                    <SecondaryButton>
+                      <Button
+                        variant="secondary"
+                      >
+                        <button
+                          className="button-0-2-41 secondary-0-2-43"
+                          type="button"
+                        >
+                          <Typography>
+                            <span
+                              className="all-0-2-44"
+                            >
+                              Second action
+                            </span>
+                          </Typography>
+                        </button>
+                      </Button>
+                    </SecondaryButton>
+                  </div>
+                </View>
+                <View
+                  className="showHideAtArea-0-2-2"
+                >
+                  <div
+                    className="showHideAtArea-0-2-2"
+                  >
+                    <ShowAt
+                      bp="m"
+                    >
+                      <H2>
+                        <Typography
+                          variant="heading2"
+                        >
+                          <h2
+                            className="all-0-2-51 heading2-0-2-53"
+                          >
+                            This content only shows at medium at above
+                          </h2>
+                        </Typography>
+                      </H2>
+                      <P>
+                        <Typography
+                          paragraph={true}
+                        >
+                          <p
+                            className="all-0-2-58 paragraph-0-2-62"
+                          >
+                            Lorem ipsum dolor sit amet, consectetur.
+                          </p>
+                        </Typography>
+                      </P>
+                    </ShowAt>
+                    <HideAt
+                      bp="m"
+                    />
+                  </div>
+                </View>
+              </div>
+            </View>
+            <Debug>
+              <View
+                className="debug-0-2-65"
+              >
+                <div
+                  className="debug-0-2-65"
+                >
+                  m
+                </div>
+              </View>
+            </Debug>
+          </CssBaseline>
+        </App>
+      </ThemeProvider>
+    </Breakpoints>
+  </Component>
 </ThemeProvider>
 `;

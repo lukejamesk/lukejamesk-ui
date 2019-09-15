@@ -18,12 +18,12 @@
     "release": "yarn build && npm publish ./build --tag latest --registry http://localhost:4873"
   },
   "dependencies": {
+    "@lukejamesk-ui/styles": "^0.0.1",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
-    "react-jss": "10.0.0-alpha.24",
-    "@lukejamesk-ui/styles": "^0.0.1"
+    "react-jss": "10.0.0-alpha.24"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^5.1.11",

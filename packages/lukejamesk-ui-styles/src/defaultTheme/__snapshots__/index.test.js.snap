@@ -2,6 +2,15 @@
 
 exports[`defaultTheme Snapshot 1`] = `
 Object {
+  "breakpoints": Object {
+    "l": 1280,
+    "m": 768,
+    "s": 480,
+    "xl": 1920,
+    "xs": 320,
+    "xxl": 2560,
+    "xxs": 0,
+  },
   "palette": Object {
     "primary": "#39c5ff",
     "secondary": "#5c946e",

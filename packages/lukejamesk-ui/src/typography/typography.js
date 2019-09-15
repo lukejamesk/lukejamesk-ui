@@ -30,7 +30,7 @@ const styles = theme => ({
     fontFamily: theme.typography.heading2.fontFamily,
     fontWeight: theme.typography.heading2.fontWeight,
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.l
+      marginBottom: theme.spacing.m
     }
   },
   heading3: {
@@ -38,7 +38,7 @@ const styles = theme => ({
     fontFamily: theme.typography.heading3.fontFamily,
     fontWeight: theme.typography.heading3.fontWeight,
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.l
+      marginBottom: theme.spacing.m
     }
   },
   paragraph: {

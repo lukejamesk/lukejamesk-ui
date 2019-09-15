@@ -6,12 +6,12 @@ exports[`<Button /> should render 1`] = `
     Object {
       "breakpoints": Object {
         "l": 1280,
-        "m": 768,
-        "s": 480,
-        "xl": 1920,
-        "xs": 320,
-        "xxl": 2560,
-        "xxs": 0,
+        "m": 1080,
+        "s": 680,
+        "xl": 1960,
+        "xs": 480,
+        "xxl": 2750,
+        "xxs": 380,
       },
       "palette": Object {
         "primary": "#39c5ff",
@@ -54,19 +54,6 @@ exports[`<Button /> should render 1`] = `
     }
   }
 >
-  <Button>
-    <button
-      className="button-0-2-1"
-      type="button"
-    >
-      <Typography>
-        <span
-          className="all-0-2-4"
-        >
-          My content for button
-        </span>
-      </Typography>
-    </button>
-  </Button>
+  <Breakpoints />
 </ThemeProvider>
 `;

@@ -5,6 +5,15 @@ exports[`<Typography /> should render a paragraph when paragraph is true 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -64,6 +73,15 @@ exports[`<Typography /> should render with: blockquote 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -124,6 +142,15 @@ exports[`<Typography /> should render with: bold 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -184,6 +211,15 @@ exports[`<Typography /> should render with: heading1 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -244,6 +280,15 @@ exports[`<Typography /> should render with: heading2 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -304,6 +349,15 @@ exports[`<Typography /> should render with: heading3 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -364,6 +418,15 @@ exports[`<Typography /> should render with: paragraph 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
@@ -424,6 +487,15 @@ exports[`<Typography /> with no type 1`] = `
   <ThemeProvider
     theme={
       Object {
+        "breakpoints": Object {
+          "l": 1280,
+          "m": 768,
+          "s": 480,
+          "xl": 1920,
+          "xs": 320,
+          "xxl": 2560,
+          "xxs": 0,
+        },
         "palette": Object {
           "primary": "#39c5ff",
           "secondary": "#5c946e",
