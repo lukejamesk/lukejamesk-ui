@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/styles",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "prop-types": "^15.7.2",
-    "react-jss": "10.0.0-alpha.24",
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "react-jss": "10.0.0-alpha.24"
   },
   "devDependencies": {
     "enzyme": "^3.10.0"

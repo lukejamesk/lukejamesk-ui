@@ -1,6 +1,6 @@
 {
   "name": "example-app",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha.0",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
@@ -10,8 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@lukejamesk/core": "^0.0.1",
-    "@lukejamesk/styles": "^0.0.1",
+    "@lukejamesk/core": "^0.0.1-alpha.0",
+    "@lukejamesk/styles": "^0.0.1-alpha.0",
     "enzyme": "^3.10.0",
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",

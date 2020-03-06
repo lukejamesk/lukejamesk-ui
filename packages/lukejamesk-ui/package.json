@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/core",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -18,7 +18,7 @@
     "release": "yarn build && npm publish ./build --tag latest --registry http://localhost:4873"
   },
   "dependencies": {
-    "@lukejamesk/styles": "^0.0.1",
+    "@lukejamesk/styles": "^0.0.1-alpha.0",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
