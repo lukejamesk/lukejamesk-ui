@@ -1,14 +1,8 @@
 module.exports = {
-  extends: [
-    'airbnb'
-  ],
-  plugins: [
-    'babel',
-    'jest'
-  ],
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  plugins: ['babel', 'jest', 'prettier'],
   rules: {
-    'comma-dangle': ['error', 'never'],
-    'semi': ['error', 'never'],
+    semi: ['error', 'never'],
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': [
       'error',
@@ -20,26 +14,27 @@ module.exports = {
           'example-app/**/*.stories.js',
           'example-app/**/*.test.js',
           'test/**',
-          'scripts/**'
-        ]
-      }
+          'scripts/**',
+        ],
+      },
     ],
-    'react/jsx-filename-extension': [1, { 'extensions': ['.js'] }],
+    'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'react/require-default-props': 'off',
+    'prettier/prettier': 'error',
   },
   env: {
     browser: true,
     node: true,
     es6: true,
-    jest: true
+    jest: true,
   },
   settings: {
     'import/extensions': ['.js'],
     'import/resolver': {
-        'node': {
-            'extensions': ['.js']
-        },
-        'babel-module': {}
-    }
-  }
+      node: {
+        extensions: ['.js'],
+      },
+      'babel-module': {},
+    },
+  },
 }

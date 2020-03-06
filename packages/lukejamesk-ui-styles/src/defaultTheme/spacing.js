@@ -5,7 +5,7 @@ const spacing = {
   m: 16,
   l: 20,
   xl: 24,
-  xxl: 28
+  xxl: 28,
 }
 
 export default spacing

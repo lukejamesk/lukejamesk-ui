@@ -10,7 +10,7 @@ describe('<CssBaseline />', () => {
         <CssBaseline>
           <div id="child">test</div>
         </CssBaseline>
-      </ThemeProvider>
+      </ThemeProvider>,
     )
     expect(wrapper.find('#child').length).toEqual(1)
   })

@@ -7,22 +7,22 @@ const typography = {
   heading1: {
     fontSize: 25,
     fontFamily: 'Verdana, Arial, Sans-serif',
-    fontWeight: fontWeightBold
+    fontWeight: fontWeightBold,
   },
   heading2: {
     fontSize: 21,
     fontFamily: 'Verdana, Arial, Sans-serif',
-    fontWeight: fontWeightBold
+    fontWeight: fontWeightBold,
   },
   heading3: {
     fontSize: 18,
     fontFamily: 'Verdana, Arial, Sans-serif',
-    fontWeight: fontWeightBold
+    fontWeight: fontWeightBold,
   },
   button: {
     fontSize: 14,
-    fontFamily: 'Verdana, Arial, Sans-serif'
-  }
+    fontFamily: 'Verdana, Arial, Sans-serif',
+  },
 }
 
 export default typography

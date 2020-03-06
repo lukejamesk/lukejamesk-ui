@@ -16,7 +16,7 @@ const ShowAt = ({ bp, children }) => {
 
 ShowAt.propTypes = {
   breakpoints: PropTypes.objectOf(PropTypes.number),
-  children: PropTypes.node
+  children: PropTypes.node,
 }
 
 export default ShowAt

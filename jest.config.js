@@ -1,7 +1,5 @@
 module.exports = {
-  setupFilesAfterEnv: [
-    '<rootDir>/test/setupTests.js'
-  ],
+  setupFilesAfterEnv: ['<rootDir>/test/setupTests.js'],
   snapshotSerializers: ['enzyme-to-json/serializer'],
-  silent: false
+  silent: false,
 }

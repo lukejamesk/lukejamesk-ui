@@ -10,45 +10,45 @@ const variantMapping = {
   heading1: 'h1',
   heading2: 'h2',
   heading3: 'h3',
-  text: 'span'
+  text: 'span',
 }
 
-const styles = theme => ({
+const styles = (theme) => ({
   all: {
-    color: 'inherit'
+    color: 'inherit',
   },
   heading1: {
     fontSize: theme.typography.heading1.fontSize,
     fontFamily: theme.typography.heading1.fontFamily,
     fontWeight: theme.typography.heading1.fontWeight,
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.l
-    }
+      marginBottom: theme.spacing.l,
+    },
   },
   heading2: {
     fontSize: theme.typography.heading2.fontSize,
     fontFamily: theme.typography.heading2.fontFamily,
     fontWeight: theme.typography.heading2.fontWeight,
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.m
-    }
+      marginBottom: theme.spacing.m,
+    },
   },
   heading3: {
     fontSize: theme.typography.heading3.fontSize,
     fontFamily: theme.typography.heading3.fontFamily,
     fontWeight: theme.typography.heading3.fontWeight,
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.m
-    }
+      marginBottom: theme.spacing.m,
+    },
   },
   paragraph: {
     fontSize: theme.typography.fontSize,
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.m
-    }
+      marginBottom: theme.spacing.m,
+    },
   },
   bold: {
-    fontWeight: theme.typography.bold
+    fontWeight: theme.typography.bold,
   },
   blockquote: {
     fontSize: theme.typography.fontSize,
@@ -58,53 +58,31 @@ const styles = theme => ({
     borderRadius: 5,
     backgroundColor: '#efefef',
     '&:not(:last-child)': {
-      marginBottom: theme.spacing.m
-    }
-  }
+      marginBottom: theme.spacing.m,
+    },
+  },
 })
 
-const Typography = forwardRef(
-  ({
-    variant = 'text',
-    className,
-    paragraph = false,
-    ...other
-  }, ref) => {
-    const classes = useStyles(styles)
+const Typography = forwardRef(({ variant = 'text', className, paragraph = false, ...other }, ref) => {
+  const classes = useStyles(styles)
 
-    const Component = paragraph
-      ? variantMapping.paragraph
-      : variantMapping[variant]
+  const Component = paragraph ? variantMapping.paragraph : variantMapping[variant]
 
-    return (
-      <Component
-        className={clsx(
-          classes.all,
-          paragraph === true && classes.paragraph,
-          classes[variant],
-          className
-        )}
-        ref={ref}
-        {...other}
-      />
-    )
-  }
-)
+  return (
+    <Component
+      className={clsx(classes.all, paragraph === true && classes.paragraph, classes[variant], className)}
+      ref={ref}
+      {...other}
+    />
+  )
+})
 
 Typography.displayName = 'Typography'
 
 Typography.propTypes = {
-  variant: PropTypes.oneOf([
-    'paragraph',
-    'bold',
-    'blockquote',
-    'heading1',
-    'heading2',
-    'heading3',
-    'text'
-  ]),
+  variant: PropTypes.oneOf(['paragraph', 'bold', 'blockquote', 'heading1', 'heading2', 'heading3', 'text']),
   paragraph: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 }
 
 export default Typography

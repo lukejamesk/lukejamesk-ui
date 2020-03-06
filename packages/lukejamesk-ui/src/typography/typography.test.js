@@ -4,16 +4,9 @@ import { forEach } from 'ramda'
 import { ThemeProvider, defaultTheme } from '@lukejamesk-ui/styles'
 import Typography from './Typography'
 
-const textTypes = [
-  'paragraph',
-  'bold',
-  'blockquote',
-  'heading1',
-  'heading2',
-  'heading3'
-]
+const textTypes = ['paragraph', 'bold', 'blockquote', 'heading1', 'heading2', 'heading3']
 
-const Wrapper = props => <ThemeProvider theme={defaultTheme} {...props} />
+const Wrapper = (props) => <ThemeProvider theme={defaultTheme} {...props} />
 
 describe('<Typography />', () => {
   forEach((type) => {
@@ -24,7 +17,7 @@ describe('<Typography />', () => {
             My content for
             {type}
           </Typography>
-        </Wrapper>
+        </Wrapper>,
       )
       expect(wrapper).toMatchSnapshot()
     })
@@ -33,10 +26,8 @@ describe('<Typography />', () => {
   it('should render a paragraph when paragraph is true', () => {
     const wrapper = mount(
       <Wrapper>
-        <Typography paragraph>
-          My content for paragraph
-        </Typography>
-      </Wrapper>
+        <Typography paragraph>My content for paragraph</Typography>
+      </Wrapper>,
     )
     expect(wrapper).toMatchSnapshot()
   })
@@ -44,10 +35,8 @@ describe('<Typography />', () => {
   it('with no type', () => {
     const wrapper = mount(
       <Wrapper>
-        <Typography>
-          My content for paragraph
-        </Typography>
-      </Wrapper>
+        <Typography>My content for paragraph</Typography>
+      </Wrapper>,
     )
     expect(wrapper).toMatchSnapshot()
   })

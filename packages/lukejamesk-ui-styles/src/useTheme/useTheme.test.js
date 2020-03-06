@@ -4,7 +4,7 @@ import ThemeProvider from '../ThemeProvider'
 import useTheme from './useTheme'
 
 const testTheme = {
-  test: 'red'
+  test: 'red',
 }
 
 describe('useTheme', () => {
@@ -19,7 +19,7 @@ describe('useTheme', () => {
     mount(
       <ThemeProvider theme={testTheme}>
         <Test />
-      </ThemeProvider>
+      </ThemeProvider>,
     )
 
     expect(text()).toMatch(testTheme.test)

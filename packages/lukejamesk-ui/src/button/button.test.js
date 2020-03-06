@@ -7,10 +7,8 @@ describe('<Button />', () => {
   it('should render', () => {
     const wrapper = mount(
       <ThemeProvider theme={defaultTheme}>
-        <Button>
-          My content for button
-        </Button>
-      </ThemeProvider>
+        <Button>My content for button</Button>
+      </ThemeProvider>,
     )
     expect(wrapper).toMatchSnapshot()
   })

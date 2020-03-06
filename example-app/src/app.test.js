@@ -8,7 +8,7 @@ describe('<App />', () => {
     const wrapper = mount(
       <ThemeProvider theme={defaultTheme}>
         <App name="Test" />
-      </ThemeProvider>
+      </ThemeProvider>,
     )
     expect(wrapper).toMatchSnapshot()
   })

@@ -4,7 +4,7 @@ import clsx from 'clsx'
 import { useStyles } from '@lukejamesk-ui/styles'
 import Typography from '../Typography'
 
-const styles = theme => ({
+const styles = (theme) => ({
   button: {
     boxSizing: 'border-box',
     background: '#eee',
@@ -13,45 +13,33 @@ const styles = theme => ({
     textTransform: 'uppercase',
     fontWeight: theme.typography.button.fontWeight,
     fontSize: theme.typography.button.fontSize,
-    borderRadius: 5
+    borderRadius: 5,
   },
   primary: {
     background: theme.palette.primary,
-    color: '#fff'
+    color: '#fff',
   },
   secondary: {
     background: 'transparent',
-    color: theme.palette.primary
-  }
+    color: theme.palette.primary,
+  },
 })
 
-const Button = forwardRef((({
-  variant,
-  children,
-  ...props
-}, ref) => {
+const Button = forwardRef(({ variant, children, ...props }, ref) => {
   const classes = useStyles(styles)
 
   return (
-    <button
-      className={clsx(
-        classes.button,
-        classes[variant]
-      )}
-      ref={ref}
-      {...props}
-      type="button"
-    >
+    <button className={clsx(classes.button, classes[variant])} ref={ref} {...props} type="button">
       <Typography>{children}</Typography>
     </button>
   )
-}))
+})
 
 Button.displayName = 'Button'
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary'])
+  variant: PropTypes.oneOf(['primary', 'secondary']),
 }
 
 export default Button

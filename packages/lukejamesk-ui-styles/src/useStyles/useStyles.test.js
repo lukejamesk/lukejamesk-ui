@@ -5,8 +5,8 @@ import useStyles from './useStyles'
 
 const styles = {
   test: {
-    color: 'red'
-  }
+    color: 'red',
+  },
 }
 
 describe('useTheme', () => {
@@ -18,9 +18,7 @@ describe('useTheme', () => {
       return <span ref={ref}>{classes.test}</span>
     }
 
-    mount(
-      <Test />
-    )
+    mount(<Test />)
 
     expect(text()).toMatch(keys(styles)[0])
   })
