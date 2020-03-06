@@ -1,0 +1,20 @@
+{
+  "packages": [
+    "packages/*",
+    "example-app"
+  ],
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish",
+      "registry": "https://npm.pkg.github.com",
+      "npmClient": "npm"
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "version": "0.0.0"
+}

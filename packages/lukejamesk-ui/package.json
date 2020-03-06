@@ -1,10 +1,10 @@
 {
-  "name": "@lukejamesk-ui/core",
+  "name": "@lukejamesk/core",
   "version": "0.0.1",
-  "main": "./src/index.js",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukejamesk/lukejamesk-ui.git",
@@ -18,7 +18,7 @@
     "release": "yarn build && npm publish ./build --tag latest --registry http://localhost:4873"
   },
   "dependencies": {
-    "@lukejamesk-ui/styles": "^0.0.1",
+    "@lukejamesk/styles": "^0.0.1",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
@@ -35,6 +35,8 @@
     "react-dom": "^16.8.6"
   },
   "publishConfig": {
-    "access": "public"
-  }
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "gitHead": "c97068befd79141f6b8544c779ad1f58ec2a2574"
 }

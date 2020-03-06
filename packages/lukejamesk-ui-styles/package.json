@@ -1,10 +1,10 @@
 {
-  "name": "@lukejamesk-ui/styles",
+  "name": "@lukejamesk/styles",
   "version": "0.0.1",
-  "main": "./src/index.js",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
+  "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukejamesk/lukejamesk-ui.git",
@@ -30,6 +30,8 @@
     "enzyme": "^3.10.0"
   },
   "publishConfig": {
-    "access": "public"
-  }
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "gitHead": "c97068befd79141f6b8544c779ad1f58ec2a2574"
 }

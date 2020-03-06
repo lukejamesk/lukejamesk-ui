@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CssBaseline, Breakpoints, ShowAt, HideAt } from '@lukejamesk-ui/core'
-import { useStyles, ThemeProvider, defaultTheme } from '@lukejamesk-ui/styles'
+import { CssBaseline, Breakpoints, ShowAt, HideAt } from '@lukejamesk/core'
+import { useStyles, ThemeProvider, defaultTheme } from '@lukejamesk/styles'
 import { H1, H2, P, B, Blockquote, PrimaryButton, View, SecondaryButton, Debug } from './components'
 
 const styles = (theme) => ({

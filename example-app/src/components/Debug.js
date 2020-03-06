@@ -1,7 +1,7 @@
 import React from 'react'
 import { keys } from 'ramda'
-import { useBreakpoints } from '@lukejamesk-ui/core'
-import { useStyles } from '@lukejamesk-ui/styles'
+import { useBreakpoints } from '@lukejamesk/core'
+import { useStyles } from '@lukejamesk/styles'
 import { View } from './Components'
 
 const styles = {

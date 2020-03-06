@@ -5,11 +5,13 @@
     "lint": "eslint . --report-unused-disable-directives",
     "test": "jest",
     "test:debug": "node --inspect node_modules/.bin/jest -i",
+    "lerna": "lerna",
     "storybook": "yarn storybook:start",
     "storybook:start": "start-storybook -c .config-storybook -p 8081",
-    "storybook:build": "build-storybook -c .config-storybook -o build-storybook"
+    "storybook:build": "build-storybook -c .config-storybook -o build-storybook",
+    "prepack": "yarn lerna run build",
+    "release": "yarn lerna publish --contents build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.5.5",
@@ -39,6 +41,7 @@
     "glob": "^7.1.4",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
+    "lerna": "^3.20.2",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
@@ -52,5 +55,6 @@
   "workspaces": [
     "packages/*",
     "example-app"
-  ]
+  ],
+  "name": "lukejamesk-ui"
 }

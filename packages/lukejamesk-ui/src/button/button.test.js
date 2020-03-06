@@ -1,6 +1,6 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { defaultTheme, ThemeProvider } from '@lukejamesk-ui/styles'
+import { defaultTheme, ThemeProvider } from '@lukejamesk/styles'
 import Button from './Button'
 
 describe('<Button />', () => {

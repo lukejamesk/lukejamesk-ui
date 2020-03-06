@@ -1,5 +1,5 @@
 import React from 'react'
-import { defaultTheme } from '@lukejamesk-ui/styles'
+import { defaultTheme } from '@lukejamesk/styles'
 import Breakpoints from './Breakpoints'
 import useBreakpoints from './useBreakpoints'
 import Typography from '../Typography'

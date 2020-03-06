@@ -3,3 +3,4 @@ build
 build-storybook
 coverage
 yarn-error.log
+lerna-debug.log

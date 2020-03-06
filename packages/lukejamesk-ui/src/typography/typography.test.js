@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 import { forEach } from 'ramda'
-import { ThemeProvider, defaultTheme } from '@lukejamesk-ui/styles'
+import { ThemeProvider, defaultTheme } from '@lukejamesk/styles'
 import Typography from './Typography'
 
 const textTypes = ['paragraph', 'bold', 'blockquote', 'heading1', 'heading2', 'heading3']

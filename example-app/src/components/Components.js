@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Button } from '@lukejamesk-ui/core'
+import { Typography, Button } from '@lukejamesk/core'
 
 export const B = (props) => <Typography variant="bold" {...props} />
 export const P = (props) => <Typography paragraph {...props} />
