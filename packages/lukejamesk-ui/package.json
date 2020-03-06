@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/core",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-0.0.1-alpha.1.0",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -17,7 +17,7 @@
     "build:pre": "rimraf build"
   },
   "dependencies": {
-    "@lukejamesk/styles": "^0.0.1-alpha.0",
+    "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
