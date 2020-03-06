@@ -2,7 +2,7 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "lint": "eslint . --report-unused-disable-directives",
+    "lint": "eslint --report-unused-disable-directives",
     "test": "jest",
     "test:debug": "node --inspect node_modules/.bin/jest -i",
     "lerna": "lerna",
