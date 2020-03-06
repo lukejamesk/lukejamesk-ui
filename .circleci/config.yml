@@ -1,19 +1,51 @@
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
+
+commands:
+  install_dependencies:
+    steps:
+      - run: yarn install
+      - run: yarn lerna link
+
 jobs:
-  lint-and-test:
-    executor:
-      name: node/default
+  build-storybook:
+    docker:
+      - image: circleci/node:lts
     steps:
       - checkout
       - node/with-cache:
           steps:
-            - run: yarn install
-            - run: yarn lerna link
+            - run:
+                name: Create GitHub Deployment
+                command: sh ./scripts/deployment/start.sh > deployment
+            - install_dependencies
+            - run: yarn storybook:build
+            - store_artifacts:
+                path: build-storybook
+            - run:
+                name: Add GitHub Deployment success status
+                command: sh ./scripts/deployment/end.sh success
+                when: on_success
+            - run:
+                name: Add GitHub Deployment error status
+                command: sh ./scripts/deployment/end.sh error
+                when: on_fail
+  lint-and-test:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - install_dependencies
             - run: yarn lint .
             - run: yarn test
 workflows:
-  build-and-test:
+  # lint-and-test:
+  #   jobs:
+  #     - lint-and-test
+  deploy:
     jobs:
       - lint-and-test
+      - build-storybook
