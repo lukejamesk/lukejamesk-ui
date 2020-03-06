@@ -12,10 +12,9 @@
   },
   "scripts": {
     "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build --ignore \"**/*.test.js\",\"**/*.stories.js\"",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build --ignore \"**/*.test.js\",\"**/*.stories.js\" --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:pre": "rimraf build",
-    "release": "yarn build && npm publish ./build --tag latest --registry http://localhost:4873"
+    "build:pre": "rimraf build"
   },
   "dependencies": {
     "@lukejamesk/styles": "^0.0.1-alpha.0",
@@ -38,5 +37,5 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "gitHead": "c97068befd79141f6b8544c779ad1f58ec2a2574"
+  "gitHead": "541de791aacfdd67ab405fc4ae658636205e90a1"
 }
