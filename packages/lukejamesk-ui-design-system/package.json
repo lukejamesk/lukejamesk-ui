@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/design-system",
-  "version": "0.0.1-0.0.1-alpha.1.0",
+  "version": "0.0.1-alpha.2",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -17,9 +17,9 @@
     "build:pre": "rimraf build"
   },
   "dependencies": {
-    "@lukejamesk/core": "^0.0.1-0.0.1-alpha.1.0",
-    "@lukejamesk/icons": "^0.0.1-0.0.1-alpha.1.0",
-    "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
+    "@lukejamesk/core": "^0.0.1-alpha.2",
+    "@lukejamesk/icons": "^0.0.1-alpha.2",
+    "@lukejamesk/styles": "^0.0.1-alpha.2",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
@@ -32,9 +32,9 @@
     "enzyme": "^3.10.0"
   },
   "peerDependencies": {
+    "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0"
+    "react-dom": "^16.8.6"
   },
   "publishConfig": {
     "access": "public",
