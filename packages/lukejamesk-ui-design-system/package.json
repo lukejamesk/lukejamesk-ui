@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/design-system",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -17,9 +17,9 @@
     "build:pre": "rimraf build"
   },
   "dependencies": {
-    "@lukejamesk/core": "^0.0.1-alpha.2",
-    "@lukejamesk/icons": "^0.0.1-alpha.2",
-    "@lukejamesk/styles": "^0.0.1-alpha.2",
+    "@lukejamesk/core": "^0.0.1-alpha.3",
+    "@lukejamesk/icons": "^0.0.1-alpha.3",
+    "@lukejamesk/styles": "^0.0.1-alpha.3",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
