@@ -25,11 +25,11 @@ const styles = (theme) => ({
   },
 })
 
-const Button = forwardRef(({ variant, children, ...props }, ref) => {
+const Button = forwardRef(({ variant, children, className, ...props }, ref) => {
   const classes = useStyles(styles)
 
   return (
-    <button className={clsx(classes.button, classes[variant])} ref={ref} {...props} type="button">
+    <button className={clsx(classes.button, classes[variant], className)} ref={ref} {...props} type="button">
       <Typography>{children}</Typography>
     </button>
   )
@@ -39,6 +39,7 @@ Button.displayName = 'Button'
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
   variant: PropTypes.oneOf(['primary', 'secondary']),
 }
 

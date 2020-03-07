@@ -1,5 +1,5 @@
 {
-  "name": "@lukejamesk/core",
+  "name": "@lukejamesk/icons",
   "version": "0.0.1-0.0.1-alpha.1.0",
   "license": "MIT",
   "author": "Luke King",
@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lukejamesk/lukejamesk-ui.git",
-    "directory": "packages/lukejamesk-ui"
+    "directory": "packages/lukejamesk-ui-icons"
   },
   "scripts": {
     "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
@@ -17,15 +17,9 @@
     "build:pre": "rimraf build"
   },
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.1.9",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
-    "@lukejamesk/icons": "^0.0.1-0.0.1-alpha.1.0",
-    "clsx": "^1.0.4",
-    "global": "^4.4.0",
-    "prop-types": "^15.7.2",
-    "ramda": "^0.26.1",
-    "react-jss": "10.0.0-alpha.24"
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^5.1.11",
@@ -33,9 +27,9 @@
     "enzyme": "^3.10.0"
   },
   "peerDependencies": {
+    "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0"
+    "react-dom": "^16.8.6"
   },
   "publishConfig": {
     "access": "public",

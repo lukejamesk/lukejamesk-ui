@@ -11,7 +11,14 @@ Object {
     "xxl": 2560,
     "xxs": 0,
   },
+  "icons": Object {
+    "l": 48,
+    "m": 24,
+    "s": 12,
+  },
   "palette": Object {
+    "dark": "#010101",
+    "light": "#efefef",
     "primary": "#39c5ff",
     "secondary": "#5c946e",
     "text": "rgba(0, 0, 0, .9)",

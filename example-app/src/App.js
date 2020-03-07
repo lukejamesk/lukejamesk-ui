@@ -1,8 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CssBaseline, Breakpoints, ShowAt, HideAt } from '@lukejamesk/core'
+import { CssBaseline, Breakpoints, ShowAt, HideAt, library } from '@lukejamesk/core'
+import { ButtonIcon } from '@lukejamesk/design-system'
 import { useStyles, ThemeProvider, defaultTheme } from '@lukejamesk/styles'
+import { coffee } from '@lukejamesk/icons'
 import { H1, H2, P, B, Blockquote, PrimaryButton, View, SecondaryButton, Debug } from './components'
+
+library.add(coffee)
 
 const styles = (theme) => ({
   app: {
@@ -25,6 +29,7 @@ const App = ({ name }) => {
           <B>Doloribus perferendis molestiae.</B>
         </Blockquote>
         <View>
+          <ButtonIcon variant="secondary" icon="coffee" />
           <PrimaryButton>My Button</PrimaryButton>
           <SecondaryButton>Second action</SecondaryButton>
         </View>

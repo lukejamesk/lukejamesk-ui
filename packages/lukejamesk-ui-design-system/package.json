@@ -1,5 +1,5 @@
 {
-  "name": "@lukejamesk/core",
+  "name": "@lukejamesk/design-system",
   "version": "0.0.1-0.0.1-alpha.1.0",
   "license": "MIT",
   "author": "Luke King",
@@ -17,10 +17,9 @@
     "build:pre": "rimraf build"
   },
   "dependencies": {
-    "@fortawesome/react-fontawesome": "^0.1.9",
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
+    "@lukejamesk/core": "^0.0.1-0.0.1-alpha.1.0",
     "@lukejamesk/icons": "^0.0.1-0.0.1-alpha.1.0",
+    "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
