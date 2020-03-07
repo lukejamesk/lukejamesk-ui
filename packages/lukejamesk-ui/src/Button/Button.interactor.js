@@ -1,21 +1,3 @@
-import { createInteractor } from '@lukejamesk/test-utils'
+import ButtonBaseInteractor from '../ButtonBase/ButtonBase.interactor'
 
-const buttonElements = (wrapper) => ({
-  button() {
-    return wrapper.find('button')
-  },
-})
-
-const buttonActions = (elements) => ({
-  click() {
-    elements.button().simulate('click')
-    return this
-  },
-  getVariant() {
-    return elements.wrapper().props().variant
-  },
-})
-
-const ButtonInteractor = createInteractor(buttonElements, buttonActions, undefined)
-
-export default ButtonInteractor
+export default ButtonBaseInteractor

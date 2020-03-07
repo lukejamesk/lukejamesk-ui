@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import clsx from 'clsx'
 import { useStyles } from '@lukejamesk/styles'
 
-const styles = () => ({
+const styles = {
   root: {},
-})
+}
 
 const ButtonBase = ({ children, className, ...props }) => {
   const classes = useStyles(styles)
