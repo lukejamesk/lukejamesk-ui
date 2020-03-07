@@ -391,10 +391,9 @@ exports[`<App /> should render 1`] = `
                                   >
                                     <Icon
                                       name="arrow-down"
-                                      variant="auto"
                                     >
                                       <span
-                                        className="auto-0-2-105 auto-0-2-105"
+                                        className="dark-0-2-100 auto-0-2-105"
                                       >
                                         <FontAwesomeIcon
                                           border={false}
@@ -478,10 +477,9 @@ exports[`<App /> should render 1`] = `
                                   >
                                     <Icon
                                       name="arrow-down"
-                                      variant="auto"
                                     >
                                       <span
-                                        className="auto-0-2-131 auto-0-2-131"
+                                        className="dark-0-2-126 auto-0-2-131"
                                       >
                                         <FontAwesomeIcon
                                           border={false}

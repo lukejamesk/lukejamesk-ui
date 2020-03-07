@@ -44,7 +44,7 @@ const ExpansionPanelHeader = ({ children }) => {
     >
       <div className={classes.indicator}>
         <Typography variant="heading3">
-          <Icon name={expanded ? 'arrow-up' : 'arrow-down'} variant="auto" />
+          <Icon name={expanded ? 'arrow-up' : 'arrow-down'} />
         </Typography>
       </div>
       <div className={classes.title}>
