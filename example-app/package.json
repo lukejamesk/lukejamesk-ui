@@ -2,6 +2,7 @@
   "name": "example-app",
   "version": "0.0.1-0.0.1-alpha.1.0",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "yarn build:pre && yarn build:copy-files && webpack --mode production --progress",

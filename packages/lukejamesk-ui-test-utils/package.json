@@ -1,5 +1,5 @@
 {
-  "name": "@lukejamesk/core",
+  "name": "@lukejamesk/test-utils",
   "version": "0.0.1-0.0.1-alpha.1.0",
   "license": "MIT",
   "author": "Luke King",
@@ -8,31 +8,23 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lukejamesk/lukejamesk-ui.git",
-    "directory": "packages/lukejamesk-ui"
+    "directory": "packages/lukejamesk-ui-test-utils"
   },
   "scripts": {
     "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build --ignore \"**/*.test.js\",\"**/*.stories.js\" --source-maps true",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build  --ignore \"**/*.test.js\" --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
     "build:pre": "rimraf build"
   },
+  "peerDependencies": {},
   "dependencies": {
-    "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
-    "clsx": "^1.0.4",
-    "global": "^4.4.0",
     "prop-types": "^15.7.2",
-    "ramda": "^0.26.1",
-    "react-jss": "10.0.0-alpha.24"
+    "enzyme": "^3.10.0",
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
-    "@storybook/addon-knobs": "^5.1.11",
-    "@storybook/react": "^5.1.11",
-    "enzyme": "^3.10.0"
-  },
-  "peerDependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0"
+    "react-dom": "^16.8.6"
   },
   "publishConfig": {
     "access": "public",
