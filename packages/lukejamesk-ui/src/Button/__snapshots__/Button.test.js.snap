@@ -2,11 +2,11 @@
 
 exports[`<Button /> Should render 1`] = `
 <button
-  class="button-0-2-1"
+  class="root-0-2-4 root-0-2-1"
   type="button"
 >
   <span
-    class="all-0-2-4"
+    class="all-0-2-5"
   >
     My content for button
   </span>

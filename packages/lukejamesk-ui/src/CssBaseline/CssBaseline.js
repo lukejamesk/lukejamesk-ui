@@ -36,6 +36,7 @@ const styles = (theme) => ({
       color: theme.palette.text,
       fontFamily: theme.typography.fontFamily,
       fontSize: theme.typography.fontSize,
+      backgroundColor: theme.palette.backgroundColor,
     },
   },
 })

@@ -1,6 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CssBaseline, Breakpoints, ShowAt, HideAt, library } from '@lukejamesk/core'
+import {
+  CssBaseline,
+  Breakpoints,
+  ShowAt,
+  HideAt,
+  library,
+  ExpansionPanel,
+  ExpansionPanelHeader,
+  ExpansionPanelBody,
+} from '@lukejamesk/core'
 import { ButtonIcon } from '@lukejamesk/design-system'
 import { useStyles, ThemeProvider, defaultTheme } from '@lukejamesk/styles'
 import { coffee } from '@lukejamesk/icons'
@@ -16,6 +25,18 @@ const styles = (theme) => ({
     marginTop: theme.spacing.l,
   },
 })
+const darkTheme = {
+  ...defaultTheme,
+  palette: {
+    backgroundColor: '#222',
+    primary: '#39c5ff',
+    secondary: '#5c946e',
+    light: '#444',
+    borderLight: '#333',
+    dark: '#ddd',
+    text: 'rgba(210, 210, 210, .9)',
+  },
+}
 
 const App = ({ name }) => {
   const classes = useStyles(styles)
@@ -42,15 +63,37 @@ const App = ({ name }) => {
             <H2>This content only shows at below medium</H2>
           </HideAt>
         </View>
+        <View>
+          <ExpansionPanel id="App1">
+            <ExpansionPanelHeader>My expansion panel title</ExpansionPanelHeader>
+            <ExpansionPanelBody>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+            </ExpansionPanelBody>
+          </ExpansionPanel>
+        </View>
+        <View>
+          <ExpansionPanel id="App2">
+            <ExpansionPanelHeader>
+              My expansion panel title <ButtonIcon icon="coffee" />
+            </ExpansionPanelHeader>
+            <ExpansionPanelBody>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+            </ExpansionPanelBody>
+          </ExpansionPanel>
+        </View>
       </View>
       <Debug />
     </CssBaseline>
   )
 }
 
-const withAppWrapper = (Component) => (props) => (
+const withAppWrapper = (Component) => ({ theme = 'light', ...props }) => (
   <Breakpoints breakpoints={defaultTheme.breakpoints}>
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme === 'light' ? defaultTheme : darkTheme}>
       <Component {...props} />
     </ThemeProvider>
   </Breakpoints>

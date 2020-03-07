@@ -2,12 +2,13 @@ import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import clsx from 'clsx'
 import { useStyles } from '@lukejamesk/styles'
+import ButtonBase from '../ButtonBase'
 import Typography from '../Typography'
 
 const styles = (theme) => ({
-  button: {
+  root: {
     boxSizing: 'border-box',
-    background: '#eee',
+    background: theme.palette.light,
     border: 'none',
     padding: theme.spacing.s,
     textTransform: 'uppercase',
@@ -29,9 +30,14 @@ const Button = forwardRef(({ variant, children, className, ...props }, ref) => {
   const classes = useStyles(styles)
 
   return (
-    <button className={clsx(classes.button, classes[variant], className)} ref={ref} {...props} type="button">
+    <ButtonBase
+      className={clsx(classes.root, classes[variant], className)}
+      ref={ref}
+      {...props}
+      type="button"
+    >
       <Typography>{children}</Typography>
-    </button>
+    </ButtonBase>
   )
 })
 
