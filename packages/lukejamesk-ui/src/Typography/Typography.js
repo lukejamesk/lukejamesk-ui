@@ -56,7 +56,7 @@ const styles = (theme) => ({
     padding: `${theme.spacing.m}px`,
     borderLeft: `solid ${theme.spacing.xxs}px ${theme.palette.primary}`,
     borderRadius: 5,
-    backgroundColor: '#efefef',
+    backgroundColor: theme.palette.light,
     '&:not(:last-child)': {
       marginBottom: theme.spacing.m,
     },

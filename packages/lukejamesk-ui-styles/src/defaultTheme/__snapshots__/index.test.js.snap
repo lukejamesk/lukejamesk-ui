@@ -17,11 +17,13 @@ Object {
     "s": 12,
   },
   "palette": Object {
-    "dark": "#010101",
+    "backgroundColor": "#fff",
+    "borderLight": "#e6e6e6",
+    "dark": "#222",
     "light": "#efefef",
     "primary": "#39c5ff",
     "secondary": "#5c946e",
-    "text": "rgba(0, 0, 0, .9)",
+    "text": "rgba(40, 40, 40, .9)",
   },
   "spacing": Object {
     "l": 20,
