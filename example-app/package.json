@@ -13,6 +13,8 @@
   "dependencies": {
     "@lukejamesk/core": "^0.0.1-0.0.1-alpha.1.0",
     "@lukejamesk/styles": "^0.0.1-0.0.1-alpha.1.0",
+    "@lukejamesk/design-system": "^0.0.1-0.0.1-alpha.1.0",
+    "@lukejamesk/icons": "^0.0.1-0.0.1-alpha.1.0",
     "enzyme": "^3.10.0",
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.7.2",
