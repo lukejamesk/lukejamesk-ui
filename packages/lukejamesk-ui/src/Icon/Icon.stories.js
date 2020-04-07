@@ -10,4 +10,4 @@ export default {
   title: 'UI|Icon',
 }
 
-export const Default = () => <Icon name={text('icon', 'coffee')} variant="primary" />
+export const Default = () => <Icon name={text('icon', 'coffee')} variant="primary" size="l" />

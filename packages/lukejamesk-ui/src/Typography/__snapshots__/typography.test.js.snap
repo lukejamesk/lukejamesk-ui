@@ -2,7 +2,7 @@
 
 exports[`<Typography /> should render a paragraph when paragraph is true 1`] = `
 <p
-  class="all-0-2-43 paragraph-0-2-47"
+  class="font-normal text-base mb-2 last:mb-0"
 >
   My content for paragraph
 </p>
@@ -10,7 +10,7 @@ exports[`<Typography /> should render a paragraph when paragraph is true 1`] = `
 
 exports[`<Typography /> should render with: blockquote 1`] = `
 <blockquote
-  class="all-0-2-15 blockquote-0-2-21"
+  class="p-2 italic border-solid border-l-4 border-blue-500 rounded bg-gray-300 text-base mb-2 last:mb-0"
 >
   My content forblockquote
 </blockquote>
@@ -18,7 +18,7 @@ exports[`<Typography /> should render with: blockquote 1`] = `
 
 exports[`<Typography /> should render with: bold 1`] = `
 <strong
-  class="all-0-2-8 bold-0-2-13"
+  class="font-semibold text-base mb-2 last:mb-0"
 >
   My content forbold
 </strong>
@@ -26,7 +26,7 @@ exports[`<Typography /> should render with: bold 1`] = `
 
 exports[`<Typography /> should render with: heading1 1`] = `
 <h1
-  class="all-0-2-22 heading1-0-2-23"
+  class="text-3xl font-medium mb-4 last:mb-0"
 >
   My content forheading1
 </h1>
@@ -34,7 +34,7 @@ exports[`<Typography /> should render with: heading1 1`] = `
 
 exports[`<Typography /> should render with: heading2 1`] = `
 <h2
-  class="all-0-2-29 heading2-0-2-31"
+  class="text-2xl font-medium mb-3 last:mb-0"
 >
   My content forheading2
 </h2>
@@ -42,7 +42,7 @@ exports[`<Typography /> should render with: heading2 1`] = `
 
 exports[`<Typography /> should render with: heading3 1`] = `
 <h3
-  class="all-0-2-36 heading3-0-2-39"
+  class="text-xl font-medium mb-2 last:mb-0"
 >
   My content forheading3
 </h3>
@@ -50,7 +50,7 @@ exports[`<Typography /> should render with: heading3 1`] = `
 
 exports[`<Typography /> should render with: paragraph 1`] = `
 <p
-  class="all-0-2-1 paragraph-0-2-5"
+  class="font-normal text-base mb-2 last:mb-0"
 >
   My content forparagraph
 </p>
@@ -58,7 +58,7 @@ exports[`<Typography /> should render with: paragraph 1`] = `
 
 exports[`<Typography /> with no type 1`] = `
 <span
-  class="all-0-2-50"
+  class="font-normal text-base mb-2 last:mb-0"
 >
   My content for no text type
 </span>

@@ -1,13 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStyles } from '@lukejamesk/styles'
 import { Button, Icon } from '@lukejamesk/core'
-
-const styles = (theme) => ({
-  text: {
-    marginLeft: theme.spacing.xs,
-  },
-})
 
 const variantToIconVariant = {
   default: 'dark',
@@ -16,12 +9,10 @@ const variantToIconVariant = {
 }
 
 const ButtonIcon = ({ icon, variant, children, ...props }) => {
-  const classes = useStyles(styles)
-
   return (
     <Button variant={variant} {...props}>
       <Icon variant={variantToIconVariant[variant]} name={icon} />
-      {children && <span className={classes.text}>{children}</span>}
+      {children && <span className="ml-2">{children}</span>}
     </Button>
   )
 }

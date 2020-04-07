@@ -1,25 +1,12 @@
 import React from 'react'
 import { keys } from 'ramda'
 import { useBreakpoints } from '@lukejamesk/core'
-import { useStyles } from '@lukejamesk/styles'
 import { View } from './Components'
-
-const styles = {
-  debug: {
-    position: 'fixed',
-    right: 0,
-    bottom: 0,
-    background: 'black',
-    color: 'white',
-    opacity: '.5',
-    padding: '5px 10px',
-    display: 'inline-block',
-  },
-}
 
 const Debug = () => {
   const { currentBreakpoint } = useBreakpoints()
-  const classes = useStyles(styles)
-  return <View className={classes.debug}>{keys(currentBreakpoint)[0]}</View>
+  return (
+    <View className="fixed bottom-0 right-0 text-white bg-black py-1 px-4">{keys(currentBreakpoint)[0]}</View>
+  )
 }
 export default Debug
