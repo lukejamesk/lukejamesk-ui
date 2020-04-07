@@ -4,3 +4,4 @@ build-storybook
 coverage
 yarn-error.log
 lerna-debug.log
+storybook-static

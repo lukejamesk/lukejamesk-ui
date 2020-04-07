@@ -2,11 +2,11 @@
 
 exports[`<Button /> Should render 1`] = `
 <button
-  class="root-0-2-4 root-0-2-1"
+  class="bg-gray-200 hover:bg-gray-400 p-2 rounded uppercase text-base"
   type="button"
 >
   <span
-    class="all-0-2-5"
+    class="font-normal text-base mb-2 last:mb-0"
   >
     My content for button
   </span>

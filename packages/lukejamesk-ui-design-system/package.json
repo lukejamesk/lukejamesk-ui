@@ -23,8 +23,7 @@
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
-    "ramda": "^0.26.1",
-    "react-jss": "10.0.0-alpha.24"
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
     "@storybook/addon-knobs": "^5.1.11",

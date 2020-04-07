@@ -1,614 +1,189 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<App /> should render 1`] = `
-<ThemeProvider
-  theme={
-    Object {
-      "breakpoints": Object {
-        "l": 1280,
-        "m": 768,
-        "s": 480,
-        "xl": 1920,
-        "xs": 320,
-        "xxl": 2560,
-        "xxs": 0,
-      },
-      "icons": Object {
-        "l": 48,
-        "m": 24,
-        "s": 12,
-      },
-      "palette": Object {
-        "backgroundColor": "#fff",
-        "borderLight": "#e6e6e6",
-        "dark": "#222",
-        "light": "#efefef",
-        "primary": "#39c5ff",
-        "secondary": "#5c946e",
-        "text": "rgba(40, 40, 40, .9)",
-      },
-      "spacing": Object {
-        "l": 20,
-        "m": 16,
-        "s": 12,
-        "xl": 24,
-        "xs": 8,
-        "xxl": 28,
-        "xxs": 4,
-      },
-      "typography": Object {
-        "bold": 600,
-        "button": Object {
-          "fontFamily": "Verdana, Arial, Sans-serif",
-          "fontSize": 14,
-        },
-        "fontFamily": "Helvetica, Arial, Sans-serif",
-        "fontSize": 14,
-        "heading1": Object {
-          "fontFamily": "Verdana, Arial, Sans-serif",
-          "fontSize": 25,
-          "fontWeight": 600,
-        },
-        "heading2": Object {
-          "fontFamily": "Verdana, Arial, Sans-serif",
-          "fontSize": 21,
-          "fontWeight": 600,
-        },
-        "heading3": Object {
-          "fontFamily": "Verdana, Arial, Sans-serif",
-          "fontSize": 18,
-          "fontWeight": 600,
-        },
-      },
-    }
-  }
->
-  <Component
-    name="Test"
+Array [
+  <h1
+    class="text-3xl font-medium mb-4 last:mb-0"
   >
-    <Breakpoints
-      breakpoints={
-        Object {
-          "l": 1280,
-          "m": 768,
-          "s": 480,
-          "xl": 1920,
-          "xs": 320,
-          "xxl": 2560,
-          "xxs": 0,
-        }
-      }
+    Test
+  </h1>,
+  <p
+    class="font-normal text-base mb-2 last:mb-0"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
+  </p>,
+  <blockquote
+    class="p-2 italic border-solid border-l-4 border-blue-500 rounded bg-gray-300 text-base mb-2 last:mb-0"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+    <strong
+      class="font-semibold text-base mb-2 last:mb-0"
     >
-      <ThemeProvider
-        theme={
-          Object {
-            "breakpoints": Object {
-              "l": 1280,
-              "m": 768,
-              "s": 480,
-              "xl": 1920,
-              "xs": 320,
-              "xxl": 2560,
-              "xxs": 0,
-            },
-            "icons": Object {
-              "l": 48,
-              "m": 24,
-              "s": 12,
-            },
-            "palette": Object {
-              "backgroundColor": "#fff",
-              "borderLight": "#e6e6e6",
-              "dark": "#222",
-              "light": "#efefef",
-              "primary": "#39c5ff",
-              "secondary": "#5c946e",
-              "text": "rgba(40, 40, 40, .9)",
-            },
-            "spacing": Object {
-              "l": 20,
-              "m": 16,
-              "s": 12,
-              "xl": 24,
-              "xs": 8,
-              "xxl": 28,
-              "xxs": 4,
-            },
-            "typography": Object {
-              "bold": 600,
-              "button": Object {
-                "fontFamily": "Verdana, Arial, Sans-serif",
-                "fontSize": 14,
-              },
-              "fontFamily": "Helvetica, Arial, Sans-serif",
-              "fontSize": 14,
-              "heading1": Object {
-                "fontFamily": "Verdana, Arial, Sans-serif",
-                "fontSize": 25,
-                "fontWeight": 600,
-              },
-              "heading2": Object {
-                "fontFamily": "Verdana, Arial, Sans-serif",
-                "fontSize": 21,
-                "fontWeight": 600,
-              },
-              "heading3": Object {
-                "fontFamily": "Verdana, Arial, Sans-serif",
-                "fontSize": 18,
-                "fontWeight": 600,
-              },
-            },
-          }
-        }
+      Doloribus perferendis molestiae.
+    </strong>
+  </blockquote>,
+  <div
+    class="mt-4"
+  >
+    <button
+      class="text-blue-500 p-2 rounded uppercase text-base"
+      type="button"
+    >
+      <span
+        class="font-normal text-base mb-2 last:mb-0"
       >
-        <App
-          name="Test"
+        <span
+          class="text-blue-500"
         >
-          <CssBaseline>
-            <View
-              className="app-0-2-1"
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-coffee fa-w-20 fill-current"
+            data-icon="coffee"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 640 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+      </span>
+    </button>
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded uppercase text-base"
+      type="button"
+    >
+      <span
+        class="font-normal text-base mb-2 last:mb-0"
+      >
+        My Button
+      </span>
+    </button>
+    <button
+      class="text-blue-500 p-2 rounded uppercase text-base"
+      type="button"
+    >
+      <span
+        class="font-normal text-base mb-2 last:mb-0"
+      >
+        Second action
+      </span>
+    </button>
+  </div>,
+  <div
+    class="mt-4"
+  >
+    <h2
+      class="text-2xl font-medium mb-3 last:mb-0"
+    >
+      This content only shows at medium at above
+    </h2>
+    <p
+      class="font-normal text-base mb-2 last:mb-0"
+    >
+      Lorem ipsum dolor sit amet, consectetur.
+    </p>
+  </div>,
+  <div
+    class="mt-4"
+  >
+    <div>
+      <button
+        aria-controls="ExpansionPanelBody-App1"
+        aria-expanded="false"
+        class="block flex border-b-2 border-black p-2 w-full"
+        id="ExpansionPanelHead-App1"
+        type="button"
+      >
+        <div
+          class="mr-4 self-center"
+        >
+          <h3
+            class="text-xl font-medium mb-2 last:mb-0"
+          >
+            <span
+              class="text-black"
+            />
+          </h3>
+        </div>
+        <div
+          class=" self-center"
+        >
+          <h3
+            class="text-xl font-medium mb-2 last:mb-0"
+          >
+            My expansion panel title
+          </h3>
+        </div>
+      </button>
+    </div>
+    <div>
+      <button
+        aria-controls="ExpansionPanelBody-App2"
+        aria-expanded="false"
+        class="block flex border-b-2 border-black p-2 w-full"
+        id="ExpansionPanelHead-App2"
+        type="button"
+      >
+        <div
+          class="mr-4 self-center"
+        >
+          <h3
+            class="text-xl font-medium mb-2 last:mb-0"
+          >
+            <span
+              class="text-black"
+            />
+          </h3>
+        </div>
+        <div
+          class=" self-center"
+        >
+          <h3
+            class="text-xl font-medium mb-2 last:mb-0"
+          >
+            My expansion panel title 
+          </h3>
+        </div>
+      </button>
+      <button
+        class="bg-gray-200 hover:bg-gray-400 p-2 rounded uppercase text-base"
+        type="button"
+      >
+        <span
+          class="font-normal text-base mb-2 last:mb-0"
+        >
+          <span
+            class="text-black"
+          >
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-coffee fa-w-20 fill-current"
+              data-icon="coffee"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 640 512"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <div
-                className="app-0-2-1"
-              >
-                <H1>
-                  <Typography
-                    variant="heading1"
-                  >
-                    <h1
-                      className="all-0-2-3 heading1-0-2-4"
-                    >
-                      Test
-                    </h1>
-                  </Typography>
-                </H1>
-                <P>
-                  <Typography
-                    paragraph={true}
-                  >
-                    <p
-                      className="all-0-2-10 paragraph-0-2-14"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
-                    </p>
-                  </Typography>
-                </P>
-                <Blockquote>
-                  <Typography
-                    variant="blockquote"
-                  >
-                    <blockquote
-                      className="all-0-2-17 blockquote-0-2-23"
-                    >
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                      <B>
-                        <Typography
-                          variant="bold"
-                        >
-                          <strong
-                            className="all-0-2-24 bold-0-2-29"
-                          >
-                            Doloribus perferendis molestiae.
-                          </strong>
-                        </Typography>
-                      </B>
-                    </blockquote>
-                  </Typography>
-                </Blockquote>
-                <View>
-                  <div>
-                    <ButtonIcon
-                      icon="coffee"
-                      variant="secondary"
-                    >
-                      <Button
-                        variant="secondary"
-                      >
-                        <ButtonBase
-                          className="root-0-2-32 secondary-0-2-34"
-                          type="button"
-                        >
-                          <button
-                            className="root-0-2-35 root-0-2-32 secondary-0-2-34"
-                            type="button"
-                          >
-                            <Typography>
-                              <span
-                                className="all-0-2-36"
-                              >
-                                <Icon
-                                  name="coffee"
-                                  variant="primary"
-                                >
-                                  <span
-                                    className="primary-0-2-43 auto-0-2-50"
-                                  >
-                                    <FontAwesomeIcon
-                                      border={false}
-                                      className=""
-                                      fixedWidth={false}
-                                      flip={null}
-                                      icon="coffee"
-                                      inverse={false}
-                                      listItem={false}
-                                      mask={null}
-                                      pull={null}
-                                      pulse={false}
-                                      rotation={null}
-                                      size={null}
-                                      spin={false}
-                                      swapOpacity={false}
-                                      symbol={false}
-                                      title=""
-                                      transform={null}
-                                    >
-                                      <svg
-                                        aria-hidden="true"
-                                        className="svg-inline--fa fa-coffee fa-w-20 "
-                                        data-icon="coffee"
-                                        data-prefix="fas"
-                                        focusable="false"
-                                        role="img"
-                                        style={Object {}}
-                                        viewBox="0 0 640 512"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path
-                                          d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-                                          fill="currentColor"
-                                          style={Object {}}
-                                        />
-                                      </svg>
-                                    </FontAwesomeIcon>
-                                  </span>
-                                </Icon>
-                              </span>
-                            </Typography>
-                          </button>
-                        </ButtonBase>
-                      </Button>
-                    </ButtonIcon>
-                    <PrimaryButton>
-                      <Button
-                        variant="primary"
-                      >
-                        <ButtonBase
-                          className="root-0-2-51 primary-0-2-52"
-                          type="button"
-                        >
-                          <button
-                            className="root-0-2-54 root-0-2-51 primary-0-2-52"
-                            type="button"
-                          >
-                            <Typography>
-                              <span
-                                className="all-0-2-55"
-                              >
-                                My Button
-                              </span>
-                            </Typography>
-                          </button>
-                        </ButtonBase>
-                      </Button>
-                    </PrimaryButton>
-                    <SecondaryButton>
-                      <Button
-                        variant="secondary"
-                      >
-                        <ButtonBase
-                          className="root-0-2-62 secondary-0-2-64"
-                          type="button"
-                        >
-                          <button
-                            className="root-0-2-65 root-0-2-62 secondary-0-2-64"
-                            type="button"
-                          >
-                            <Typography>
-                              <span
-                                className="all-0-2-66"
-                              >
-                                Second action
-                              </span>
-                            </Typography>
-                          </button>
-                        </ButtonBase>
-                      </Button>
-                    </SecondaryButton>
-                  </div>
-                </View>
-                <View
-                  className="showHideAtArea-0-2-2"
-                >
-                  <div
-                    className="showHideAtArea-0-2-2"
-                  >
-                    <ShowAt
-                      bp="m"
-                    >
-                      <H2>
-                        <Typography
-                          variant="heading2"
-                        >
-                          <h2
-                            className="all-0-2-73 heading2-0-2-75"
-                          >
-                            This content only shows at medium at above
-                          </h2>
-                        </Typography>
-                      </H2>
-                      <P>
-                        <Typography
-                          paragraph={true}
-                        >
-                          <p
-                            className="all-0-2-80 paragraph-0-2-84"
-                          >
-                            Lorem ipsum dolor sit amet, consectetur.
-                          </p>
-                        </Typography>
-                      </P>
-                    </ShowAt>
-                    <HideAt
-                      bp="m"
-                    />
-                  </div>
-                </View>
-                <View>
-                  <div>
-                    <ExpansionPanel
-                      controlled={false}
-                      expanded={false}
-                      id="App1"
-                      onChange={[Function]}
-                    >
-                      <div>
-                        <ExpansionPanelHeader
-                          key=".0"
-                        >
-                          <ButtonBase
-                            aria-controls="ExpansionPanelBody-App1"
-                            aria-expanded={false}
-                            className="root-0-2-87"
-                            id="ExpansionPanelHead-App1"
-                            onClick={[Function]}
-                          >
-                            <button
-                              aria-controls="ExpansionPanelBody-App1"
-                              aria-expanded={false}
-                              className="root-0-2-90 root-0-2-87"
-                              id="ExpansionPanelHead-App1"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <div
-                                className="indicator-0-2-89"
-                              >
-                                <Typography
-                                  variant="heading3"
-                                >
-                                  <h3
-                                    className="all-0-2-91 heading3-0-2-94"
-                                  >
-                                    <Icon
-                                      name="arrow-down"
-                                    >
-                                      <span
-                                        className="dark-0-2-100 auto-0-2-105"
-                                      >
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon="arrow-down"
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          swapOpacity={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        />
-                                      </span>
-                                    </Icon>
-                                  </h3>
-                                </Typography>
-                              </div>
-                              <div
-                                className="title-0-2-88"
-                              >
-                                <Typography
-                                  variant="heading3"
-                                >
-                                  <h3
-                                    className="all-0-2-106 heading3-0-2-109"
-                                  >
-                                    My expansion panel title
-                                  </h3>
-                                </Typography>
-                              </div>
-                            </button>
-                          </ButtonBase>
-                        </ExpansionPanelHeader>
-                      </div>
-                    </ExpansionPanel>
-                  </div>
-                </View>
-                <View>
-                  <div>
-                    <ExpansionPanel
-                      controlled={false}
-                      expanded={false}
-                      id="App2"
-                      onChange={[Function]}
-                    >
-                      <div>
-                        <ExpansionPanelHeader
-                          key=".0"
-                        >
-                          <ButtonBase
-                            aria-controls="ExpansionPanelBody-App2"
-                            aria-expanded={false}
-                            className="root-0-2-113"
-                            id="ExpansionPanelHead-App2"
-                            onClick={[Function]}
-                          >
-                            <button
-                              aria-controls="ExpansionPanelBody-App2"
-                              aria-expanded={false}
-                              className="root-0-2-116 root-0-2-113"
-                              id="ExpansionPanelHead-App2"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              <div
-                                className="indicator-0-2-115"
-                              >
-                                <Typography
-                                  variant="heading3"
-                                >
-                                  <h3
-                                    className="all-0-2-117 heading3-0-2-120"
-                                  >
-                                    <Icon
-                                      name="arrow-down"
-                                    >
-                                      <span
-                                        className="dark-0-2-126 auto-0-2-131"
-                                      >
-                                        <FontAwesomeIcon
-                                          border={false}
-                                          className=""
-                                          fixedWidth={false}
-                                          flip={null}
-                                          icon="arrow-down"
-                                          inverse={false}
-                                          listItem={false}
-                                          mask={null}
-                                          pull={null}
-                                          pulse={false}
-                                          rotation={null}
-                                          size={null}
-                                          spin={false}
-                                          swapOpacity={false}
-                                          symbol={false}
-                                          title=""
-                                          transform={null}
-                                        />
-                                      </span>
-                                    </Icon>
-                                  </h3>
-                                </Typography>
-                              </div>
-                              <div
-                                className="title-0-2-114"
-                              >
-                                <Typography
-                                  variant="heading3"
-                                >
-                                  <h3
-                                    className="all-0-2-132 heading3-0-2-135"
-                                  >
-                                    My expansion panel title 
-                                    <ButtonIcon
-                                      icon="coffee"
-                                    >
-                                      <Button>
-                                        <ButtonBase
-                                          className="root-0-2-140"
-                                          type="button"
-                                        >
-                                          <button
-                                            className="root-0-2-143 root-0-2-140"
-                                            type="button"
-                                          >
-                                            <Typography>
-                                              <span
-                                                className="all-0-2-144"
-                                              >
-                                                <Icon
-                                                  name="coffee"
-                                                >
-                                                  <span
-                                                    className="dark-0-2-153 auto-0-2-158"
-                                                  >
-                                                    <FontAwesomeIcon
-                                                      border={false}
-                                                      className=""
-                                                      fixedWidth={false}
-                                                      flip={null}
-                                                      icon="coffee"
-                                                      inverse={false}
-                                                      listItem={false}
-                                                      mask={null}
-                                                      pull={null}
-                                                      pulse={false}
-                                                      rotation={null}
-                                                      size={null}
-                                                      spin={false}
-                                                      swapOpacity={false}
-                                                      symbol={false}
-                                                      title=""
-                                                      transform={null}
-                                                    >
-                                                      <svg
-                                                        aria-hidden="true"
-                                                        className="svg-inline--fa fa-coffee fa-w-20 "
-                                                        data-icon="coffee"
-                                                        data-prefix="fas"
-                                                        focusable="false"
-                                                        role="img"
-                                                        style={Object {}}
-                                                        viewBox="0 0 640 512"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                      >
-                                                        <path
-                                                          d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
-                                                          fill="currentColor"
-                                                          style={Object {}}
-                                                        />
-                                                      </svg>
-                                                    </FontAwesomeIcon>
-                                                  </span>
-                                                </Icon>
-                                              </span>
-                                            </Typography>
-                                          </button>
-                                        </ButtonBase>
-                                      </Button>
-                                    </ButtonIcon>
-                                  </h3>
-                                </Typography>
-                              </div>
-                            </button>
-                          </ButtonBase>
-                        </ExpansionPanelHeader>
-                      </div>
-                    </ExpansionPanel>
-                  </div>
-                </View>
-              </div>
-            </View>
-            <Debug>
-              <View
-                className="debug-0-2-159"
-              >
-                <div
-                  className="debug-0-2-159"
-                >
-                  m
-                </div>
-              </View>
-            </Debug>
-          </CssBaseline>
-        </App>
-      </ThemeProvider>
-    </Breakpoints>
-  </Component>
-</ThemeProvider>
+              <path
+                d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>,
+  <div
+    class="fixed bottom-0 right-0 text-white bg-black py-1 px-4 mt-4"
+  >
+    m
+  </div>,
+]
 `;

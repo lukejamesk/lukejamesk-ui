@@ -1,37 +1,20 @@
 import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 import clsx from 'clsx'
-import { useStyles } from '@lukejamesk/styles'
 import ButtonBase from '../ButtonBase'
 import Typography from '../Typography'
 
-const styles = (theme) => ({
-  root: {
-    boxSizing: 'border-box',
-    background: theme.palette.light,
-    border: 'none',
-    padding: theme.spacing.s,
-    textTransform: 'uppercase',
-    fontWeight: theme.typography.button.fontWeight,
-    fontSize: theme.typography.button.fontSize,
-    borderRadius: 5,
-  },
-  primary: {
-    background: theme.palette.primary,
-    color: '#fff',
-  },
-  secondary: {
-    background: 'transparent',
-    color: theme.palette.primary,
-  },
-})
+const variantMapping = {
+  default: 'bg-gray-200 hover:bg-gray-400',
+  primary: 'bg-blue-500 hover:bg-blue-700 text-white',
+  secondary: 'text-blue-500',
+}
 
 const Button = forwardRef(({ variant, children, className, ...props }, ref) => {
-  const classes = useStyles(styles)
-
+  const v = variant || 'default'
   return (
     <ButtonBase
-      className={clsx(classes.root, classes[variant], className)}
+      className={clsx(variantMapping[v], 'p-2 rounded uppercase text-base')}
       ref={ref}
       {...props}
       type="button"

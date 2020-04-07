@@ -1,50 +1,26 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useStyles } from '@lukejamesk/styles'
 import clsx from 'clsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const styles = (theme) => ({
-  primary: {
-    '& svg *': {
-      fill: theme.palette.primary,
-    },
-  },
-  light: {
-    '& svg *': {
-      fill: theme.palette.light,
-    },
-  },
-  dark: {
-    '& svg *': {
-      fill: theme.palette.dark,
-    },
-  },
-  secondary: {
-    '& svg *': {
-      fill: theme.palette.secondary,
-    },
-  },
-  s: {
-    fontSize: theme.icons.s,
-  },
-  m: {
-    fontSize: theme.icons.m,
-  },
-  l: {
-    fontSize: theme.icons.l,
-  },
-  auto: {
-    fontSize: 'inherit',
-  },
-})
+const variantMappiping = {
+  light: 'text-white',
+  dark: 'text-black',
+  primary: 'text-blue-500',
+  secondary: 'text-green-500',
+}
+
+const sizeMapping = {
+  s: 'text-sm',
+  m: 'text-base',
+  l: 'text-4xl',
+  auto: '',
+}
 
 const Icon = ({ name, variant = 'dark', size = 'auto' }) => {
-  const classes = useStyles(styles)
-
   return (
-    <span className={clsx(classes[variant], classes[size])}>
-      <FontAwesomeIcon icon={name} />
+    <span className={clsx(variantMappiping[variant], sizeMapping[size])}>
+      <FontAwesomeIcon icon={name} className="fill-current" />
     </span>
   )
 }
