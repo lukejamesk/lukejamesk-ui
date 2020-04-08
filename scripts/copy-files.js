@@ -46,7 +46,6 @@ async function run() {
     await createPackageFile()
     await createModulePackages({ from: srcPath, to: buildPath })
   } catch (err) {
-    // console.log(err)
     process.exit(1)
   }
 }

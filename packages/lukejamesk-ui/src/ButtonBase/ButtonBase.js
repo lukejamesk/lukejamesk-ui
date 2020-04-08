@@ -1,17 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const ButtonBase = ({ children, className, ...props }) => {
+const ButtonBase = ({ children, className, element: Element, ...props }) => {
   return (
-    <button type="button" className={className} {...props}>
+    <Element type="button" className={className} {...props} tabIndex="0">
       {children}
-    </button>
+    </Element>
   )
 }
 
 ButtonBase.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
+  element: PropTypes.string,
+}
+
+ButtonBase.defaultProps = {
+  element: 'button',
 }
 
 export default ButtonBase

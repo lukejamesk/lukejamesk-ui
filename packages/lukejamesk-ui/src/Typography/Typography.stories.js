@@ -7,7 +7,7 @@ Maecenas feugiat varius mi, eu sagittis nunc dignissim nec.
 Quisque rhoncus hendrerit leo.`
 
 export default {
-  title: 'UI|Typography',
+  title: 'Core|Typography',
 }
 
 export const Paragraph = () => <Typography paragraph={boolean}>{text('text', exampleText)}</Typography>

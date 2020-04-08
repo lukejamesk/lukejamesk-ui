@@ -1,2 +1,2 @@
-const styles = require('@lukejamesk/styles')
-module.exports = styles.tailwindConfig
+const { tailwindConfig } = require('@lukejamesk/styles')
+module.exports = tailwindConfig

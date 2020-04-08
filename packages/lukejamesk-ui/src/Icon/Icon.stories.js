@@ -7,7 +7,7 @@ import Icon from './Icon'
 library.add(coffee)
 
 export default {
-  title: 'UI|Icon',
+  title: 'Core|Icon',
 }
 
 export const Default = () => <Icon name={text('icon', 'coffee')} variant="primary" size="l" />

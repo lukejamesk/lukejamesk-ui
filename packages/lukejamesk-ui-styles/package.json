@@ -18,8 +18,8 @@
     "build:tailwind": "postcss src/scss/base.scss -o build/scss/tailwind.css"
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "dependencies": {
     "autoprefix": "^1.0.1",

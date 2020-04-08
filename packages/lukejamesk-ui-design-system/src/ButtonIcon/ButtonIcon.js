@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Button, Icon } from '@lukejamesk/core'
+import Icon from '../Icon'
+import Button, { buttonVariants } from '../Button'
 
 const variantToIconVariant = {
   default: 'dark',
@@ -8,18 +9,20 @@ const variantToIconVariant = {
   secondary: 'primary',
 }
 
+export const buttonIconVariants = buttonVariants
+
 const ButtonIcon = ({ icon, variant, children, ...props }) => {
   return (
     <Button variant={variant} {...props}>
       <Icon variant={variantToIconVariant[variant]} name={icon} />
-      {children && <span className="ml-2">{children}</span>}
+      {children && <span className="ljk-ml-s">{children}</span>}
     </Button>
   )
 }
 
 ButtonIcon.propTypes = {
   icon: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'default']),
+  variant: PropTypes.oneOf(buttonIconVariants),
   children: PropTypes.node,
 }
 

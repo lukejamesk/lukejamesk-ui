@@ -25,7 +25,7 @@ const Component = () => {
 }
 
 export default {
-  title: 'UI|Breakpoints',
+  title: 'Core|Breakpoints',
   decorators: [(storyFn) => <Breakpoints breakpoints={defaultTheme.breakpoints}>{storyFn()}</Breakpoints>],
 }
 

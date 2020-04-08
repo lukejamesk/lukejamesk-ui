@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Typography /> Variant: blockquote should render 1`] = `
+<blockquote
+  class="ljk-typo-blockquote"
+>
+  My content
+</blockquote>
+`;
+
+exports[`<Typography /> Variant: bold should render 1`] = `
+<strong
+  class="ljk-typo-b"
+>
+  My content
+</strong>
+`;
+
+exports[`<Typography /> Variant: heading1 should render 1`] = `
+<h1
+  class="ljk-typo-h1"
+>
+  My content
+</h1>
+`;
+
+exports[`<Typography /> Variant: heading2 should render 1`] = `
+<h2
+  class="ljk-typo-h2"
+>
+  My content
+</h2>
+`;
+
+exports[`<Typography /> Variant: heading3 should render 1`] = `
+<h3
+  class="ljk-typo-h3"
+>
+  My content
+</h3>
+`;
+
+exports[`<Typography /> Variant: paragraph should render 1`] = `
+<p
+  class="ljk-typo-p"
+>
+  My content
+</p>
+`;
+
+exports[`<Typography /> Variant: text should render 1`] = `
+<span
+  class="ljk-typo-text"
+>
+  My content
+</span>
+`;
