@@ -6,7 +6,9 @@ import { View } from './Components'
 const Debug = () => {
   const { currentBreakpoint } = useBreakpoints()
   return (
-    <View className="fixed bottom-0 right-0 text-white bg-black py-1 px-4">{keys(currentBreakpoint)[0]}</View>
+    <View className="ljk-fixed ljk-bottom-0 ljk-right-0 ljk-text-white ljk-bg-black ljk-py-1 ljk-px-m">
+      {keys(currentBreakpoint)[0]}
+    </View>
   )
 }
 export default Debug

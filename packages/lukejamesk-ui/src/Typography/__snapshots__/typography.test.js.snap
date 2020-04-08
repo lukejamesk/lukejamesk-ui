@@ -1,65 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Typography /> should render a paragraph when paragraph is true 1`] = `
-<p
-  class="font-normal text-base mb-2 last:mb-0"
->
-  My content for paragraph
-</p>
-`;
-
 exports[`<Typography /> should render with: blockquote 1`] = `
-<blockquote
-  class="p-2 italic border-solid border-l-4 border-blue-500 rounded bg-gray-300 text-base mb-2 last:mb-0"
->
+<blockquote>
   My content forblockquote
 </blockquote>
 `;
 
 exports[`<Typography /> should render with: bold 1`] = `
-<strong
-  class="font-semibold text-base mb-2 last:mb-0"
->
+<strong>
   My content forbold
 </strong>
 `;
 
 exports[`<Typography /> should render with: heading1 1`] = `
-<h1
-  class="text-3xl font-medium mb-4 last:mb-0"
->
+<h1>
   My content forheading1
 </h1>
 `;
 
 exports[`<Typography /> should render with: heading2 1`] = `
-<h2
-  class="text-2xl font-medium mb-3 last:mb-0"
->
+<h2>
   My content forheading2
 </h2>
 `;
 
 exports[`<Typography /> should render with: heading3 1`] = `
-<h3
-  class="text-xl font-medium mb-2 last:mb-0"
->
+<h3>
   My content forheading3
 </h3>
 `;
 
 exports[`<Typography /> should render with: paragraph 1`] = `
-<p
-  class="font-normal text-base mb-2 last:mb-0"
->
+<p>
   My content forparagraph
 </p>
 `;
 
-exports[`<Typography /> with no type 1`] = `
-<span
-  class="font-normal text-base mb-2 last:mb-0"
->
-  My content for no text type
+exports[`<Typography /> should render with: text 1`] = `
+<span>
+  My content fortext
 </span>
 `;

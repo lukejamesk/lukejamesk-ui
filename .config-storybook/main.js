@@ -1,15 +1,26 @@
 require('@babel/register')
+
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
   stories: ['../**/*.stories.js'],
   addons: ['@storybook/addon-knobs/register'],
   webpackFinal: async (config) => {
+    config.plugins.push(new MiniCssExtractPlugin())
+
+    config.module.rules.find((rule) => rule.test.toString() === '/\\.css$/').exclude = /\.css$/
+
     config.module.rules.push({
-      test: /\.scss$/,
+      test: /\.css$/,
       use: [
-        'style-loader',
-        'css-loader',
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+          },
+        },
         {
           loader: 'postcss-loader',
           options: {

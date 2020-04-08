@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> Should render 1`] = `
+<button
+  class="ljk-bg-gray-200 ljk-hover:bg-gray-400 ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+  tabindex="0"
+  type="button"
+>
+  <span>
+    My content for button
+  </span>
+</button>
+`;

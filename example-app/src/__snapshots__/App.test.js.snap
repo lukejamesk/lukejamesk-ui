@@ -3,41 +3,40 @@
 exports[`<App /> should render 1`] = `
 Array [
   <h1
-    class="text-3xl font-medium mb-4 last:mb-0"
+    class="ljk-typo-h1"
   >
     Test
   </h1>,
-  <p
-    class="font-normal text-base mb-2 last:mb-0"
+  <span
+    class="ljk-typo-p"
   >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
-  </p>,
+  </span>,
   <blockquote
-    class="p-2 italic border-solid border-l-4 border-blue-500 rounded bg-gray-300 text-base mb-2 last:mb-0"
+    class="ljk-typo-blockquote"
   >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
     <strong
-      class="font-semibold text-base mb-2 last:mb-0"
+      class="ljk-typo-b"
     >
       Doloribus perferendis molestiae.
     </strong>
   </blockquote>,
   <div
-    class="mt-4"
+    class="ljk-mt-m"
   >
     <button
-      class="text-blue-500 p-2 rounded uppercase text-base"
+      class="ljk-text-primary ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+      tabindex="0"
       type="button"
     >
-      <span
-        class="font-normal text-base mb-2 last:mb-0"
-      >
+      <span>
         <span
-          class="text-blue-500"
+          class="ljk-text-primary"
         >
           <svg
             aria-hidden="true"
-            class="svg-inline--fa fa-coffee fa-w-20 fill-current"
+            class="svg-inline--fa fa-coffee fa-w-20 ljk-fill-current"
             data-icon="coffee"
             data-prefix="fas"
             focusable="false"
@@ -54,68 +53,75 @@ Array [
       </span>
     </button>
     <button
-      class="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded uppercase text-base"
+      class="ljk-bg-primary ljk-hover:primary-dark ljk-text-white ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+      tabindex="0"
       type="button"
     >
-      <span
-        class="font-normal text-base mb-2 last:mb-0"
-      >
+      <span>
         My Button
       </span>
     </button>
     <button
-      class="text-blue-500 p-2 rounded uppercase text-base"
+      class="ljk-text-primary ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+      tabindex="0"
       type="button"
     >
-      <span
-        class="font-normal text-base mb-2 last:mb-0"
-      >
+      <span>
         Second action
       </span>
     </button>
   </div>,
   <div
-    class="mt-4"
+    class="ljk-mt-m"
   >
     <h2
-      class="text-2xl font-medium mb-3 last:mb-0"
+      class="ljk-typo-h2"
     >
       This content only shows at medium at above
     </h2>
-    <p
-      class="font-normal text-base mb-2 last:mb-0"
+    <span
+      class="ljk-typo-p"
     >
       Lorem ipsum dolor sit amet, consectetur.
-    </p>
+    </span>
   </div>,
   <div
-    class="mt-4"
+    class="ljk-mt-m"
   >
     <div>
       <button
         aria-controls="ExpansionPanelBody-App1"
         aria-expanded="false"
-        class="block flex border-b-2 border-black p-2 w-full"
+        class="ljk-block ljk-flex ljk-border-b-2 ljk-border-black ljk-p-s ljk-w-full"
         id="ExpansionPanelHead-App1"
+        tabindex="0"
         type="button"
       >
         <div
-          class="mr-4 self-center"
+          class="ljk-mr-m ljk-self-center"
         >
-          <h3
-            class="text-xl font-medium mb-2 last:mb-0"
-          >
-            <span
-              class="text-black"
-            />
+          <h3>
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-arrow-down fa-w-14 "
+              data-icon="arrow-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 448 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+                fill="currentColor"
+              />
+            </svg>
           </h3>
         </div>
         <div
-          class=" self-center"
+          class="ljk-self-center"
         >
-          <h3
-            class="text-xl font-medium mb-2 last:mb-0"
-          >
+          <h3>
             My expansion panel title
           </h3>
         </div>
@@ -125,63 +131,71 @@ Array [
       <button
         aria-controls="ExpansionPanelBody-App2"
         aria-expanded="false"
-        class="block flex border-b-2 border-black p-2 w-full"
+        class="ljk-block ljk-flex ljk-border-b-2 ljk-border-black ljk-p-s ljk-w-full"
         id="ExpansionPanelHead-App2"
+        tabindex="0"
         type="button"
       >
         <div
-          class="mr-4 self-center"
+          class="ljk-mr-m ljk-self-center"
         >
-          <h3
-            class="text-xl font-medium mb-2 last:mb-0"
-          >
-            <span
-              class="text-black"
-            />
-          </h3>
-        </div>
-        <div
-          class=" self-center"
-        >
-          <h3
-            class="text-xl font-medium mb-2 last:mb-0"
-          >
-            My expansion panel title 
-          </h3>
-        </div>
-      </button>
-      <button
-        class="bg-gray-200 hover:bg-gray-400 p-2 rounded uppercase text-base"
-        type="button"
-      >
-        <span
-          class="font-normal text-base mb-2 last:mb-0"
-        >
-          <span
-            class="text-black"
-          >
+          <h3>
             <svg
               aria-hidden="true"
-              class="svg-inline--fa fa-coffee fa-w-20 fill-current"
-              data-icon="coffee"
+              class="svg-inline--fa fa-arrow-down fa-w-14 "
+              data-icon="arrow-down"
               data-prefix="fas"
               focusable="false"
               role="img"
-              viewBox="0 0 640 512"
+              viewBox="0 0 448 512"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
                 fill="currentColor"
               />
             </svg>
-          </span>
-        </span>
+          </h3>
+        </div>
+        <div
+          class="ljk-self-center"
+        >
+          <h3>
+            My expansion panel title 
+            <span
+              class="ljk-bg-gray-200 ljk-hover:bg-gray-400 ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+              tabindex="0"
+              type="button"
+            >
+              <span>
+                <span
+                  class="ljk-text-black"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-coffee fa-w-20 ljk-fill-current"
+                    data-icon="coffee"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 640 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M192 384h192c53 0 96-43 96-96h32c70.6 0 128-57.4 128-128S582.6 32 512 32H120c-13.3 0-24 10.7-24 24v232c0 53 43 96 96 96zM512 96c35.3 0 64 28.7 64 64s-28.7 64-64 64h-32V96h32zm47.7 384H48.3c-47.6 0-61-64-36-64h583.3c25 0 11.8 64-35.9 64z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </span>
+            </span>
+          </h3>
+        </div>
       </button>
     </div>
   </div>,
   <div
-    class="fixed bottom-0 right-0 text-white bg-black py-1 px-4 mt-4"
+    class="ljk-fixed ljk-bottom-0 ljk-right-0 ljk-text-white ljk-bg-black ljk-py-1 ljk-px-m ljk-mt-m"
   >
     m
   </div>,

@@ -1,15 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Breakpoints, ShowAt, HideAt, library } from '@lukejamesk/core'
 import {
-  Breakpoints,
-  ShowAt,
-  HideAt,
-  library,
+  ButtonIcon,
   ExpansionPanel,
   ExpansionPanelHeader,
   ExpansionPanelBody,
-} from '@lukejamesk/core'
-import { ButtonIcon } from '@lukejamesk/design-system'
+} from '@lukejamesk/design-system'
 import { coffee } from '@lukejamesk/icons'
 import { H1, H2, P, B, Blockquote, PrimaryButton, View, SecondaryButton, Debug } from './components'
 
@@ -59,7 +56,7 @@ const App = ({ name }) => {
         </ExpansionPanel>
         <ExpansionPanel id="App2">
           <ExpansionPanelHeader>
-            My expansion panel title <ButtonIcon icon="coffee" />
+            My expansion panel title <ButtonIcon icon="coffee" element="span" />
           </ExpansionPanelHeader>
           <ExpansionPanelBody>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>

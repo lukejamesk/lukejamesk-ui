@@ -17,20 +17,12 @@
     "build:pre": "rimraf build"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "prop-types": "^15.7.2"
-  },
-  "devDependencies": {
-    "@storybook/addon-knobs": "^5.1.11",
-    "@storybook/react": "^5.1.11",
-    "enzyme": "^3.10.0"
-  },
-  "peerDependencies": {
     "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1"
   },
+  "devDependencies": {},
+  "peerDependencies": {},
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"

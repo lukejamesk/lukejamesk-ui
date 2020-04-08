@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ButtonBase /> Should render 1`] = `
+<button
+  tabindex="0"
+  type="button"
+>
+  My content for button
+</button>
+`;

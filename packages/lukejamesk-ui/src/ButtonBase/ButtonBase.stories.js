@@ -3,7 +3,7 @@ import { text } from '@storybook/addon-knobs'
 import ButtonBase from './ButtonBase'
 
 export default {
-  title: 'UI|ButtonBase',
+  title: 'Core|ButtonBase',
 }
 
 export const Default = () => <ButtonBase>{text('text', 'My Button')}</ButtonBase>

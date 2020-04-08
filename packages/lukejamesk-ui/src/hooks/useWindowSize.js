@@ -11,10 +11,10 @@ const useWindowSize = () => {
     const handleResize = () => {
       setWindowSize(getSize())
     }
-    window.addEventListener('resize', handleResize)
+    window.addEventListener('resize', handleResize, { bubbles: true })
 
     return () => window.removeEventListener('resize', handleResize)
-  })
+  }, [])
 
   return windowSize
 }

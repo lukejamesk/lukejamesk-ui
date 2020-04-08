@@ -1,0 +1,39 @@
+.ljk-typo {
+  &-h1 {
+    @apply text-3xl font-medium mb-s;
+  }
+
+  &-h2 {
+    @apply text-2xl font-medium mb-s;
+  }
+
+  &-h3 {
+    @apply text-xl font-medium mb-xs;
+  }
+
+  &-p,
+  &-text {
+    @apply font-normal text-base mb-xs;
+  }
+
+  &-blockquote {
+    @apply p-xs italic border-solid border-l-4 border-primary rounded bg-gray-300 text-base mb-xs;
+  }
+
+  .typo-bold {
+    @apply font-semibold text-base mb-xs;
+  }
+
+  &-h1,
+  &-h2,
+  &-h3,
+  &-p,
+  &-text,
+  &-blockquote,
+  &-bold {
+    @apply block;
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}

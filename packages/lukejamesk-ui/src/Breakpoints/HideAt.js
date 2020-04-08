@@ -6,7 +6,7 @@ const HideAt = ({ bp, children }) => {
   const { currentBreakpoint, breakpoints } = useBreakpoints()
   const breakpoint = breakpoints[bp]
 
-  if (!breakpoint) {
+  if (breakpoint === undefined) {
     throw new Error(`Breakpoint ${bp} was not found in breakpoints ${breakpoints}`)
   }
 
