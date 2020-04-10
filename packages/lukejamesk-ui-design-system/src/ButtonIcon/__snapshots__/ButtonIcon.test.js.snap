@@ -2,7 +2,7 @@
 
 exports[`<ButtonIcon /> Should render with text 1`] = `
 <button
-  class="ljk-bg-gray-200 ljk-hover:bg-gray-400 ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+  class="ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
   tabindex="0"
   type="button"
 >
@@ -27,7 +27,7 @@ exports[`<ButtonIcon /> Should render with text 1`] = `
       </svg>
     </span>
     <span
-      class="ljk-ml-s"
+      class="ljk-ml-xxs"
     >
       My content for button
     </span>
@@ -37,7 +37,7 @@ exports[`<ButtonIcon /> Should render with text 1`] = `
 
 exports[`<ButtonIcon /> Should render without text 1`] = `
 <button
-  class="ljk-bg-gray-200 ljk-hover:bg-gray-400 ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+  class="ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
   tabindex="0"
   type="button"
 >

@@ -24,9 +24,17 @@ export const typographyVariants = [
 ]
 
 const Typography = forwardRef(({ variant = 'text', className, paragraph = false, ...other }, ref) => {
-  const v = paragraph ? variantMapping.paragraph : variantMapping[variant]
+  const vMapped = paragraph ? 'paragraph' : variant
+  // const v = paragraph ? variantMapping.paragraph : variantMapping[variant]
 
-  return <TypographyCore variant={variant} className={clsx(v, className)} ref={ref} {...other} />
+  return (
+    <TypographyCore
+      variant={vMapped}
+      className={clsx(variantMapping[vMapped], className)}
+      ref={ref}
+      {...other}
+    />
+  )
 })
 
 Typography.displayName = 'Typography'

@@ -4,12 +4,13 @@ import clsx from 'clsx'
 import { ButtonBase, Typography } from '@lukejamesk/core'
 
 const variantMapping = {
-  default: 'ljk-bg-gray-200 ljk-hover:bg-gray-400',
+  default: '',
   primary: 'ljk-bg-primary ljk-hover:primary-dark ljk-text-white',
   secondary: 'ljk-text-primary',
+  danger: 'ljk-bg-red-600 ljk-text-white',
 }
 
-export const buttonVariants = ['default', 'primary', 'secondary']
+export const buttonVariants = ['default', 'primary', 'secondary', 'danger']
 
 const Button = forwardRef(({ variant, children, className, ...props }, ref) => {
   const v = variant || 'default'

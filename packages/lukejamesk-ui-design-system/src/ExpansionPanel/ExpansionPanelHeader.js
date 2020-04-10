@@ -1,7 +1,9 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import { ExpanderContext, ButtonBase, Icon, Typography, library } from '@lukejamesk/core'
+import { ExpanderContext, ButtonBase, library } from '@lukejamesk/core'
 import { arrowDown, arrowUp } from '@lukejamesk/icons'
+import Typography from '../Typography'
+import Icon from '../Icon'
 
 library.add(arrowUp)
 library.add(arrowDown)
@@ -11,7 +13,7 @@ const ExpansionPanelHeader = ({ children }) => {
 
   return (
     <ButtonBase
-      className="ljk-block ljk-flex ljk-border-b-2 ljk-border-black ljk-p-s ljk-w-full"
+      className="ljk-block ljk-flex ljk-pt-s ljk-pb-s ljk-w-full"
       onClick={onChange}
       aria-expanded={expanded}
       id={id && `ExpansionPanelHead-${id}`}

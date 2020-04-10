@@ -10,12 +10,17 @@ Array [
   "ExpanderContext",
   "ExpanderHeaderInteractor",
   "ExpanderInteractor",
+  "FocusTrap",
   "HideAt",
   "Icon",
+  "Modal",
+  "ModalManager",
   "ShowAt",
   "Typography",
   "library",
   "useBreakpoints",
+  "useForkRef",
+  "useModalHandlers",
   "useWindowSize",
 ]
 `;

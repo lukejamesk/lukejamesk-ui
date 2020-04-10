@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Breakpoints, ShowAt, HideAt, library } from '@lukejamesk/core'
 import {
@@ -6,6 +6,7 @@ import {
   ExpansionPanel,
   ExpansionPanelHeader,
   ExpansionPanelBody,
+  Modal,
 } from '@lukejamesk/design-system'
 import { coffee } from '@lukejamesk/icons'
 import { H1, H2, P, B, Blockquote, PrimaryButton, View, SecondaryButton, Debug } from './components'
@@ -23,6 +24,7 @@ const breakpoints = {
 }
 
 const App = ({ name }) => {
+  const [modalOpened, setModalOpened] = useState(false)
   return (
     <>
       <H1>{name}</H1>
@@ -32,9 +34,9 @@ const App = ({ name }) => {
         <B>Doloribus perferendis molestiae.</B>
       </Blockquote>
       <View>
-        <ButtonIcon variant="secondary" icon="coffee" />
-        <PrimaryButton>My Button</PrimaryButton>
-        <SecondaryButton>Second action</SecondaryButton>
+        <ButtonIcon variant="secondary" icon="coffee" onClick={() => setModalOpened(true)} />
+        <PrimaryButton onClick={() => setModalOpened(true)}>My Button</PrimaryButton>
+        <SecondaryButton onClick={() => setModalOpened(true)}>Second action</SecondaryButton>
       </View>
       <View>
         <ShowAt bp="m">
@@ -65,6 +67,28 @@ const App = ({ name }) => {
           </ExpansionPanelBody>
         </ExpansionPanel>
       </View>
+      <Modal open={modalOpened} onClose={() => setModalOpened(false)}>
+        <Modal.Head>My modal content</Modal.Head>
+        <Modal.Body>
+          <P>Some content</P>
+          <ExpansionPanel id="App3">
+            <ExpansionPanelHeader>My expansion panel title</ExpansionPanelHeader>
+            <ExpansionPanelBody>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+            </ExpansionPanelBody>
+          </ExpansionPanel>
+          <ExpansionPanel id="App4">
+            <ExpansionPanelHeader>My expansion panel title</ExpansionPanelHeader>
+            <ExpansionPanelBody>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+              <P>Lorem ipsum dolor sit amet, consectetur.</P>
+            </ExpansionPanelBody>
+          </ExpansionPanel>
+        </Modal.Body>
+      </Modal>
       <Debug />
     </>
   )

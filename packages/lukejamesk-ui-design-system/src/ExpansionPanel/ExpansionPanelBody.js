@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const ExpansionPanelBody = ({ children }) => {
-  return <div className="ljk-rounded-b-lg ljk-bg-gray-300 ljk-p-m">{children}</div>
+  return <div className="ljk-pt-m ljk-pb-m">{children}</div>
 }
 
 ExpansionPanelBody.propTypes = {

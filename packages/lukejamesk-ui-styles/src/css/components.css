@@ -17,7 +17,7 @@
   }
 
   &-blockquote {
-    @apply p-xs italic border-solid border-l-4 border-primary rounded bg-gray-300 text-base mb-xs;
+    @apply p-xs italic border-solid border-l-4 border-secondary rounded bg-gray-200 text-base mb-xs;
   }
 
   .typo-bold {
@@ -32,6 +32,7 @@
   &-blockquote,
   &-bold {
     @apply block;
+
     &:last-child {
       @apply mb-0;
     }
