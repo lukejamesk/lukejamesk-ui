@@ -21,7 +21,6 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.9.0",
     "@fullhuman/postcss-purgecss": "^2.1.0",
-    "@lukejamesk/test-utils": "^0.0.1-0.0.1-alpha.1.0",
     "@storybook/addon-knobs": "^5.1.11",
     "@storybook/react": "^5.1.11",
     "autoprefixer": "^9.7.6",
