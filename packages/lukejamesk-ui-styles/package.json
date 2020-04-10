@@ -15,7 +15,7 @@
     "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build  --ignore \"**/*.test.js\" --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
     "build:pre": "rimraf build",
-    "build:tailwind": "postcss src/scss/base.scss -o build/scss/tailwind.css"
+    "build:tailwind": "postcss src/css/ui.css -o build/css/lukejamesk.css"
   },
   "peerDependencies": {
     "react": "^16.9.0",
