@@ -7,11 +7,11 @@ Array [
   >
     Test
   </h1>,
-  <span
+  <p
     class="ljk-typo-p"
   >
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perferendis molestiae.
-  </span>,
+  </p>,
   <blockquote
     class="ljk-typo-blockquote"
   >
@@ -79,11 +79,11 @@ Array [
     >
       This content only shows at medium at above
     </h2>
-    <span
+    <p
       class="ljk-typo-p"
     >
       Lorem ipsum dolor sit amet, consectetur.
-    </span>
+    </p>
   </div>,
   <div
     class="ljk-mt-m"
@@ -92,7 +92,7 @@ Array [
       <button
         aria-controls="ExpansionPanelBody-App1"
         aria-expanded="false"
-        class="ljk-block ljk-flex ljk-border-b-2 ljk-border-black ljk-p-s ljk-w-full"
+        class="ljk-block ljk-flex ljk-pt-s ljk-pb-s ljk-w-full"
         id="ExpansionPanelHead-App1"
         tabindex="0"
         type="button"
@@ -100,28 +100,36 @@ Array [
         <div
           class="ljk-mr-m ljk-self-center"
         >
-          <h3>
-            <svg
-              aria-hidden="true"
-              class="svg-inline--fa fa-arrow-down fa-w-14 "
-              data-icon="arrow-down"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
+          <h3
+            class="ljk-typo-h3"
+          >
+            <span
+              class="ljk-text-black"
             >
-              <path
-                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
-                fill="currentColor"
-              />
-            </svg>
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-arrow-down fa-w-14 ljk-fill-current"
+                data-icon="arrow-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
           </h3>
         </div>
         <div
           class="ljk-self-center"
         >
-          <h3>
+          <h3
+            class="ljk-typo-h3"
+          >
             My expansion panel title
           </h3>
         </div>
@@ -131,7 +139,7 @@ Array [
       <button
         aria-controls="ExpansionPanelBody-App2"
         aria-expanded="false"
-        class="ljk-block ljk-flex ljk-border-b-2 ljk-border-black ljk-p-s ljk-w-full"
+        class="ljk-block ljk-flex ljk-pt-s ljk-pb-s ljk-w-full"
         id="ExpansionPanelHead-App2"
         tabindex="0"
         type="button"
@@ -139,31 +147,39 @@ Array [
         <div
           class="ljk-mr-m ljk-self-center"
         >
-          <h3>
-            <svg
-              aria-hidden="true"
-              class="svg-inline--fa fa-arrow-down fa-w-14 "
-              data-icon="arrow-down"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              viewBox="0 0 448 512"
-              xmlns="http://www.w3.org/2000/svg"
+          <h3
+            class="ljk-typo-h3"
+          >
+            <span
+              class="ljk-text-black"
             >
-              <path
-                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
-                fill="currentColor"
-              />
-            </svg>
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-arrow-down fa-w-14 ljk-fill-current"
+                data-icon="arrow-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 448 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
           </h3>
         </div>
         <div
           class="ljk-self-center"
         >
-          <h3>
+          <h3
+            class="ljk-typo-h3"
+          >
             My expansion panel title 
             <span
-              class="ljk-bg-gray-200 ljk-hover:bg-gray-400 ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+              class="ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
               tabindex="0"
               type="button"
             >

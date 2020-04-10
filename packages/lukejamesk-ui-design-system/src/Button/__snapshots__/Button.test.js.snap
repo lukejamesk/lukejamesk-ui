@@ -2,7 +2,7 @@
 
 exports[`<Button /> Should render 1`] = `
 <button
-  class="ljk-bg-gray-200 ljk-hover:bg-gray-400 ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
+  class="ljk-p-xs ljk-rounded ljk-uppercase ljk-text-base"
   tabindex="0"
   type="button"
 >

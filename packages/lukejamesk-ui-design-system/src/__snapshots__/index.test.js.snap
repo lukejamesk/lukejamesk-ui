@@ -4,15 +4,18 @@ exports[`@lukejamesk/design-system should match snapshot 1`] = `
 Array [
   "Button",
   "ButtonIcon",
+  "ConfirmationDialog",
   "ExpansionPanel",
   "ExpansionPanelBody",
   "ExpansionPanelHeader",
   "Icon",
+  "Modal",
   "Typography",
   "buttonIconVariants",
   "buttonVariants",
   "iconSizes",
   "iconVariants",
+  "modalSizes",
   "typographyVariants",
 ]
 `;
