@@ -1,19 +1,19 @@
 import { createInteractor } from '@lukejamesk/test-utils'
 import ButtonBaseInteractor from '../ButtonBase/ButtonBase.interactor'
 
-const expanderHeaderElements = (wrapper) => ({
+const expanderHeadElements = (wrapper) => ({
   header() {
     return ButtonBaseInteractor(wrapper.find('ButtonBase'))
   },
 })
 
-const expanderHeaderActions = (elements) => ({
+const expanderHeadActions = (elements) => ({
   click() {
     elements.header().actions.click()
     return this
   },
 })
 
-const ExpanderHeaderInteractor = createInteractor(expanderHeaderElements, expanderHeaderActions, undefined)
+const ExpanderHeadInteractor = createInteractor(expanderHeadElements, expanderHeadActions, undefined)
 
-export default ExpanderHeaderInteractor
+export default ExpanderHeadInteractor

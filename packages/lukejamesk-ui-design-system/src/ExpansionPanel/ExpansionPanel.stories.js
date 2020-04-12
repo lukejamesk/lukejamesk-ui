@@ -1,22 +1,20 @@
 import React from 'react'
 import { ExpanderContext } from '@lukejamesk/core'
 import ExpansionPanel from './ExpansionPanel'
-import ExpansionPanelHeader from './ExpansionPanelHeader'
-import ExpansionPanelBody from './ExpansionPanelBody'
 
 export default {
   title: 'Design System|Expansion Panel',
   component: ExpansionPanel,
   subcomponents: {
-    ExpansionPanelHeader,
-    ExpansionPanelBody,
+    'ExpansionPanel.Head': ExpansionPanel.Head,
+    'ExpansionPanel.Body': ExpansionPanel.Body,
     ExpanderContext,
   },
 }
 
 export const Default = () => (
-  <ExpansionPanel id="story">
-    <ExpansionPanelHeader>Header</ExpansionPanelHeader>
-    <ExpansionPanelBody>body</ExpansionPanelBody>
+  <ExpansionPanel id="story" uncontrolled>
+    <ExpansionPanel.Head>Header</ExpansionPanel.Head>
+    <ExpansionPanel.Body>body</ExpansionPanel.Body>
   </ExpansionPanel>
 )

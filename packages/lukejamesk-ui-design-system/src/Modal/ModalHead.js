@@ -11,7 +11,7 @@ const ModalHead = ({ children }) => {
   const { onClose } = useModalHandlers()
   return (
     <div className="ljk-m-m ljk-flex ljk-justify-between ljk-items-center">
-      <Typography variant="heading3" className="ljk-my-0">
+      <Typography variant="heading2" className="ljk-my-0">
         {children}
       </Typography>
       <ButtonIcon icon="times" onClick={onClose} />

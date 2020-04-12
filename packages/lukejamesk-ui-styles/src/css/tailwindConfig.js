@@ -8,6 +8,7 @@ const tailwindConfig = {
   prefix: 'ljk-',
   variants: {
     margin: ['last'],
+    border: ['focus'],
   },
   theme: {
     screens: compose(

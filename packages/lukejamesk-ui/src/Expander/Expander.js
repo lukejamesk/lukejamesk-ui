@@ -2,17 +2,17 @@ import React, { Children, useCallback, useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import ExpanderContext from './ExpanderContext'
 
-const Expander = ({ id, expanded: expandedProp, controlled, onChange, children }) => {
+const Expander = ({ id, expanded: expandedProp, uncontrolled, onChange, children }) => {
   const [title, body] = Children.toArray(children)
   const [expandedState, setIsExpanded] = useState(expandedProp)
-  const expanded = controlled ? expandedProp : expandedState
+  const expanded = !uncontrolled ? expandedProp : expandedState
 
   const handleChange = useCallback(() => {
-    if (!controlled) {
+    if (uncontrolled) {
       setIsExpanded(!expanded)
     }
     onChange(!expanded)
-  }, [expanded, controlled, onChange])
+  }, [expanded, uncontrolled, onChange])
 
   const panelContext = useMemo(
     () => ({
@@ -39,14 +39,14 @@ Expander.propTypes = {
   id: PropTypes.string.isRequired,
   expanded: PropTypes.bool,
   onChange: PropTypes.func,
-  controlled: PropTypes.bool,
+  uncontrolled: PropTypes.bool,
   children: PropTypes.node.isRequired,
 }
 
 Expander.defaultProps = {
   expanded: false,
   onChange: () => {},
-  controlled: false,
+  uncontrolled: false,
 }
 
 export default Expander

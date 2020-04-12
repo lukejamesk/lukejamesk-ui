@@ -1,10 +1,10 @@
 import { createInteractor } from '@lukejamesk/test-utils'
-import ExpanderHeaderInteractor from './ExpanderHeader.interactor'
+import ExpanderHeadInteractor from './ExpanderHead.interactor'
 import ExpanderBodyInteractor from './ExpanderBody.interactor'
 
 const expansionPanelElements = (wrapper) => ({
   header() {
-    return ExpanderHeaderInteractor(wrapper.find('ExpanderHeader'))
+    return ExpanderHeadInteractor(wrapper.find('ExpanderHead'))
   },
   body() {
     return ExpanderBodyInteractor(wrapper.find('ExpanderBody'))

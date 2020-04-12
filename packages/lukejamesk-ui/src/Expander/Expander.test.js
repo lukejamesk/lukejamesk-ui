@@ -1,14 +1,14 @@
 import React from 'react'
 import ExpanderInteractor from './Expander.interactor'
 import Expander from './Expander'
-import ExpanderHeader from './ExpanderHeader'
+import ExpanderHead from './ExpanderHead'
 import ExpanderBody from './ExpanderBody'
 
 describe('<Expander />', () => {
   it('should allow to only mount children when it is expanded', () => {
     const interactor = ExpanderInteractor(
-      <Expander id="test">
-        <ExpanderHeader>My title</ExpanderHeader>
+      <Expander id="test" uncontrolled>
+        <ExpanderHead>My title</ExpanderHead>
         <ExpanderBody>My content</ExpanderBody>
       </Expander>,
     )

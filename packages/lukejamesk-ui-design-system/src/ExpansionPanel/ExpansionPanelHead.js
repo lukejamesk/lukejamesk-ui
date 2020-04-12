@@ -8,7 +8,7 @@ import Icon from '../Icon'
 library.add(arrowUp)
 library.add(arrowDown)
 
-const ExpansionPanelHeader = ({ children }) => {
+const ExpansionPanelHead = ({ children }) => {
   const { expanded, onChange, id } = useContext(ExpanderContext)
 
   return (
@@ -31,8 +31,8 @@ const ExpansionPanelHeader = ({ children }) => {
   )
 }
 
-ExpansionPanelHeader.propTypes = {
+ExpansionPanelHead.propTypes = {
   children: PropTypes.node,
 }
 
-export default ExpansionPanelHeader
+export default ExpansionPanelHead
