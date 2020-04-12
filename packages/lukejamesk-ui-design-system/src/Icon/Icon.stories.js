@@ -14,6 +14,7 @@ forEach((icon) => {
 
 export default {
   title: 'Design System|Icon',
+  component: Icon,
 }
 
 export const Default = () => (

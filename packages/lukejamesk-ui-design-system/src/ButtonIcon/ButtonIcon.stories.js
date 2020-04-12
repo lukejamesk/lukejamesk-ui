@@ -8,6 +8,7 @@ library.add(coffee)
 
 export default {
   title: 'Design System|Button Icon',
+  component: ButtonIcon,
 }
 
 const variantsKnob = () => select('Variant', buttonIconVariants, buttonIconVariants[0])

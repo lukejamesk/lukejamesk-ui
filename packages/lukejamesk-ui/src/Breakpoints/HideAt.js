@@ -14,7 +14,7 @@ const HideAt = ({ bp, children }) => {
 }
 
 HideAt.propTypes = {
-  breakpoints: PropTypes.objectOf(PropTypes.number),
+  bp: PropTypes.string,
   children: PropTypes.node,
 }
 

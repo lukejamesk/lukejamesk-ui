@@ -4,6 +4,7 @@ import Button from './Button'
 
 export default {
   title: 'Design System|Button',
+  component: Button,
 }
 
 export const Default = () => <Button>{text('text', 'My Button')}</Button>

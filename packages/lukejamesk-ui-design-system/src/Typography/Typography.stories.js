@@ -8,6 +8,7 @@ Quisque rhoncus hendrerit leo.`
 
 export default {
   title: 'Design System|Typography',
+  component: Typography,
 }
 
 export const Paragraph = () => <Typography paragraph={boolean}>{text('text', exampleText)}</Typography>
