@@ -6,6 +6,12 @@ import { DeleteButton } from '../Buttons'
 
 export default {
   title: 'Design System|Confirmation Dialog',
+  component: ConfirmationDialog,
+  subcomponents: {
+    'ConfirmationDialog.Title': ConfirmationDialog.Title,
+    'ConfirmationDialog.Body': ConfirmationDialog.Body,
+    'ConfirmationDialog.Actions': ConfirmationDialog.Actions,
+  },
 }
 
 export const Default = () => {
@@ -24,7 +30,7 @@ export const Default = () => {
           <Typography paragraph>Are you sure you would like to delete this?</Typography>
         </ConfirmationDialog.Body>
         <ConfirmationDialog.Actions>
-          <Button onClick={closeModal}>No, thanks</Button>
+          <Button onClick={closeModal}>No, thanks </Button>
           <DeleteButton onClick={closeModal} />
         </ConfirmationDialog.Actions>
       </ConfirmationDialog>

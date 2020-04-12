@@ -6,6 +6,7 @@ import Typography from '../Typography'
 
 export default {
   title: 'Core|Modal',
+  component: Modal,
 }
 
 const ModalStoryBody = () => {

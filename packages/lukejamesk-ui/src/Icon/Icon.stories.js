@@ -8,6 +8,7 @@ library.add(coffee)
 
 export default {
   title: 'Core|Icon',
+  component: Icon,
 }
 
 export const Default = () => <Icon name={text('icon', 'coffee')} variant="primary" size="l" />

@@ -15,7 +15,7 @@ const ShowAt = ({ bp, children }) => {
 }
 
 ShowAt.propTypes = {
-  breakpoints: PropTypes.objectOf(PropTypes.number),
+  bp: PropTypes.string,
   children: PropTypes.node,
 }
 

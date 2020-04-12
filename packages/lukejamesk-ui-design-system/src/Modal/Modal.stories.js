@@ -5,6 +5,12 @@ import Modal from './Modal'
 
 export default {
   title: 'Design System|Modal',
+  component: Modal,
+  subcomponents: {
+    'Modal.Head': Modal.Head,
+    'Modal.Body': Modal.Body,
+    'Modal.Actions': Modal.Actions,
+  },
 }
 
 export const Default = () => {

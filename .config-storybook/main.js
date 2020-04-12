@@ -5,7 +5,12 @@ const path = require('path')
 
 module.exports = {
   stories: ['../**/*.stories.js'],
-  addons: ['@storybook/addon-knobs/register'],
+  addons: [
+    '@storybook/addon-knobs/register',
+    '@storybook/addon-storysource',
+    '@storybook/addon-docs',
+    '@storybook/addon-viewport/register',
+  ],
   webpackFinal: async (config) => {
     config.plugins.push(new MiniCssExtractPlugin())
 

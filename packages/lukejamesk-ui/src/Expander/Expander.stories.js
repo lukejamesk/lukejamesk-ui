@@ -5,6 +5,8 @@ import ExpanderBody from './ExpanderBody'
 
 export default {
   title: 'Core|Expander',
+  component: Expander,
+  subcomponents: { ExpanderHeader, ExpanderBody },
 }
 
 export const Default = () => (
