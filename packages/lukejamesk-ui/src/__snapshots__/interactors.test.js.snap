@@ -4,7 +4,7 @@ exports[`@lukejamesk/core/interactors should match snapshot 1`] = `
 Array [
   "ButtonBaseInteractor",
   "ExpanderBodyInteractor",
-  "ExpanderHeaderInteractor",
+  "ExpanderHeadInteractor",
   "ExpanderInteractor",
 ]
 `;

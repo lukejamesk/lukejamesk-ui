@@ -1,9 +1,9 @@
 import { createInteractor } from '@lukejamesk/test-utils'
-import { ExpansionPanelHeaderInteractor, ExpansionPanelBodyInteractor } from '@lukejamesk/core'
+import { ExpansionPanelHeadInteractor, ExpansionPanelBodyInteractor } from '@lukejamesk/core'
 
 const expansionPanelElements = (wrapper) => ({
   header() {
-    return ExpansionPanelHeaderInteractor(wrapper.find('ExpansionPanelHeader'))
+    return ExpansionPanelHeadInteractor(wrapper.find('ExpansionPanelHead'))
   },
   body() {
     return ExpansionPanelBodyInteractor(wrapper.find('ExpansionPanelBody'))

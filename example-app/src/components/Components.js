@@ -7,6 +7,7 @@ export const B = (props) => <Typography variant="bold" {...props} />
 export const P = (props) => <Typography paragraph {...props} />
 export const H1 = (props) => <Typography variant="heading1" {...props} />
 export const H2 = (props) => <Typography variant="heading2" {...props} />
+export const H3 = (props) => <Typography variant="heading3" {...props} />
 export const Blockquote = (props) => <Typography variant="blockquote" {...props} />
 export const PrimaryButton = (props) => <Button variant="primary" {...props} />
 export const SecondaryButton = (props) => <Button variant="secondary" {...props} />

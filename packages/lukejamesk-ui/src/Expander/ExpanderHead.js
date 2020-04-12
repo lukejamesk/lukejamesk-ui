@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import ButtonBase from '../ButtonBase'
 import ExpanderContext from './ExpanderContext'
 
-const ExpanderHeader = ({ className, children }) => {
+const ExpanderHead = ({ className, children }) => {
   const { expanded, onChange, id } = useContext(ExpanderContext)
 
   return (
@@ -19,9 +19,9 @@ const ExpanderHeader = ({ className, children }) => {
   )
 }
 
-ExpanderHeader.propTypes = {
+ExpanderHead.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
 }
 
-export default ExpanderHeader
+export default ExpanderHead

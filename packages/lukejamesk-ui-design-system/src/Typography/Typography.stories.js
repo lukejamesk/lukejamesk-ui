@@ -1,5 +1,5 @@
 import React from 'react'
-import { text, boolean } from '@storybook/addon-knobs'
+import { text } from '@storybook/addon-knobs'
 import Typography from './Typography'
 
 const exampleText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -11,7 +11,7 @@ export default {
   component: Typography,
 }
 
-export const Paragraph = () => <Typography paragraph={boolean}>{text('text', exampleText)}</Typography>
+export const Paragraph = () => <Typography paragraph>{text('text', exampleText)}</Typography>
 export const Blockquote = () => <Typography variant="blockquote">{text('text', exampleText)}</Typography>
 export const Bold = () => <Typography variant="bold">{text('text', exampleText)}</Typography>
 export const Heading1 = () => <Typography variant="heading1">{text('text', 'Heading 1')}</Typography>

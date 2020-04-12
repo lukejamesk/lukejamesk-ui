@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Breakpoints, ShowAt, HideAt, library } from '@lukejamesk/core'
 import {
+  Button,
   ButtonIcon,
   ExpansionPanel,
-  ExpansionPanelHeader,
-  ExpansionPanelBody,
   Modal,
+  CheckboxField,
+  NumberInputField,
+  TextInputField,
 } from '@lukejamesk/design-system'
 import { coffee } from '@lukejamesk/icons'
-import { H1, H2, P, B, Blockquote, PrimaryButton, View, SecondaryButton, Debug } from './components'
+import { H1, H2, H3, P, B, Blockquote, PrimaryButton, View, SecondaryButton, Debug } from './components'
 
 library.add(coffee)
 
@@ -24,7 +26,7 @@ const breakpoints = {
 }
 
 const App = ({ name }) => {
-  const [modalOpened, setModalOpened] = useState(false)
+  const [modalOpened, setModalOpened] = useState(true)
   return (
     <>
       <H1>{name}</H1>
@@ -48,46 +50,49 @@ const App = ({ name }) => {
         </HideAt>
       </View>
       <View>
-        <ExpansionPanel id="App1">
-          <ExpansionPanelHeader>My expansion panel title</ExpansionPanelHeader>
-          <ExpansionPanelBody>
+        <ExpansionPanel id="App1" uncontrolled>
+          <ExpansionPanel.Head>My expansion panel title</ExpansionPanel.Head>
+          <ExpansionPanel.Body>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>
-          </ExpansionPanelBody>
+          </ExpansionPanel.Body>
         </ExpansionPanel>
-        <ExpansionPanel id="App2">
-          <ExpansionPanelHeader>
+        <ExpansionPanel id="App2" uncontrolled>
+          <ExpansionPanel.Head>
             My expansion panel title <ButtonIcon icon="coffee" element="span" />
-          </ExpansionPanelHeader>
-          <ExpansionPanelBody>
+          </ExpansionPanel.Head>
+          <ExpansionPanel.Body>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>
             <P>Lorem ipsum dolor sit amet, consectetur.</P>
-          </ExpansionPanelBody>
+          </ExpansionPanel.Body>
         </ExpansionPanel>
       </View>
       <Modal open={modalOpened} onClose={() => setModalOpened(false)}>
         <Modal.Head>My modal content</Modal.Head>
         <Modal.Body>
-          <P>Some content</P>
-          <ExpansionPanel id="App3">
-            <ExpansionPanelHeader>My expansion panel title</ExpansionPanelHeader>
-            <ExpansionPanelBody>
-              <P>Lorem ipsum dolor sit amet, consectetur.</P>
-              <P>Lorem ipsum dolor sit amet, consectetur.</P>
-              <P>Lorem ipsum dolor sit amet, consectetur.</P>
-            </ExpansionPanelBody>
+          <H3>Fill out this form</H3>
+          <ExpansionPanel id="App3" expanded uncontrolled>
+            <ExpansionPanel.Head>Section 1</ExpansionPanel.Head>
+            <ExpansionPanel.Body>
+              <TextInputField name="Input1" label="Enter a value" uncontrolled required />
+              <NumberInputField name="Input2" label="Enter a number" uncontrolled />
+              <CheckboxField name="Input3" label="Check to confirm" uncontrolled />
+            </ExpansionPanel.Body>
           </ExpansionPanel>
-          <ExpansionPanel id="App4">
-            <ExpansionPanelHeader>My expansion panel title</ExpansionPanelHeader>
-            <ExpansionPanelBody>
-              <P>Lorem ipsum dolor sit amet, consectetur.</P>
-              <P>Lorem ipsum dolor sit amet, consectetur.</P>
-              <P>Lorem ipsum dolor sit amet, consectetur.</P>
-            </ExpansionPanelBody>
+          <ExpansionPanel id="App4" uncontrolled>
+            <ExpansionPanel.Head>Section 2</ExpansionPanel.Head>
+            <ExpansionPanel.Body>
+              <TextInputField name="Input4" label="Enter a value" uncontrolled />
+              <NumberInputField name="Input4" label="Enter a number" uncontrolled />
+            </ExpansionPanel.Body>
           </ExpansionPanel>
         </Modal.Body>
+        <Modal.Actions>
+          <Button onClick={() => setModalOpened(false)}>Cancel</Button>
+          <PrimaryButton onClick={() => setModalOpened(false)}>Save</PrimaryButton>
+        </Modal.Actions>
       </Modal>
       <Debug />
     </>
