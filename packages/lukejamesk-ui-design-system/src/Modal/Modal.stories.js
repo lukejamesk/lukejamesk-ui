@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { select } from '@storybook/addon-knobs'
 import Button from '../Button'
 import Typography from '../Typography'
-import Modal from './Modal'
+import Modal, { modalSizes } from './Modal'
 
 export default {
   title: 'Design System|Modal',
@@ -23,7 +24,7 @@ export const Default = () => {
       <Button type="button" onClick={() => setModalOpened(true)}>
         Open Modal
       </Button>
-      <Modal open={modalOpened} onClose={closeModal}>
+      <Modal open={modalOpened} onClose={closeModal} size={select('Size', modalSizes, 'm')}>
         <Modal.Head>My title</Modal.Head>
         <Modal.Body>
           <Typography paragraph>Modal content here</Typography>

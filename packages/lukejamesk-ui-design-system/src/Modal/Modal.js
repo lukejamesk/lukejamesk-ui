@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Modal as ModalCore, useModalHandlers } from '@lukejamesk/core'
+import { Modal as ModalCore, useModalHandlers, useBreakpoints } from '@lukejamesk/core'
 import clsx from 'clsx'
+import { keys } from 'ramda'
 import Curtain from '../Curtain'
 import ModalHead from './ModalHead'
 import ModalBody from './ModalBody'
@@ -10,21 +11,21 @@ import ModalActions from './ModalActions'
 export const modalSizes = ['s', 'm', 'l']
 
 const mapSizeToClass = {
-  s: 'ljk-w-1/4',
-  m: 'ljk-w-2/4',
-  l: 'ljk-w-3/4',
+  s: 'ljk-w-full m:ljk-max-w-sm',
+  m: 'ljk-w-full m:ljk-max-w-xl',
+  l: 'ljk-w-full m:ljk-max-w-5xl',
 }
 
 const ModalWrapper = ({ children, size, disableCurtain }) => {
   const { onClose } = useModalHandlers()
-
+  const { currentBreakpoint } = useBreakpoints()
   return (
-    <div className="ljk-fixed ljk-w-full ljk-h-full ljk-top-0 ljk-left-0 ljk-flex ljk-items-start ljk-justify-center ljk-overflow-y-auto ljk-max-h-screen ljk-p-xxxl">
+    <div className="ljk-fixed ljk-w-full ljk-h-full ljk-top-0 ljk-left-0 ljk-flex ljk-items-start ljk-justify-center ljk-overflow-y-auto ljk-max-h-screen ljk-p-m m:ljk-p-xxxl">
       <Curtain onClick={disableCurtain ? undefined : onClose} />
       <div
         className={clsx(
-          mapSizeToClass[size],
-          'ljk-bg-white ljk-md:max-w-md ljk-mx-auto ljk-rounded ljk-shadow-lg ljk-z-50',
+          currentBreakpoint[keys(currentBreakpoint)[0]] < 500 ? 'ljk-w-11/12' : mapSizeToClass[size],
+          'ljk-bg-white  ljk-mx-auto ljk-rounded ljk-shadow-lg ljk-z-50',
         )}
       >
         {children}
