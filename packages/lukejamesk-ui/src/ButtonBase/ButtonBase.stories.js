@@ -3,7 +3,7 @@ import { text } from '@storybook/addon-knobs'
 import ButtonBase from './ButtonBase'
 
 export default {
-  title: 'Core|ButtonBase',
+  title: 'Core/ButtonBase',
   component: ButtonBase,
 }
 

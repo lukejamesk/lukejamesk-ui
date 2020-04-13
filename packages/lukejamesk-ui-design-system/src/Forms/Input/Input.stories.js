@@ -3,7 +3,7 @@ import { select } from '@storybook/addon-knobs'
 import Input, { inputTypes } from './Input'
 
 export default {
-  title: 'Design System|Forms/Input',
+  title: 'Design System/Forms/Input',
   component: Input,
 }
 

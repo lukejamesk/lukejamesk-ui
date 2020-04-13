@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NumberInput from './NumberInput'
 
 export default {
-  title: 'Design System|Forms/Number Input',
+  title: 'Design System/Forms/Number Input',
   component: NumberInput,
 }
 

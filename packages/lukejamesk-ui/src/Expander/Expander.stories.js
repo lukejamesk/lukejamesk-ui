@@ -4,7 +4,7 @@ import ExpanderHeader from './ExpanderHead'
 import ExpanderBody from './ExpanderBody'
 
 export default {
-  title: 'Core|Expander',
+  title: 'Core/Expander',
   component: Expander,
 }
 

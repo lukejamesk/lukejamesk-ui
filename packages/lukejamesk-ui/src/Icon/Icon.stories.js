@@ -7,7 +7,7 @@ import Icon from './Icon'
 library.add(coffee)
 
 export default {
-  title: 'Core|Icon',
+  title: 'Core/Icon',
   component: Icon,
 }
 

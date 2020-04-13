@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import CheckboxField from './CheckboxField'
 
 export default {
-  title: 'Design System|Forms/Layout/Checkbox Field',
+  title: 'Design System/Forms/Layout/Checkbox Field',
   component: CheckboxField,
 }
 

@@ -25,7 +25,7 @@ const Component = () => {
 }
 
 export default {
-  title: 'Core|Breakpoints',
+  title: 'Core/Breakpoints',
   decorators: [(storyFn) => <Breakpoints breakpoints={defaultTheme.breakpoints}>{storyFn()}</Breakpoints>],
   component: Breakpoints,
   subcomponents: { ShowAt, HideAt },

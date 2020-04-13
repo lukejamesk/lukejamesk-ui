@@ -5,7 +5,7 @@ import { InputLabel } from '../InputLabel'
 import { Checkbox } from '../Checkbox'
 
 export default {
-  title: 'Design System|Forms/Form Control',
+  title: 'Design System/Forms/Form Control',
   component: FormControl,
   subcomponents: {
     InputLabel,

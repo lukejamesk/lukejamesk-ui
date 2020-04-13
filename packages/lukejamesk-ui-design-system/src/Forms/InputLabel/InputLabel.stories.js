@@ -2,7 +2,7 @@ import React from 'react'
 import InputLabel from './InputLabel'
 
 export default {
-  title: 'Design System|Forms/Input Label',
+  title: 'Design System/Forms/Input Label',
   component: InputLabel,
 }
 

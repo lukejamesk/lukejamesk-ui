@@ -5,7 +5,7 @@ import { useModalHandlers } from './ModalContext'
 import Typography from '../Typography'
 
 export default {
-  title: 'Core|Modal',
+  title: 'Core/Modal',
   component: Modal,
 }
 
