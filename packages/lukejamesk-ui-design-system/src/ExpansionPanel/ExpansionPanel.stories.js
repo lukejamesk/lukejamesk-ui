@@ -8,7 +8,7 @@ export default {
   subcomponents: {
     'ExpansionPanel.Head': ExpansionPanel.Head,
     'ExpansionPanel.Body': ExpansionPanel.Body,
-    ExpanderContext,
+    'ExpanderContext.Provider': ExpanderContext.Provider,
   },
 }
 
