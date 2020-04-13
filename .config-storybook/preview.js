@@ -31,7 +31,6 @@ console.log(convertBreakpoints(defaultTheme.breakpoints))
 addParameters({
   viewport: {
     viewports: convertBreakpoints(defaultTheme.breakpoints),
-    defaultViewport: 'l',
   },
 })
 addDecorator(withKnobs)
