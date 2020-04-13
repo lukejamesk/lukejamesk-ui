@@ -32,7 +32,7 @@ const ExpansionPanelHead = ({ children }) => {
 }
 
 ExpansionPanelHead.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node.isRequired,
 }
 
 export default ExpansionPanelHead
