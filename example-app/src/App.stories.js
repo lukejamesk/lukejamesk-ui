@@ -3,7 +3,7 @@ import { text } from '@storybook/addon-knobs'
 import App from './App'
 
 export default {
-  title: 'Apps|Example app',
+  title: 'Apps/Example app',
 }
 
 export const Default = () => <App name={text('Name', 'Example App')} />

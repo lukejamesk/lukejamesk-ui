@@ -13,7 +13,7 @@ forEach((icon) => {
 }, getKeys(AllIcons))
 
 export default {
-  title: 'Design System|Icon',
+  title: 'Design System/Icon',
   component: Icon,
 }
 

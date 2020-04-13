@@ -3,7 +3,7 @@ import FormControl from './FormControl'
 import { InputBase } from '../InputBase'
 
 export default {
-  title: 'Core|Forms/Form Control',
+  title: 'Core/Forms/Form Control',
   component: FormControl,
 }
 

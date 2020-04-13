@@ -7,7 +7,7 @@ Maecenas feugiat varius mi, eu sagittis nunc dignissim nec.
 Quisque rhoncus hendrerit leo.`
 
 export default {
-  title: 'Core|Typography',
+  title: 'Core/Typography',
   component: Typography,
 }
 

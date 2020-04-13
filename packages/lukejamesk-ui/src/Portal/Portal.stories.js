@@ -3,7 +3,7 @@ import Portal from './Portal'
 import Typography from '../Typography'
 
 export default {
-  title: 'Core|Portal',
+  title: 'Core/Portal',
   component: Portal,
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TextInputField from './TextInputField'
 
 export default {
-  title: 'Design System|Forms/Layout/Text Input Field',
+  title: 'Design System/Forms/Layout/Text Input Field',
   component: TextInputField,
 }
 

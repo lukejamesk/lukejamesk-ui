@@ -2,7 +2,7 @@ import React from 'react'
 import Curtain from './Curtain'
 
 export default {
-  title: 'Design System|Curtain',
+  title: 'Design System/Curtain',
   component: Curtain,
 }
 

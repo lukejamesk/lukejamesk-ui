@@ -7,7 +7,7 @@ import ButtonIcon, { buttonIconVariants } from './ButtonIcon'
 library.add(coffee)
 
 export default {
-  title: 'Design System|Button Icon',
+  title: 'Design System/Button Icon',
   component: ButtonIcon,
 }
 

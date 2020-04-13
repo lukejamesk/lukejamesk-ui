@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import InputField from './InputField'
 
 export default {
-  title: 'Design System|Forms/Layout/Input Field',
+  title: 'Design System/Forms/Layout/Input Field',
   component: InputField,
 }
 

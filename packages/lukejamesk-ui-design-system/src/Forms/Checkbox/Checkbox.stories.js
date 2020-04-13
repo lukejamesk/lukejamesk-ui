@@ -3,7 +3,7 @@ import { boolean } from '@storybook/addon-knobs'
 import Checkbox from './Checkbox'
 
 export default {
-  title: 'Design System|Forms/Checkbox',
+  title: 'Design System/Forms/Checkbox',
   component: Checkbox,
 }
 

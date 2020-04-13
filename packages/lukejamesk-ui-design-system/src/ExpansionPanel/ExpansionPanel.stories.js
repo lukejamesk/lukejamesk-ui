@@ -3,7 +3,7 @@ import { ExpanderContext } from '@lukejamesk/core'
 import ExpansionPanel from './ExpansionPanel'
 
 export default {
-  title: 'Design System|Expansion Panel',
+  title: 'Design System/Expansion Panel',
   component: ExpansionPanel,
   subcomponents: {
     'ExpansionPanel.Head': ExpansionPanel.Head,

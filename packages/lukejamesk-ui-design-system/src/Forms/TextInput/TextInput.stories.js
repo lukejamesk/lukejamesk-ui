@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import TextInput from './TextInput'
 
 export default {
-  title: 'Design System|Forms/Text Input',
+  title: 'Design System/Forms/Text Input',
   component: TextInput,
 }
 

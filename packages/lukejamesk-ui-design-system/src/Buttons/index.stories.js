@@ -3,7 +3,7 @@ import { text } from '@storybook/addon-knobs'
 import DeleteButton from './DeleteButton'
 
 export default {
-  title: 'Design System|Buttons',
+  title: 'Design System/Buttons',
   component: DeleteButton,
 }
 

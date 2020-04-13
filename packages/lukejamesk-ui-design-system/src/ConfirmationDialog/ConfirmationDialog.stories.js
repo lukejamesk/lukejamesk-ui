@@ -5,7 +5,7 @@ import ConfirmationDialog from './ConfirmationDialog'
 import { DeleteButton } from '../Buttons'
 
 export default {
-  title: 'Design System|Confirmation Dialog',
+  title: 'Design System/Confirmation Dialog',
   component: ConfirmationDialog,
   subcomponents: {
     'ConfirmationDialog.Title': ConfirmationDialog.Title,

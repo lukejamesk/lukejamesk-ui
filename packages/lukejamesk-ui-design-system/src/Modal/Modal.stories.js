@@ -5,7 +5,7 @@ import Typography from '../Typography'
 import Modal, { modalSizes } from './Modal'
 
 export default {
-  title: 'Design System|Modal',
+  title: 'Design System/Modal',
   component: Modal,
   subcomponents: {
     'Modal.Head': Modal.Head,
