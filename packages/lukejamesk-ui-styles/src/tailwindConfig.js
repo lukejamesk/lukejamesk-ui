@@ -1,6 +1,6 @@
 import { toPairs, compose, map, fromPairs } from 'ramda'
 import { colors } from 'tailwindcss/defaultTheme'
-import defaultTheme from '../defaultTheme'
+import defaultTheme from './defaultTheme'
 
 const { spacing, breakpoints, palette } = defaultTheme
 
