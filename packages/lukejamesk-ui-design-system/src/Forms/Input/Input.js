@@ -38,6 +38,8 @@ const Input = forwardRef(({ type, id, name, placeholder, onFocus, onBlur, ...pro
   return (
     <InputBase
       ref={ref}
+      id={id}
+      name={name}
       className={clsx('ljk-pb-xs ljk-pt-xs ljk-border-b-2 ljk-border-gray-400 ljk-w-full ljk-outline-none', {
         'ljk-border-primary': useInternalFocus ? internalFocus : ljkFormControl.focused,
       })}
