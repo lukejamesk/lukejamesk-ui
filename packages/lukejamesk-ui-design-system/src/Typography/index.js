@@ -1,1 +1,1 @@
-export { default, typographyVariants } from './Typography'
+export { default as Typography, typographyVariants, typographyAlignments } from './Typography'

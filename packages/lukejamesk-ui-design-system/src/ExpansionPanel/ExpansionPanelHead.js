@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 import { ExpanderContext, ButtonBase, library } from '@lukejamesk/core'
 import { arrowDown, arrowUp } from '@lukejamesk/icons'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 import Icon from '../Icon'
 
 library.add(arrowUp)

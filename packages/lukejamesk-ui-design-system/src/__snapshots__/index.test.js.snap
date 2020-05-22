@@ -27,6 +27,7 @@ Array [
   "inputTypes",
   "modalSizes",
   "spinnerSizes",
+  "typographyAlignments",
   "typographyVariants",
 ]
 `;

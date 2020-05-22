@@ -13,6 +13,14 @@ const variantMapping = {
   text: 'ljk-typo-text',
 }
 
+const alignMapping = {
+  auto: '',
+  left: 'ljk-text-left',
+  center: 'ljk-text-center',
+  right: 'ljk-text-right',
+  justify: 'ljk-text-justify',
+}
+
 export const typographyVariants = [
   'paragraph',
   'bold',
@@ -23,19 +31,22 @@ export const typographyVariants = [
   'text',
 ]
 
-const Typography = forwardRef(({ variant = 'text', className, paragraph = false, ...other }, ref) => {
-  const vMapped = paragraph ? 'paragraph' : variant
-  // const v = paragraph ? variantMapping.paragraph : variantMapping[variant]
+export const typographyAlignments = ['auto', 'left', 'center', 'right', 'justify']
 
-  return (
-    <TypographyCore
-      variant={vMapped}
-      className={clsx(variantMapping[vMapped], className)}
-      ref={ref}
-      {...other}
-    />
-  )
-})
+const Typography = forwardRef(
+  ({ variant = 'text', className, paragraph = false, align = 'auto', ...other }, ref) => {
+    const vMapped = paragraph ? 'paragraph' : variant
+
+    return (
+      <TypographyCore
+        variant={vMapped}
+        className={clsx(variantMapping[vMapped], alignMapping[align], className)}
+        ref={ref}
+        {...other}
+      />
+    )
+  },
+)
 
 Typography.displayName = 'Typography'
 
@@ -43,6 +54,7 @@ Typography.propTypes = {
   variant: PropTypes.oneOf(typographyVariants),
   paragraph: PropTypes.bool,
   className: PropTypes.string,
+  align: PropTypes.oneOf(typographyAlignments),
 }
 
 export default Typography
