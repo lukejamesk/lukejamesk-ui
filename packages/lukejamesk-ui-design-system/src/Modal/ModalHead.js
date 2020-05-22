@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { useModalHandlers, library } from '@lukejamesk/core'
 import { times } from '@lukejamesk/icons'
 import ButtonIcon from '../ButtonIcon'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 
 library.add(times)
 

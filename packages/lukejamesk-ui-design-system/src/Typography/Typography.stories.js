@@ -1,6 +1,6 @@
 import React from 'react'
-import { text } from '@storybook/addon-knobs'
-import Typography from './Typography'
+import { select, text } from '@storybook/addon-knobs'
+import Typography, { typographyAlignments, typographyVariants } from './Typography'
 
 const exampleText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Maecenas feugiat varius mi, eu sagittis nunc dignissim nec.
@@ -10,6 +10,15 @@ export default {
   title: 'Design System/Typography',
   component: Typography,
 }
+
+export const Default = () => (
+  <Typography
+    variant={select('Variant', typographyVariants, typographyVariants[0])}
+    align={select('Align', typographyAlignments, typographyAlignments[0])}
+  >
+    {exampleText}
+  </Typography>
+)
 
 export const Paragraph = () => <Typography paragraph>{text('text', exampleText)}</Typography>
 export const Blockquote = () => <Typography variant="blockquote">{text('text', exampleText)}</Typography>

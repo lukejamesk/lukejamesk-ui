@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { select } from '@storybook/addon-knobs'
 import Button from '../Button'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 import Modal, { modalSizes } from './Modal'
 
 export default {

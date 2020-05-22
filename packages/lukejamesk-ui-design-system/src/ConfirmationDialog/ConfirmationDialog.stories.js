@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Button from '../Button'
-import Typography from '../Typography'
+import { Typography } from '../Typography'
 import ConfirmationDialog from './ConfirmationDialog'
 import { DeleteButton } from '../Buttons'
 

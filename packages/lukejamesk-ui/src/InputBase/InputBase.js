@@ -1,5 +1,6 @@
 import React, { forwardRef, useState, useCallback } from 'react'
 import PropTypes from 'prop-types'
+import clsx from 'clsx'
 import { pathOr } from 'ramda'
 import { useFormControl } from '../FormControl'
 
@@ -76,7 +77,7 @@ const InputBase = forwardRef(
         onChange={handleOnChange}
         onBlur={handleOnBlur}
         onFocus={handleOnFocus}
-        className={className}
+        className={clsx('ljk-outline-none', className)}
         {...inputProps}
       />
     )
