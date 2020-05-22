@@ -16,6 +16,7 @@ Array [
   "Modal",
   "NumberInput",
   "NumberInputField",
+  "Spinner",
   "TextInput",
   "TextInputField",
   "Typography",
@@ -25,6 +26,7 @@ Array [
   "iconVariants",
   "inputTypes",
   "modalSizes",
+  "spinnerSizes",
   "typographyVariants",
 ]
 `;

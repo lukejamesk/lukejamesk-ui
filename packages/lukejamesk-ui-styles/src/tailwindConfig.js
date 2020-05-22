@@ -1,6 +1,7 @@
 import { toPairs, compose, map, fromPairs } from 'ramda'
 import { colors } from 'tailwindcss/defaultTheme'
 import defaultTheme from './defaultTheme'
+import { spinnerPlugin } from './tailwindPlugins'
 
 const { spacing, breakpoints, palette } = defaultTheme
 
@@ -34,8 +35,16 @@ const tailwindConfig = {
         dark: palette.secondaryDark,
       },
     },
+    spinner: {
+      s: spacing.m,
+      m: spacing.l,
+      l: spacing.xxl,
+      color: palette.primary,
+      secondaryColor: '#ccc',
+    },
     spacing,
   },
+  plugins: [spinnerPlugin],
 }
 
 export default tailwindConfig
