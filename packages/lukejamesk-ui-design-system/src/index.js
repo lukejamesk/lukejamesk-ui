@@ -1,5 +1,6 @@
 export { default as Button, buttonVariants } from './Button'
 export { default as ButtonIcon, buttonIconVariants } from './ButtonIcon'
+export * from './ButtonLoader'
 export { default as ConfirmationDialog } from './ConfirmationDialog'
 export * from './ExpansionPanel'
 export * from './Forms'

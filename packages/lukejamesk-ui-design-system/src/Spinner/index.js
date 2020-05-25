@@ -1,1 +1,1 @@
-export { default as Spinner, spinnerSizes } from './Spinner'
+export { default as Spinner, spinnerSizes, spinnerColors } from './Spinner'

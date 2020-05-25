@@ -36,11 +36,25 @@ const tailwindConfig = {
       },
     },
     spinner: {
-      s: spacing.m,
-      m: spacing.l,
-      l: spacing.xxl,
-      color: palette.primary,
-      secondaryColor: '#ccc',
+      sizes: {
+        s: spacing.m,
+        m: spacing.l,
+        l: spacing.xxl,
+      },
+      colors: {
+        primary: {
+          primary: palette.primary,
+          secondary: '#ccc',
+        },
+        light: {
+          primary: '#ccc',
+          secondary: 'rgba(255, 255, 255, .75)',
+        },
+        dark: {
+          primary: '#333',
+          secondary: '#ccc',
+        },
+      },
     },
     spacing,
   },

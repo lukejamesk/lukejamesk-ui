@@ -2,6 +2,6 @@
 
 exports[`<Spinner /> should render 1`] = `
 <span
-  class="ljk-spinner-m"
+  class="ljk-spinner ljk-spinner-size-m ljk-spinner-color-primary"
 />
 `;
