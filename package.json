@@ -10,7 +10,7 @@
     "storybook:start": "start-storybook -c .config-storybook -p 8081",
     "storybook:build": "build-storybook -c .config-storybook -o build-storybook",
     "prepack": "yarn lerna run build",
-    "release": "yarn lerna publish --contents build"
+    "release": "yarn lerna publish --contents build --force-publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
