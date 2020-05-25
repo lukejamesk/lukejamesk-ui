@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Alert /> Should render 1`] = `
+<div
+  class="ljk-p-m ljk-border ljk-rounded-md ljk-bg-blue-200 ljk-border-blue-700"
+>
+  <strong
+    class="ljk-typo-b"
+  >
+    My content for button
+  </strong>
+</div>
+`;
