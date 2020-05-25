@@ -1,3 +1,4 @@
+export * from './Alert'
 export { default as Button, buttonVariants } from './Button'
 export { default as ButtonIcon, buttonIconVariants } from './ButtonIcon'
 export * from './ButtonLoader'

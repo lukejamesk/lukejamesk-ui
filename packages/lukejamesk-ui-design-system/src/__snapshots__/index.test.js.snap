@@ -2,6 +2,7 @@
 
 exports[`@lukejamesk/design-system should match snapshot 1`] = `
 Array [
+  "Alert",
   "Button",
   "ButtonIcon",
   "ButtonLoader",
