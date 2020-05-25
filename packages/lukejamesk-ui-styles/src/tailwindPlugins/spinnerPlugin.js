@@ -1,4 +1,5 @@
 import plugin from 'tailwindcss/plugin'
+import { keys, reduce } from 'ramda'
 
 const spinnerPlugin = plugin(({ addUtilities, addComponents, theme }) => {
   addUtilities({
@@ -11,29 +12,65 @@ const spinnerPlugin = plugin(({ addUtilities, addComponents, theme }) => {
       },
     },
   })
-  const createSpinner = (name, size, color, secondaryColor) => ({
-    [`.spinner-${name}`]: {
+  const sizes = theme('spinner.sizes')
+  const colors = theme('spinner.colors')
+
+  const spinner = {
+    '.spinner': {
       position: 'relative',
       display: 'inline-block',
-      width: size,
-      height: size,
       '&::before': {
         content: `''`,
         boxSizing: 'border-box',
         position: 'absolute',
         borderRadius: '50%',
-        border: `calc(${size} / 10) solid ${secondaryColor}`,
-        borderTopColor: color,
+        top: '0',
+        left: '0',
+        borderStyle: 'solid',
         animation: 'rotate .7s ease-in-out infinite',
-        width: size,
-        height: size,
       },
     },
-  })
+  }
+
+  const spinnerColors = reduce(
+    (acc, color) => {
+      return {
+        ...acc,
+        [`.spinner-color-${color}`]: {
+          '&::before': {
+            borderColor: colors[color].secondary,
+            borderTopColor: colors[color].primary,
+          },
+        },
+      }
+    },
+    {},
+    keys(colors),
+  )
+
+  const spinnerSizes = reduce(
+    (acc, size) => {
+      return {
+        ...acc,
+        [`.spinner-size-${size}`]: {
+          width: sizes[size],
+          height: sizes[size],
+          '&::before': {
+            borderWidth: `calc(${sizes[size]} / 10)`,
+            width: sizes[size],
+            height: sizes[size],
+          },
+        },
+      }
+    },
+    {},
+    keys(sizes),
+  )
+
   const spinnerComponents = {
-    ...createSpinner('s', theme('spinner.s'), theme('spinner.color'), theme('spinner.secondaryColor')),
-    ...createSpinner('m', theme('spinner.m'), theme('spinner.color'), theme('spinner.secondaryColor')),
-    ...createSpinner('l', theme('spinner.l'), theme('spinner.color'), theme('spinner.secondaryColor')),
+    ...spinner,
+    ...spinnerSizes,
+    ...spinnerColors,
   }
 
   addComponents(spinnerComponents)
