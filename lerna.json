@@ -13,12 +13,6 @@
       "message": "chore(release): publish",
       "registry": "https://npm.pkg.github.com",
       "npmClient": "npm"
-    },
-    "bootstrap": {
-      "ignore": "component-*",
-      "npmClientArgs": [
-        "--no-package-lock"
-      ]
     }
   },
   "version": "0.0.4-alpha.3"

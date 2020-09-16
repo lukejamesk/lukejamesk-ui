@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { select } from '@storybook/addon-knobs'
+import { defaultTheme } from '@lukejamesk/styles'
+import { Breakpoints } from '@lukejamesk/core'
 import Button from '../Button'
 import { Typography } from '../Typography'
 import Modal, { modalSizes } from './Modal'
@@ -20,7 +22,7 @@ export const Default = () => {
   const closeModal = () => setModalOpened(false)
 
   return (
-    <>
+    <Breakpoints breakpoints={defaultTheme.breakpoints}>
       <Button type="button" onClick={() => setModalOpened(true)}>
         Open Modal
       </Button>
@@ -42,6 +44,6 @@ export const Default = () => {
           </Button>
         </Modal.Actions>
       </Modal>
-    </>
+    </Breakpoints>
   )
 }
