@@ -11,10 +11,11 @@
     "directory": "packages/lukejamesk-ui-icons"
   },
   "scripts": {
-    "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build --ignore \"**/*.test.js\",\"**/*.stories.js\" --source-maps true",
+    "build": "npm run build:clear && npm run build:cjs && npm run build:copy-files",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=production ../../node_modules/.bin/babel --config-file ../../babel.config.js ./src --out-dir ./build --extensions .ts,.tsx,.js,.jsx --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:pre": "rimraf build"
+    "build:clear": "npx rimraf build",
+    "ts:typecheck": "tsc --noEmit --jsx react"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

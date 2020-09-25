@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
-  stories: ['../**/*.stories.js'],
+  stories: ['../packages/lukejamesk-ui/**/*.stories.js', '../packages/lukejamesk-ui/**/*.stories.tsx'],
   addons: [
     '@storybook/addon-knobs/register',
     '@storybook/addon-storysource',

@@ -1,7 +1,7 @@
 import { createLoader } from '../util'
 
 const babelLoader = config => createLoader(config)({
-  test: /\.(js)$/,
+  test: /\.(js|tsx)$/,
   exclude: /node_modules/,
   use: {
     loader: 'babel-loader'

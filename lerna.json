@@ -3,7 +3,6 @@
     "packages/*",
     "example-app"
   ],
-  "useWorkspaces": true,
   "command": {
     "publish": {
       "ignoreChanges": [

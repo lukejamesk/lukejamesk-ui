@@ -11,19 +11,15 @@
     "directory": "packages/lukejamesk-ui-test-utils"
   },
   "scripts": {
-    "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build  --ignore \"**/*.test.js\" --source-maps true",
+    "build": "npm run build:clear && yarn build:cjs && npm run build:copy-files",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=production ../../node_modules/.bin/babel --config-file ../../babel.config.js ./src --out-dir ./build --extensions .ts,.tsx,.js,.jsx --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:pre": "rimraf build"
+    "build:clear": "npx rimraf build"
   },
   "dependencies": {
     "enzyme": "^3.10.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1"
-  },
-  "devDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
   },
   "publishConfig": {
     "access": "public",

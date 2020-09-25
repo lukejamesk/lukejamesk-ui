@@ -11,10 +11,10 @@
     "directory": "packages/lukejamesk-ui-styles"
   },
   "scripts": {
-    "build": "yarn build:pre && yarn build:cjs && yarn copy:styles && yarn build:copy-files",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build  --ignore \"**/*.test.js\" --source-maps true",
+    "build": "npm run build:clear && npm run build:cjs && npm run copy:styles && npm run build:copy-files",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=production ../../node_modules/.bin/babel --config-file ../../babel.config.js ./src --out-dir ./build --extensions .ts,.tsx,.js,.jsx --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:pre": "rimraf build",
+    "build:clear": "npx rimraf build",
     "copy:styles": "cp -a src/css/ build/css/",
     "build:tailwind": "postcss src/css/ui.css -o build/css/dist.css --config"
   },
@@ -29,10 +29,6 @@
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
     "tailwindcss": "^1.2.0"
-  },
-  "devDependencies": {
-    "enzyme": "^3.10.0",
-    "postcss-nested": "^4.2.1"
   },
   "publishConfig": {
     "access": "public",

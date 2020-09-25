@@ -3,10 +3,5 @@ module.exports = {
   snapshotSerializers: ['enzyme-to-json/serializer'],
   silent: false,
   testPathIgnorePatterns: ['/node_modules/', '/build/'],
-  collectCoverageFrom: [
-    'packages/**/*.js',
-    '!packages/**/index.js',
-    '!**/*.stories.js',
-    '!**/*.interactor.js',
-  ],
+  collectCoverageFrom: ['packages/**/*.js', '!packages/**/index.js', '!**/*.stories.js'],
 }

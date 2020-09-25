@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "jsx": "react",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "removeComments": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["packages"]
+    },
+    "typeRoots": [ "./packages/lukejamesk-ui-types", "./node_modules/@types"]
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules", "**/node_modules", "**/build", "./packages/lukejamesk-ui-types" ]
+}

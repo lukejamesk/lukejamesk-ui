@@ -1,11 +1,11 @@
 import path from 'path'
 import { compose } from 'ramda'
-import { babelLoader } from './modules'
-import { appHtmlPlugin } from './plugins'
+import { withCss, withTranspiledJavascript, withAppHtml } from './with'
 
 const config = compose(
-  appHtmlPlugin,
-  babelLoader
+  withAppHtml,
+  withCss('../../postcss.config.js'),
+  withTranspiledJavascript,
 )({
   entry: {
     app: './src/index.js'
@@ -15,7 +15,7 @@ const config = compose(
     filename: '[name]-[chunkhash].js'
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.tsx', '.ts', '.css'],
     modules: ['node_modules'],
     alias: {},
     plugins: []
