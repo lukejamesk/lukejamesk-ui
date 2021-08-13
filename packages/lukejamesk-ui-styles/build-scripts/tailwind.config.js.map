@@ -1,0 +1,1 @@
+{"version":3,"sources":["../scripts/tailwind.config.ts"],"names":[],"mappings":";;;;;;;;;;;;AAAA","sourcesContent":["export { default } from './src/tailwindConfig'\n"],"file":"tailwind.config.js"}

@@ -36,7 +36,7 @@ const spinnerPlugin = plugin(({ addUtilities, addComponents, theme }) => {
     (acc, color) => {
       return {
         ...acc,
-        [`.spinner-color-${color}`]: {
+        [`.spinner-color-${String(color)}`]: {
           '&::before': {
             borderColor: colors[color].secondary,
             borderTopColor: colors[color].primary,
@@ -52,11 +52,11 @@ const spinnerPlugin = plugin(({ addUtilities, addComponents, theme }) => {
     (acc, size) => {
       return {
         ...acc,
-        [`.spinner-size-${size}`]: {
+        [`.spinner-size-${String(size)}`]: {
           width: sizes[size],
           height: sizes[size],
           '&::before': {
-            borderWidth: `calc(${sizes[size]} / 10)`,
+            borderWidth: `calc(${String(sizes[size])} / 10)`,
             width: sizes[size],
             height: sizes[size],
           },

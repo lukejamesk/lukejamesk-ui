@@ -9,6 +9,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
   ],
 })
 
+console.log('loading postcss');
+
 module.exports = {
   plugins: [
     // require('postcss-import'),

@@ -1,25 +1,27 @@
 {
   "name": "@lukejamesk/icons",
-  "version": "0.0.4-alpha.3",
+  "version": "0.0.4-alpha.4",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukejamesk/lukejamesk-ui.git",
     "directory": "packages/lukejamesk-ui-icons"
   },
   "scripts": {
-    "build": "yarn build:pre && yarn build:cjs && yarn build:copy-files",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel --config-file ../../babel.config.js ./src --out-dir ./build --ignore \"**/*.test.js\",\"**/*.stories.js\" --source-maps true",
+    "build": "yarn ts:typecheck && yarn build:clear && yarn build:cjs && yarn build:copy-files && yarn build:types",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=production && babel --config-file ../../babel.config.js ./src --out-dir ./build --extensions .ts,.tsx,.js,.jsx --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:pre": "rimraf build"
+    "build:clear": "rimraf build",
+    "ts:typecheck": "tsc -p tsconfig.json",
+    "build:types": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@lukejamesk/test-utils": "^0.0.4-alpha.3"
+    "@lukejamesk/test-utils": "^0.0.4-alpha.4"
   },
   "publishConfig": {
     "access": "public",

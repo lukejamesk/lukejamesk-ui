@@ -3,9 +3,6 @@
 exports[`@lukejamesk/test-utils should match snapshot 1`] = `
 Array [
   "changeWindowWidth",
-  "createInteractor",
-  "extendInteractor",
-  "mergeInteractor",
   "setWindowWidth",
   "testPackageExports",
 ]

@@ -1,6 +1,0 @@
-export { default as arrowDown } from './arrowDown'
-export { default as arrowUp } from './arrowUp'
-export { default as check } from './check'
-export { default as coffee } from './coffee'
-export { default as times } from './times'
-export { default as trashAlt } from './trashAlt'

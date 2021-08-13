@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "declaration": false,
+    "jsx": "preserve",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
+    // "removeComments": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["packages"]
+    }
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules", "**/node_modules", "**/build" ]
+}
