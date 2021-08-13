@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/icons",
-  "version": "0.0.4-alpha.3",
+  "version": "0.0.4-alpha.4",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -21,7 +21,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@lukejamesk/test-utils": "^0.0.4-alpha.3"
+    "@lukejamesk/test-utils": "^0.0.4-alpha.4"
   },
   "publishConfig": {
     "access": "public",

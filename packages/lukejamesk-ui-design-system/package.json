@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/design-system",
-  "version": "0.0.4-alpha.3",
+  "version": "0.0.4-alpha.4",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -19,10 +19,10 @@
     "build:types": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
-    "@lukejamesk/core": "^0.0.4-alpha.3",
-    "@lukejamesk/icons": "^0.0.4-alpha.3",
-    "@lukejamesk/styles": "^0.0.4-alpha.3",
-    "@lukejamesk/test-utils": "^0.0.4-alpha.3",
+    "@lukejamesk/core": "^0.0.4-alpha.4",
+    "@lukejamesk/icons": "^0.0.4-alpha.4",
+    "@lukejamesk/styles": "^0.0.4-alpha.4",
+    "@lukejamesk/test-utils": "^0.0.4-alpha.4",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
