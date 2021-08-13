@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/core",
-  "version": "0.0.4-alpha.4",
+  "version": "0.0.4-alpha.5",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -21,8 +21,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/react-fontawesome": "^0.1.9",
-    "@lukejamesk/icons": "^0.0.4-alpha.4",
-    "@lukejamesk/test-utils": "^0.0.4-alpha.4",
+    "@lukejamesk/icons": "^0.0.4-alpha.5",
+    "@lukejamesk/test-utils": "^0.0.4-alpha.5",
     "clsx": "^1.0.4",
     "global": "^4.4.0",
     "prop-types": "^15.7.2",
@@ -37,5 +37,5 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "gitHead": "541de791aacfdd67ab405fc4ae658636205e90a1"
+  "gitHead": "d3b48a07d4a88f3a493e3c2375d65053c61ece4f"
 }

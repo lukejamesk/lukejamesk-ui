@@ -1,6 +1,6 @@
 {
   "name": "@lukejamesk/icons",
-  "version": "0.0.4-alpha.4",
+  "version": "0.0.4-alpha.5",
   "license": "MIT",
   "author": "Luke King",
   "private": false,
@@ -21,11 +21,11 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "@lukejamesk/test-utils": "^0.0.4-alpha.4"
+    "@lukejamesk/test-utils": "^0.0.4-alpha.5"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "gitHead": "541de791aacfdd67ab405fc4ae658636205e90a1"
+  "gitHead": "d3b48a07d4a88f3a493e3c2375d65053c61ece4f"
 }

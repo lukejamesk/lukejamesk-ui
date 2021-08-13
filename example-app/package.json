@@ -1,6 +1,6 @@
 {
   "name": "example-app",
-  "version": "0.0.4-alpha.4",
+  "version": "0.0.4-alpha.5",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -11,10 +11,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@lukejamesk/core": "^0.0.4-alpha.4",
-    "@lukejamesk/design-system": "^0.0.4-alpha.4",
-    "@lukejamesk/icons": "^0.0.4-alpha.4",
-    "@lukejamesk/styles": "^0.0.4-alpha.4",
+    "@lukejamesk/core": "^0.0.4-alpha.5",
+    "@lukejamesk/design-system": "^0.0.4-alpha.5",
+    "@lukejamesk/icons": "^0.0.4-alpha.5",
+    "@lukejamesk/styles": "^0.0.4-alpha.5",
     "clsx": "^1.1.0",
     "enzyme": "^3.10.0",
     "prop-types": "^15.7.2",
