@@ -4,19 +4,19 @@
   "license": "MIT",
   "author": "Luke King",
   "private": false,
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukejamesk/lukejamesk-ui.git",
     "directory": "packages/lukejamesk-ui"
   },
   "scripts": {
-    "build": "npm run ts:typecheck && npm run build:clear && npm run build:cjs && npm run build:copy-files && npm run build:types",
-    "build:cjs": "NODE_ENV=production BABEL_ENV=production && ../../node_modules/.bin/babel --config-file ../../babel.config.js ./src --out-dir ./build --extensions .ts,.tsx,.js,.jsx --source-maps true",
+    "build": "yarn ts:typecheck && yarn build:clear && yarn build:cjs && yarn build:copy-files && yarn build:types",
+    "build:cjs": "NODE_ENV=production BABEL_ENV=production && babel --config-file ../../babel.config.js ./src --out-dir ./build --extensions .ts,.tsx,.js,.jsx --source-maps true",
     "build:copy-files": "node ../../scripts/copy-files.js",
-    "build:clear": "npx rimraf build",
-    "ts:typecheck": "tsc --noEmit --jsx react",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build:clear": "rimraf build",
+    "ts:typecheck": "tsc -p tsconfig.json",
+    "build:types": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

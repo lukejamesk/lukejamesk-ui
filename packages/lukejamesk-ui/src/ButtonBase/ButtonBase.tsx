@@ -1,29 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { forwardRef } from 'react'
+import { ButtonBaseProps, ButtonBaseRef } from './types'
 
-export interface ButtonBaseProps extends React.HTMLProps<HTMLButtonElement> {
-  children: React.ReactNode
-  className?: string
-  element?: string | React.FunctionComponent<React.HTMLProps<HTMLButtonElement>>
-}
+const ButtonBase = forwardRef<ButtonBaseRef, ButtonBaseProps>(
+  ({ children, className, element: Element = 'button', ...props }, ref) => {
+    return (
+      <Element type="button" className={className} tabIndex={0} {...props} ref={ref}>
+        {children}
+      </Element>
+    )
+  },
+)
 
-const ButtonBase: React.FunctionComponent<ButtonBaseProps> = ({
-  children,
-  className,
-  element: Element = 'button',
-  ...props
-}) => {
-  return (
-    <Element type="button" className={className} tabIndex={0} {...props}>
-      {children}
-    </Element>
-  )
-}
-
-ButtonBase.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node.isRequired,
-  element: PropTypes.string,
-}
+ButtonBase.displayName = 'ButtonBase'
 
 export default ButtonBase

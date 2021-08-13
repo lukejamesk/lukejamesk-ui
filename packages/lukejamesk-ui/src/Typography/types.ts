@@ -5,7 +5,7 @@ export type TypographyIntrinsicElements = Required<
   >
 >
 
-export type TypographyVariant = Required<
+export type TypographyVariant =
   | 'paragraph'
   | 'bold'
   | 'blockquote'
@@ -16,4 +16,10 @@ export type TypographyVariant = Required<
   | 'heading5'
   | 'heading6'
   | 'text'
->
+
+export type TypographyProps = React.PropsWithChildren<{
+  variant?: TypographyVariant
+  className?: string | undefined
+}>
+
+export type TypographyRef = any

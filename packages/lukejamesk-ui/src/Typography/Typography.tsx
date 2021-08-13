@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react'
-import { TypographyVariant, TypographyIntrinsicElements } from './types'
+import { TypographyVariant, TypographyIntrinsicElements, TypographyProps, TypographyRef } from './types'
 
 export const typographyVariants: Record<TypographyVariant, keyof TypographyIntrinsicElements> = {
   paragraph: 'p',
@@ -14,18 +14,11 @@ export const typographyVariants: Record<TypographyVariant, keyof TypographyIntri
   text: 'span',
 }
 
-export type TypographyProps = React.PropsWithChildren<{
-  variant?: TypographyVariant
-  className?: string | undefined
-}>
-
-export type Ref = any
-
 const findVariant = (variant?: TypographyVariant) => {
   return variant ? typographyVariants[variant] : typographyVariants.paragraph
 }
 
-const Typography = forwardRef<Ref, TypographyProps>(({ variant, className, ...other }, ref) => {
+const Typography = forwardRef<TypographyRef, TypographyProps>(({ variant, className, ...other }, ref) => {
   const Component: keyof TypographyIntrinsicElements = findVariant(variant)
   return <Component className={className} {...other} ref={ref} />
 })

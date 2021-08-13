@@ -32,7 +32,6 @@ export type BreakpointsProps = React.PropsWithChildren<{
 }>
 
 const Breakpoints: React.FC<BreakpointsProps> = ({ breakpoints, children }) => {
-  debugger
   const { width } = useWindowSize()
   const breakpointsCreated = createBreakpoints(breakpoints)
   const currentBreakpoint = findMatchingBreakpoint(width)(breakpointsCreated)

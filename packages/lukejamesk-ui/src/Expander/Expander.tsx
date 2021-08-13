@@ -1,14 +1,7 @@
 import React, { Children, useCallback, useState, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import ExpanderContext from './ExpanderContext'
-
-export type ExpanderProps = {
-  id: string
-  expanded?: boolean
-  uncontrolled?: boolean
-  onChange?: (expanded: boolean) => void
-  children: React.ReactNode
-}
+import { ExpanderProps } from './types'
 
 const Expander: React.FunctionComponent<ExpanderProps> = ({
   id,

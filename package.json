@@ -1,4 +1,5 @@
 {
+  "name": "lukejamesk-ui",
   "private": true,
   "version": "0.0.1",
   "scripts": {
@@ -6,11 +7,11 @@
     "test": "jest",
     "test:debug": "node --inspect node_modules/.bin/jest -i",
     "lerna": "lerna",
-    "storybook": "npm run storybook:start",
+    "storybook": "yarn storybook:start",
     "storybook:start": "start-storybook -c .config-storybook -p 8081",
     "storybook:build": "build-storybook -c .config-storybook -o build-storybook",
-    "prepack": "npx lerna run --parallel build",
-    "release": "npx lerna publish --contents build --force-publish"
+    "prepack": "lerna run --parallel build",
+    "release": "lerna publish --contents build --force-publish"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
@@ -73,22 +74,16 @@
     "source-map-loader": "^0.2.4",
     "tailwindcss": "^1.2.0",
     "ts-loader": "^8.0.3",
+    "ts-node": "^9.0.0",
     "typescript": "^3.7.5",
     "webpack": "^4.37.0",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
   },
+  "dependencies": {
+  },
   "workspaces": [
     "packages/*",
     "example-app"
-  ],
-  "name": "lukejamesk-ui",
-  "dependencies": {
-    "@lukejamesk/core": "file:packages/lukejamesk-ui",
-    "@lukejamesk/design-system": "file:packages/lukejamesk-ui-design-system",
-    "@lukejamesk/icons": "file:packages/lukejamesk-ui-icons",
-    "@lukejamesk/styles": "file:packages/lukejamesk-ui-styles",
-    "@lukejamesk/test-utils": "file:packages/lukejamesk-ui-test-utils",
-    "example-app": "file:example-app"
-  }
+  ]
 }

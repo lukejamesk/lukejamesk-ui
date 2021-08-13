@@ -1,9 +1,10 @@
 {
   "extends": "../../tsconfig.json",
+  "include": ["./src"],
   "compilerOptions": {
-    "rootDir": "./src",
+    "allowJs": true,
+    "skipLibCheckFor": ["@tailwindcss/plugin"],
     "baseUrl": "./",
-    "outDir": "./build"
+    "rootDir": "./src",
   },
-  "include": ["./src"]
 }

@@ -3,8 +3,8 @@ import { compose, map, toPairs, reduce } from 'ramda'
 import { addDecorator, addParameters } from '@storybook/react'
 import { withKnobs, boolean, text } from '@storybook/addon-knobs'
 import { defaultTheme } from '@lukejamesk/styles'
-
-import '../packages/lukejamesk-ui-styles/src/css/ui.css'
+import { Breakpoints } from '@lukejamesk/core'
+import '../packages/lukejamesk-ui-styles/build/css/ui.css'
 
 const convertBreakpoints = compose(
   reduce(
@@ -32,3 +32,14 @@ addParameters({
   },
 })
 addDecorator(withKnobs)
+
+addDecorator((story) => {
+  document.querySelector('html').style.fontSize = text('Base font size', '14px')
+  return story()
+})
+
+addDecorator((storyFn) => (
+  <Breakpoints breakpoints={defaultTheme.breakpoints}>
+    <div className="ljk-p-xl">{storyFn()}</div>
+  </Breakpoints>
+))

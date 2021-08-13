@@ -2,30 +2,11 @@ import React, { forwardRef, useState, useCallback } from 'react'
 import clsx from 'clsx'
 import { pathOr } from 'ramda'
 import { useFormControl } from '../FormControl'
+import { InputBaseProps, InputBaseRef } from './types'
 
 const noop = () => {}
 
-type Ref = HTMLInputElement
-
-export type InputType = 'text' | 'number' | 'email' | 'checkbox' | 'radio'
-
-export type InputBaseCheckboxProps = { checked?: boolean }
-
-type InputBaseCustomProps = {
-  type?: InputType
-  onChange?: (value: string) => unknown
-  onBlur?: (value: string) => unknown
-  onFocus?: () => unknown
-  value: string
-  uncontrolled?: boolean
-  className?: string
-}
-
-export type InputBaseProps = InputBaseCustomProps &
-  Omit<React.HTMLAttributes<Ref>, keyof InputBaseCustomProps> &
-  Omit<React.HTMLProps<Ref>, keyof InputBaseCustomProps>
-
-const InputBase = forwardRef<Ref, InputBaseProps>(
+const InputBase = forwardRef<InputBaseRef, InputBaseProps>(
   (
     {
       type = 'text',
@@ -87,7 +68,7 @@ const InputBase = forwardRef<Ref, InputBaseProps>(
     )
 
     const handleOnBlur = useCallback(() => {
-      onBlur(val)
+      onBlur(val || '')
       if (ljkFormControl) {
         ljkFormControl.onBlur()
       }
